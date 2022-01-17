@@ -406,6 +406,8 @@ footer{
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -446,7 +448,8 @@ footer{
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
-
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -481,7 +484,8 @@ footer{
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-tres h4{
@@ -502,7 +506,8 @@ footer{
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
-    
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -520,6 +525,8 @@ footer{
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
+    align-items: center;
+    justify-content: center;
     
 }
 
@@ -748,10 +755,14 @@ header nav ul li a{
 
 .footer-inferior{
     flex-direction: column;
+    
+    
 }
 
 
 /* Footer 1 */
+
+
 
 
 .footer-uno h4 {
@@ -808,7 +819,6 @@ margin-left: 1em;
 
 
 /* Footer 4 */
-
 
 .footer-cuatro h4 {
     font-size: 1rem;

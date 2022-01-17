@@ -1,14 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
 /* Parametros generales */
 *{
     margin: 0px ;
@@ -33,16 +23,12 @@ body {
     background-color: #FAEBD7; 
 }
 
-/* Parametros mobile */
-
 
 /* Header ---------------------------------------------------------*/
 
 
 header{
     background-color: #2e3436;
-    padding-top: 1em;
-    padding-bottom: 2em;
     grid-area: header;
 }
 
@@ -50,25 +36,18 @@ header nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 1em;
-  
 }
 
-header nav h1{
-      margin-bottom: 1em;
-}
+
 
 header nav h1 a{
     text-decoration: none;
     font-family: saintCapital;
-    
     font-style: italic;
     font-weight: bold;
     background-color:#FAEBD7;
     color:#2e3436;
-    font-size: 3.3rem;
     text-align: center;
-
 }
 
 header nav ul{
@@ -76,11 +55,6 @@ header nav ul{
     display: flex;
 }
 
-header nav ul li{
-    /* display: inline-block; */
-    margin-right: 1em;
-    font-size: 1.5rem;
-}
 
 header nav ul li a{
     text-decoration: none;
@@ -88,7 +62,6 @@ header nav ul li a{
     color: #FAEBD7;
     font-family: saintCapital;
     background-color:#2e3436;
-    font-size: 1.2rem;
     font-weight: bold;
 }
 
@@ -99,15 +72,12 @@ header nav ul li a{
 
 .index-grid{
     display: grid;
-    grid-template-columns: 3% auto 3%;
-    grid-template-rows:  10rem 103rem 30rem 105rem 20rem;
     grid-template-areas: 
     "header header header"
     "blanco1 bodega blanco2"
     "video video video"
     "blanco3 nosotros blanco4"
     "footer footer footer";
-    row-gap: 10px;
     }
 
 
@@ -120,7 +90,6 @@ header nav ul li a{
 
 .div-bodega{
     border: #2e3436 solid 5px;
-    
 }
 
 
@@ -128,7 +97,6 @@ header nav ul li a{
     display: flex;
     align-items: center;
     justify-content:center;
-    font-size: 2rem;
     border: #2e3436 2px solid;
     font-family: saintCapital;
     background-color: #FAEBD7;
@@ -140,33 +108,22 @@ header nav ul li a{
 .primera-linea{
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content:space-evenly;
 
 }
 
 .caja-parrafo{
-    font-size: 1rem;
     width: auto;
-    max-width: 350px;
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
 
 
 .parrafo-bodega {
-    font-size: 1rem;
-    line-height: 1.5em;
     font-family: saintCapital;
     text-align: justify;
 }
 
  .div-img-bodega{
     width: 96%;
-    max-width: 330px;
-    margin-top: 1em;
-    margin-left: 1em;
 }
 
 .div-img-bodega img{
@@ -177,11 +134,9 @@ header nav ul li a{
 .segunda-linea{
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
+   
     justify-content: space-evenly; 
 }
-
-
 
 .video-recorrido{
     display: flex;
@@ -211,7 +166,6 @@ header nav ul li a{
 .div-nosotros h2{
     display: flex;
     justify-content: center;
-    font-size: 2rem;
     border: #2e3436 2px solid;
     font-family: saintCapital;
     background-color: #FAEBD7;
@@ -224,7 +178,6 @@ header nav ul li a{
 .div-nosotros h3{
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
     border: #2e3436 2px solid;
     font-family: saintCapital;
     font-style: italic;
@@ -237,9 +190,6 @@ header nav ul li a{
 
 .grid-vinos{
     display:grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 10rem 143rem 143rem 143rem 17rem;
-    row-gap: 50px;
     grid-template-areas: 
     "header header header"
     "blanco malbec blanco2"
@@ -274,7 +224,6 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     font-family: saintCapital;
-    font-size: 2.9rem;
     font-weight: bold;
     border: #FAEBD7 solid 5px;
 
@@ -283,8 +232,6 @@ header nav ul li a{
 
 .vino-container{
     display: flex;
-    flex-direction: column;
-    
 }
 
 .vino-container-interior{
@@ -292,7 +239,6 @@ header nav ul li a{
     border: #FAEBD7 solid 5px;
     flex-direction: column;
     align-items: center;
-
 }
 
 
@@ -301,14 +247,13 @@ header nav ul li a{
     text-align: center;
     font-family: saintCapitan;
     border: #FAEBD7 solid 5px;
-    font-size: 2rem;
+  
 }
 
 .vino-container-interior p{
     font-family: saintCapitan;
     text-align: justify;
-    font-size: 1.5rem;
-    margin: 1em;
+
     
 }
 
@@ -317,9 +262,6 @@ header nav ul li a{
 
 .grid-puntos{
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 10rem 203rem 16rem;
-    row-gap: 1rem;
     grid-template-areas: 
     "header header header"
     "blanco puntos blanco2"
@@ -334,8 +276,6 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 2.8rem;
-    margin: 1em;
     font-weight: bold;
     font-family: saintCapital;
     text-decoration: underline;
@@ -348,14 +288,12 @@ header nav ul li a{
     flex-direction: column;
     align-items: center;
     border: #2e3436 5px solid;
-    margin-bottom: 2em;
 }
 
 .mapa-local-mendoza h3{
     color: #2e3436;
-    margin: 1em;
     text-decoration: underline;
-    font-size: 1.5rem;
+    
 }
 
 .sala-turismo{
@@ -372,40 +310,29 @@ header nav ul li a{
     flex-direction: column;
     align-items: center;
     border: #2e3436 5px solid;
-    margin-bottom: 2em;
-
 }
 
 .mapa-local h3{
     color: #2e3436;
     text-decoration: underline;
-    font-size: 1.5rem;
-    margin: 1em;
 }
 
 .mapa-local div {
     background-color: #2e3436;
-   
 }
 
 .mapa-interno{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
-.mapa-interno svg, .mapa-interno iframe{
-    margin: 1em;
-}
+
 
 /* CONTACTO ---------------------------------------------------*/
 
 .grid-contacto{
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 8rem 23rem 10rem 17rem;
-    row-gap: 20px;
     grid-template-areas: 
     "header header header"
     "blanco contacto blanco2"
@@ -429,22 +356,17 @@ header nav ul li a{
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
-    font-size: 2.5rem;
 }
 
 .formulario-contacto p{
     font-family: saintCapital;
     text-align: justify;
-    font-size: 1.5rem;
-    margin: 1em;
 }
 
 .formulario-contacto form{
     color:#FAEBD7;
     background-color: #2e3436; 
     display: flex;
-    flex-direction: column;
-   
 }
 
 /* Atencion al consumidor */
@@ -467,31 +389,23 @@ footer{
 
 }
 
-.footer-container{
-    display: flex;
-    flex-direction: row;
-}
-
 .footer-superior{
     display: flex;
-    flex-direction: column;
+    
 }
 
 .footer-inferior{
     display: flex;
-    flex-direction: column;
-}
 
+}
 
 /* Footer 1 */
 
 .footer-uno{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
-    
-   
 }
 
 
@@ -499,8 +413,6 @@ footer{
     display: flex;
     font-family: saintCapital;
     color: #2e3436;
-    font-size: 1rem;
-    margin-left: 1em;
     
 }
 
@@ -511,13 +423,8 @@ footer{
 .container-premios{
     display: flex;
     flex-direction: column;
-    margin-right: 1em;
-    font-size: 1rem;
 }
 
-.premio-uno{
-margin-left: 1em;
-}
 
 .footer-uno div div{
     font-family: saintCapital;
@@ -534,8 +441,8 @@ margin-left: 1em;
 /* Footer 2 */
 
 .footer-dos{ 
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
@@ -545,7 +452,6 @@ margin-left: 1em;
 
 .footer-dos h4{
     display: flex;
-    font-size: 1rem;
 } 
 
 
@@ -558,8 +464,6 @@ margin-left: 1em;
 .container-redes div a{
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
-    margin-right: 0.5em;
 }
 
 
@@ -572,8 +476,8 @@ margin-left: 1em;
 /* Footer 3 */
 
  .footer-tres{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
@@ -582,20 +486,12 @@ margin-left: 1em;
 
 .footer-tres h4{
     color: #2e3436;
-    font-size: 1rem;
 }
 
 .container-mapa{
     display: flex;
     align-items: center;
 }
-
-.container-mapa svg{
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1.5rem;
-}
-
 
 
 /* Footer 4 */
@@ -609,6 +505,311 @@ margin-left: 1em;
     
 }
 
+
+
+.footer-cuatro form {
+    display: flex;
+}
+
+
+
+/* Footer 5 */
+
+.footer-cinco{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa07a;
+    border: #2e3436 solid 2px;
+    
+}
+
+.footer-cinco span{
+    color: #2e3436;
+    font-weight: bold;
+    font-family: saintCapital;
+}
+
+
+/* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width:360px){
+
+/* Header ---------------------------------------------------------*/
+
+
+header{
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+header nav{
+    margin-left: 1em;
+}
+
+header nav h1{
+    margin-bottom: 1em;
+}
+
+header nav h1 a{
+    font-size: 3.3rem;
+}
+
+header nav ul li{
+    margin-right: 1em;
+    font-size: 1.5rem;
+}
+
+header nav ul li a{
+    font-size: 1.2rem;
+}
+
+
+/* PAGINA INDEX -----------------------------------------*/
+
+/* Contenedor Grid Index */
+
+.index-grid{
+    grid-template-columns: 3% auto 3%;
+    grid-template-rows:  10rem 103rem 30rem 105rem 20rem;
+    row-gap: 10px;
+    }
+
+
+/* SECCION BODEGA */
+
+
+.primera-linea{
+    flex-direction: column;
+}
+
+.segunda-linea{
+    flex-direction: column-reverse;
+}
+
+
+.div-bodega h2{
+    font-size: 2rem;
+}
+
+
+
+.caja-parrafo{
+    font-size: 1rem;
+    max-width: 350px;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+.parrafo-bodega {
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+ .div-img-bodega{
+    max-width: 330px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+
+/* SECCION NOSOTROS */
+
+
+
+
+.div-nosotros h2{
+    font-size: 2rem;
+}
+
+.div-nosotros h3{
+    font-size: 1.5rem;
+}
+
+
+/* PAGINA VINOS -------------------------------------------------*/
+
+.grid-vinos{
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 10rem 143rem 143rem 143rem 17rem;
+    row-gap: 50px;
+}
+
+.cepa h2 {
+    font-size: 2.9rem;
+}
+
+
+.vino-container{
+    flex-direction: column;
+}
+
+
+
+.vino-container-interior h3{
+    font-size: 2rem;
+}
+
+.vino-container-interior p{
+    font-size: 1.5rem;
+    margin: 1em;
+    
+}
+
+/* PUNTOS DE VENTA ------------------------------------------------*/
+
+
+.grid-puntos{
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 10rem 203rem 16rem;
+    row-gap: 1rem;
+ 
+}
+
+
+.puntos h2 {
+    font-size: 2.8rem;
+    margin: 1em;
+}
+
+.mapa-local-mendoza{
+    margin-bottom: 2em;
+}
+
+.mapa-local-mendoza h3{
+    margin: 1em;
+    font-size: 1.5rem;
+}
+
+.sala-turismo{
+    font-size: 1.5rem;
+    margin: 1em;
+}
+
+
+
+.mapa-local{
+    margin-bottom: 2em;
+
+}
+
+.mapa-local h3{
+    font-size: 1.5rem;
+    margin: 1em;
+}
+
+
+.mapa-interno{
+    flex-direction: column;
+    
+}
+
+.mapa-interno svg, .mapa-interno iframe{
+    margin: 1em;
+}
+
+/* CONTACTO ---------------------------------------------------*/
+
+.grid-contacto{
+    grid-template-columns: 10% auto 10%;
+    grid-template-rows: 8rem 23rem 10rem 17rem;
+    row-gap: 20px;
+   
+}
+
+/* Formulario de contato */
+
+
+
+.formulario-contacto h2{
+    font-size: 2.5rem;
+}
+
+.formulario-contacto p{
+    font-size: 1.5rem;
+    margin: 1em;
+}
+
+.formulario-contacto form{
+    flex-direction: column;
+}
+
+/* Atencion al consumidor */
+
+
+/* FOOTER --------------------------------------------------------*/
+
+
+.footer-superior{
+    flex-direction: column;
+}
+
+.footer-inferior{
+    flex-direction: column;
+}
+
+
+/* Footer 1 */
+
+
+.footer-uno h4 {
+    font-size: 1rem;
+    margin-left: 1em;
+    
+}
+
+
+.container-premios{
+    margin-right: 1em;
+    font-size: 1rem;
+}
+
+.premio-uno{
+margin-left: 1em;
+}
+
+
+
+/* Footer 2 */
+
+
+
+.footer-dos h4{
+    font-size: 1rem;
+} 
+
+
+
+.container-redes div a{
+    font-size: 1.5rem;
+    margin-right: 0.5em;
+}
+
+
+
+/* Footer 3 */
+
+
+.footer-tres h4{
+    font-size: 1rem;
+}
+
+.container-mapa{
+    align-items: center;
+}
+
+.container-mapa svg{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.5rem;
+}
+
+
+/* Footer 4 */
+
+
 .footer-cuatro h4 {
     font-size: 1rem;
     margin-bottom: 0.5em;
@@ -616,7 +817,6 @@ margin-left: 1em;
 }
 
 .footer-cuatro form {
-    display: flex;
     margin-bottom: 0.5em;
 }
 
@@ -635,19 +835,14 @@ margin-left: 1em;
 /* Footer 5 */
 
 .footer-cinco{
-    display: flex;
     flex-direction: column;
-    background-color: #ffa07a;
-    border: #2e3436 solid 2px;
-    
 }
 
 .footer-cinco span{
     font-size: 0.9rem;
     padding-left: 0.5em;
-    color: #2e3436;
-    font-weight: bold;
-    font-family: saintCapital;
+}
+    
 }
 
 
@@ -657,12 +852,7 @@ margin-left: 1em;
 
 @media screen and (min-width:1200px){/* Header ---------------------------------------------------------*/
 
-
-
-
-
     header nav{
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -670,15 +860,12 @@ margin-left: 1em;
 
     header nav h1 a{
         font-size: 4rem;
-
     }
 
 
     header nav ul li a{
-        font-size: 2rem;
-        
+        font-size: 2rem; 
     }
-
 
     /* PAGINA INDEX -----------------------------------------*/
 
@@ -700,20 +887,10 @@ margin-left: 1em;
         border: none;
         text-decoration: underline;
         justify-content:start;
-        
-    
-    
-        
-        color: #2e3436;
-        font-style: italic;
-        font-weight: bold;
     }
-
-    
 
     .primera-linea{
         flex-direction: row;
-    
     }
 
     .caja-parrafo{
@@ -759,7 +936,6 @@ margin-left: 1em;
 
     .div-nosotros h3{
         margin-left: 5em;
-    
         font-size: 2rem;
         border: none;
         text-decoration: underline;
@@ -792,7 +968,6 @@ margin-left: 1em;
     .vino-container-interior p{
         font-size: 1.5rem;
         margin: 1em;
-        
     }
 
     /* PUNTOS DE VENTA ------------------------------------------------*/

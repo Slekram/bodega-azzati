@@ -8,6 +8,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="./src/assets/img/favicon.ico"/>
         <!--Link con hoja de estilos-->
         <link rel="stylesheet" href="./css/style.css">
+        <!-- Link con animacion aos -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <title>Bodega Flia. Azzati</title>
     </head>
     <body class="index-grid">
@@ -52,7 +54,7 @@
             </div>    
         </section>
         <div class="video-recorrido"> <!--Video de Youtube que muestra un recorrido por la bodega-->
-            <iframe width="330" height="430" src="https://www.youtube.com/embed/EibMJD2ABmE" 
+            <iframe data-aos="flip-up" width="330" height="430" src="https://www.youtube.com/embed/EibMJD2ABmE" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
             clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
@@ -154,5 +156,9 @@
                 </div>
             </div>   
             </footer>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+                 AOS.init();
+            </script>
         </body>
     </html>

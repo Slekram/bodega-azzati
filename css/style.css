@@ -384,6 +384,41 @@ header nav ul li a{
 } 
 
 
+/* Animacion para el boton de watsapp */
+
+.boton-wsup {
+   
+    fill: #41e175;
+    border: #2e3436 solid 2px;
+    background-color: #FAEBD7;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.animacion-wsup:hover{
+    animation-name: boton-wsup;
+    animation-duration: 10s;
+}
+
+@keyframes boton-wsup{
+   
+    
+   
+
+    50%{
+       
+        background-color: #41e175;
+        fill: #FAEBD7;
+        transform: scale(2);
+    }
+
+    70%{
+        border-radius: 20% 30% 90% 70%;
+    }
+}
+
+
+
 /* FOOTER --------------------------------------------------------*/
 
 footer{

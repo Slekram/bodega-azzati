@@ -243,6 +243,8 @@ header nav ul li a{
 
 
 
+
+
 .vino-container-interior h3{
     text-align: center;
     font-family: saintCapitan;
@@ -329,6 +331,7 @@ header nav ul li a{
 
 
 
+
 /* CONTACTO ---------------------------------------------------*/
 
 .grid-contacto{
@@ -378,6 +381,19 @@ header nav ul li a{
     align-items: center;
     border: #2e3436 10px solid;
 } 
+
+
+/* Animacion para el boton de watsapp */
+
+.boton-wsup {
+   
+    fill: #41e175;
+    border: #2e3436 solid 2px;
+    background-color: #FAEBD7;
+    border-radius: 30px;
+    padding: 20px;
+}
+
 
 
 /* FOOTER --------------------------------------------------------*/
@@ -613,6 +629,7 @@ header nav ul li a{
     margin-top: 1em;
     margin-left: 1em;
 }
+
 
 
 /* SECCION NOSOTROS */
@@ -922,6 +939,14 @@ margin-left: 1em;
 
     }
 
+/* Transformacion de escala para las imagenes */
+
+    .div-img-bodega:hover{
+        transform: scale(1.5,1);
+        transition: all 2s;
+        }
+
+        
     /* SECCION NOSOTROS */
 
 
@@ -959,6 +984,15 @@ margin-left: 1em;
         display: flex;
         flex-direction: row;
         
+    }
+
+/* Transformacion de escala con transicion para los vinos */
+
+    .vino-container-interior:hover{
+        transform: scale(1.5);
+        transition: 2s;
+        z-index: 1;
+        background-color: #2e3436;
     }
 
     .vino-container-interior h3{
@@ -1010,6 +1044,16 @@ margin-left: 1em;
         
     }
 
+/* Transformacion con transicion para los mapas */
+
+    .mapa-interno:hover{
+        transform: scale(1.5);
+        transition: 2s;
+        z-index: 1;
+        background-color: #2e3436;
+    }
+    
+
     .mapa-interno svg, .mapa-interno iframe{
         margin: 1em;
     }
@@ -1048,6 +1092,30 @@ margin-left: 1em;
     font-size: 2rem;
     text-align: center;
     }
+
+    
+    .animacion-wsup:hover{
+        animation-name: boton-wsup;
+        animation-duration: 10s;
+    }
+
+    @keyframes boton-wsup{
+    
+        
+    
+
+        50%{
+        
+            background-color: #41e175;
+            fill: #FAEBD7;
+            transform: scale(2);
+        }
+
+        70%{
+            border-radius: 20% 30% 90% 70%;
+        }
+    }
+
 
 
     /* FOOTER --------------------------------------------------------*/

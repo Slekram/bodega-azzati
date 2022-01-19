@@ -406,8 +406,7 @@ footer{
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 
@@ -420,11 +419,15 @@ footer{
 
 .gran-container-premios{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container-premios{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -448,25 +451,28 @@ footer{
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
-    align-items: center;
-    justify-content: center;
+   
+    
 
 }
 
 .footer-dos h4{
     display: flex;
+    align-items: center;
 } 
 
 
 .container-redes{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
 }
 
 .container-redes div a{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -484,8 +490,7 @@ footer{
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 .footer-tres h4{
@@ -495,6 +500,7 @@ footer{
 .container-mapa{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
@@ -506,14 +512,15 @@ footer{
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
     font-family: saintCapital;
-    align-items: center;
-    justify-content: center;
+   
 }
 
 
 
 .footer-cuatro form {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -1082,14 +1089,13 @@ margin-left: 1em;
     }
 
     .gran-container-premios{
-        display: flex;
         margin-left: 2em;
     }
 
     .container-premios{
     
         margin-right: 2em;
-        font-size: 1.5rem;
+        font-size: 1.5rem; 
     }
 
 
@@ -1132,7 +1138,8 @@ margin-left: 1em;
     }
 
     .container-mapa{
-        margin-left: 5em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
         
     }
 
@@ -1158,7 +1165,8 @@ margin-left: 1em;
     }
 
     .footer-cuatro form {
-        margin-left: 3.6em;
+        margin-left: 1.8em;
+        margin-right: 1.8em;
         margin-bottom: 1em;
     }
 

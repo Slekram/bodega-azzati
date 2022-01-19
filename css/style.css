@@ -247,6 +247,7 @@ header nav ul li a{
 
 .vino-container-interior:hover{
     transform: scale(1.5);
+    transition: 2s;
     z-index: 1;
     background-color: #2e3436;
 }
@@ -339,6 +340,7 @@ header nav ul li a{
 
 .mapa-interno:hover{
     transform: scale(1.5);
+    transition: 2s;
     z-index: 1;
     background-color: #2e3436;
 }

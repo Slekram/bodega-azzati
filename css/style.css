@@ -960,6 +960,7 @@ margin-left: 1em;
 
     .div-img-bodega:hover{
         transform: scale(1.5,1);
+        -webkit-transform: scale(1.5,1);
         transition: all 2s;
         }
 
@@ -1007,6 +1008,7 @@ margin-left: 1em;
 
     .vino-container-interior:hover{
         transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transition: 2s;
         z-index: 1;
         background-color: #2e3436;
@@ -1065,6 +1067,7 @@ margin-left: 1em;
 
     .mapa-interno:hover{
         transform: scale(1.5);
+        -webkit-transform: scale(1.5);
         transition: 2s;
         z-index: 1;
         background-color: #2e3436;
@@ -1126,6 +1129,7 @@ margin-left: 1em;
             background-color: #41e175;
             fill: #FAEBD7;
             transform: scale(2);
+            -webkit-transform: scale(2);
         }
 
         70%{

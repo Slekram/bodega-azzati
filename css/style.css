@@ -29,7 +29,6 @@ body {
 
 header{
     background-color: #2e3436;
-    grid-area: header;
 }
 
 header nav{
@@ -37,8 +36,6 @@ header nav{
     flex-direction: column;
     align-items: center;
 }
-
-
 
 header nav h1 a{
     text-decoration: none;
@@ -55,7 +52,6 @@ header nav ul{
     display: flex;
 }
 
-
 header nav ul li a{
     text-decoration: none;
     text-align: center;
@@ -68,34 +64,21 @@ header nav ul li a{
 
 /* PAGINA INDEX -----------------------------------------*/
 
-/* Contenedor Grid Index */
-
-.index-grid{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "blanco1 bodega blanco2"
-    "video video video"
-    "blanco3 nosotros blanco4"
-    "footer footer footer";
-    }
-
-
 /* SECCION BODEGA */
 
 .la-bodega{
     background-color: #FAEBD7;
-    grid-area: bodega;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .div-bodega{
     border: #2e3436 solid 5px;
 }
 
-
 .div-bodega h2{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content:center;
     border: #2e3436 2px solid;
     font-family: saintCapital;
@@ -106,24 +89,20 @@ header nav ul li a{
 }
 
 .primera-linea{
-    display: flex;
     align-items: center;
-    justify-content:space-evenly;
-
 }
 
-.caja-parrafo{
+/* .caja-parrafo{
     width: auto;
-}
+} */
 
-
-.parrafo-bodega {
+.parrafo-bodega{
     font-family: saintCapital;
     text-align: justify;
 }
 
- .div-img-bodega{
-    width: 96%;
+.div-img-bodega{
+    width: 100%;
 }
 
 .div-img-bodega img{
@@ -132,10 +111,7 @@ header nav ul li a{
 } 
 
 .segunda-linea{
-    display: flex;
     align-items: center;
-   
-    justify-content: space-evenly; 
 }
 
 .video-recorrido{
@@ -143,20 +119,18 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
     background-color: #ffa07a;
-    padding-right: auto;
-    padding-left: auto;
-    padding-top: auto;
-    padding-bottom: auto;
-    grid-area: video;
+    padding-top: 2em;
+    padding-bottom: 2em;
 
 }
+
 
 /* SECCION NOSOTROS */
 
 #nosotros{
     background-color:#FAEBD7;
-    grid-area: nosotros; 
-
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .div-nosotros{
@@ -172,17 +146,14 @@ header nav ul li a{
     color: #2e3436;
     font-style: italic;
     font-weight: bold;
-
 }
 
 .div-nosotros h3{
     display: flex;
     justify-content: center;
     border: #2e3436 2px solid;
-    font-family: saintCapital;
     font-style: italic;
     font-weight: bold;
-    
 }
 
 
@@ -399,21 +370,9 @@ header nav ul li a{
 /* FOOTER --------------------------------------------------------*/
 
 footer{
-   
     background-color: #FAEBD7;
-    grid-area: footer;
-
 }
 
-.footer-superior{
-    display: flex;
-    
-}
-
-.footer-inferior{
-    display: flex;
-
-}
 
 /* Footer 1 */
 
@@ -422,21 +381,18 @@ footer{
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
-    
 }
 
-
 .footer-uno h4 {
-    display: flex;
-    font-family: saintCapital;
     color: #2e3436;
-    
+    display: flex;
 }
 
 .gran-container-premios{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
 }
 
 .container-premios{
@@ -447,16 +403,11 @@ footer{
 }
 
 
-.footer-uno div div{
-    font-family: saintCapital;
-}
-
 .footer-uno div div h5{
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
     color: #2e3436;
-
 }
 
 /* Footer 2 */
@@ -466,22 +417,20 @@ footer{
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
-    font-family: saintCapital;
-   
-    
-
 }
 
 .footer-dos h4{
+    color: #2e3436;
     display: flex;
-    align-items: center;
 } 
 
 
 .container-redes{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 
 }
 
@@ -489,13 +438,15 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 
-.container-redes div h5 {
+.container-redes div a h5 {
     text-decoration: underline;
     font-weight: bold;
     color: #2e3436;
+    margin-left: 0.5em;
 }
 
 /* Footer 3 */
@@ -505,41 +456,36 @@ footer{
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
-    font-family: saintCapital;
-    
 }
 
 .footer-tres h4{
     color: #2e3436;
+    display: flex;
 }
 
 .container-mapa{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 
 /* Footer 4 */
 
  .footer-cuatro{
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
-    font-family: saintCapital;
-   
 }
-
-
 
 .footer-cuatro form {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-
-
 
 /* Footer 5 */
 
@@ -550,15 +496,12 @@ footer{
     border: #2e3436 solid 2px;
     align-items: center;
     justify-content: center;
-    
 }
 
 .footer-cinco span{
     color: #2e3436;
     font-weight: bold;
-    font-family: saintCapital;
 }
-
 
 /* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -599,64 +542,37 @@ header nav ul li a{
 
 /* Contenedor Grid Index */
 
-.index-grid{
-    grid-template-columns: 3% auto 3%;
-    grid-template-rows:  10rem 103rem 30rem 105rem 20rem;
-    row-gap: 10px;
-    }
-
-
 /* SECCION BODEGA */
 
-
-.primera-linea{
-    flex-direction: column;
-}
 
 .segunda-linea{
     flex-direction: column-reverse;
 }
-
-
+ 
 .div-bodega h2{
     font-size: 2rem;
 }
 
-
-
 .caja-parrafo{
     font-size: 1rem;
-    max-width: 350px;
-    margin-top: 1em;
-    margin-left: 1em;
-    margin-right: 1em;
 }
-
 
 .parrafo-bodega {
     font-size: 1rem;
-    line-height: 1.5em;
 }
 
  .div-img-bodega{
     max-width: 330px;
-    margin-top: 1em;
-    margin-left: 1em;
 }
 
-
-
 /* SECCION NOSOTROS */
-
-
-
-
+    
 .div-nosotros h2{
     font-size: 2rem;
 }
 
 .div-nosotros h3{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 
@@ -772,114 +688,86 @@ header nav ul li a{
 
 /* FOOTER --------------------------------------------------------*/
 
-
 .footer-superior{
-    flex-direction: column;
+    justify-content: center;
 }
 
 .footer-inferior{
-    flex-direction: column;
-    
-    
+    justify-content: center;
 }
-
 
 /* Footer 1 */
 
-
-
-
 .footer-uno h4 {
-    font-size: 1rem;
-    margin-left: 1em;
-    
+    font-size: 1.2rem;
+    justify-content: center;
 }
 
-
-.container-premios{
-    margin-right: 1em;
-    font-size: 1rem;
+.container-premios h5{
+    font-size: 0.9rem; 
+    margin-right: 0.4em;
 }
-
-.premio-uno{
-margin-left: 1em;
-}
-
 
 
 /* Footer 2 */
 
 
-
 .footer-dos h4{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    justify-content: center;
+    
 } 
 
 
-
 .container-redes div a{
-    font-size: 1.5rem;
-    margin-right: 0.5em;
+    font-size: 0.7rem;
+    
 }
 
 
+.container-redes div h5 {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #2e3436;
+}
 
 /* Footer 3 */
 
 
 .footer-tres h4{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    justify-content: center;
 }
 
-.container-mapa{
-    align-items: center;
+.container-mapa iframe{
+    width: 300px;
 }
-
-.container-mapa svg{
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1.5rem;
-}
-
 
 /* Footer 4 */
 
 .footer-cuatro h4 {
-    font-size: 1rem;
-    margin-bottom: 0.5em;
-
+    font-size: 1.2rem;
 }
 
 .footer-cuatro form {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .footer-cuatro form label{
-    font-size: 1rem;
-    margin-left: 1em;
-    margin-right: 1.1em;
-}
+    font-size: 1.2rem;    }
 
 .footer-cuatro form input {
-    font-size: 1rem;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    font-size: 1.5rem;
 }  
 
 /* Footer 5 */
 
-.footer-cinco{
-    flex-direction: column;
-}
-
 .footer-cinco span{
-    font-size: 0.9rem;
-    padding-left: 0.5em;
-}
-    
+    font-size: 0.6rem;  
 }
 
-
+}
 
 /* Parametros Desktop *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -903,21 +791,10 @@ margin-left: 1em;
 
     /* PAGINA INDEX -----------------------------------------*/
 
-    /* Contenedor Grid Index */
-
-    .index-grid{
-        grid-template-columns: 10% auto 10%;
-        grid-template-rows:  7rem 59rem 30rem 61rem 20rem;
-        row-gap: 30px;
-        }
-
-
     /* SECCION BODEGA */
-
 
     .div-bodega h2{
         font-size: 3rem;
-        margin-left: 4em;
         border: none;
         text-decoration: underline;
         justify-content:start;
@@ -927,64 +804,45 @@ margin-left: 1em;
         flex-direction: row;
     }
 
-    .caja-parrafo{
-        font-size: 1rem;
-        max-width: 500px;
-        margin-left: 2em;
-        margin-right: 0.5em;
-    }
-
-
     .parrafo-bodega {
         font-size: 1.2rem;
-        line-height: 1.4em;
-    }
-
-    .div-img-bodega{
-        max-width: 400px;
-        margin-left: 1em;
-        margin-right: 0.5em;
     }
 
     .segunda-linea{
         flex-direction: row;
     }
 
-
     .video-recorrido iframe {
-    width: 800px;
-
+    width: 700px;
     }
 
-/* Transformacion de escala para las imagenes */
+    /* Transformacion de escala para las imagenes */
 
     .div-img-bodega:hover{
         transform: scale(1.5,1);
         -webkit-transform: scale(1.5,1);
         transition: all 2s;
-        }
+    }
 
-        
+    
     /* SECCION NOSOTROS */
 
 
+    /* SECCION NOSOTROS */
 
     .div-nosotros h2{
         font-size: 3rem;
-        margin-left: 3.5em;
         border: none;
         text-decoration: underline;
         justify-content:start;
     }
 
     .div-nosotros h3{
-        margin-left: 5em;
         font-size: 2rem;
         border: none;
         text-decoration: underline;
         justify-content:start;
     }
-
 
     /* PAGINA VINOS -------------------------------------------------*/
 
@@ -1154,10 +1012,9 @@ margin-left: 1em;
 
     /* Footer 1 */
 
-
-
     .footer-uno h4 {
         font-size: 1.7rem;
+        justify-content: flex-start;
     }
 
     .gran-container-premios{
@@ -1179,6 +1036,7 @@ margin-left: 1em;
         font-size: 1.7rem;
         margin-bottom: 0.5em;
         margin-left: 1em;
+        justify-content: flex-start;
     } 
 
 
@@ -1187,9 +1045,13 @@ margin-left: 1em;
 
     }
 
+    .container-redes{
+        flex-direction: row;
+    }
+
     .container-redes div a{
         font-size: 1.5rem;
-        margin-right: 2em;
+        margin-right: 1em;
     }
 
 
@@ -1201,12 +1063,11 @@ margin-left: 1em;
 
     /* Footer 3 */
 
-
-
     .footer-tres h4{
         font-size: 1.7rem;
         margin-left: 1em;
         margin-bottom: 0.5em;
+        justify-content: flex-start;
     }
 
     .container-mapa{
@@ -1234,9 +1095,11 @@ margin-left: 1em;
         font-size: 1.7rem;
         margin-bottom: 1em;
         margin-left: 1em;
+        justify-content: flex-start;
     }
 
     .footer-cuatro form {
+        flex-direction: row;
         margin-left: 1.8em;
         margin-right: 1.8em;
         margin-bottom: 1em;
@@ -1263,5 +1126,4 @@ margin-left: 1em;
         padding-bottom: 0.7em;
 
     }
-    
 }

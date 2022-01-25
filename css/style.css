@@ -525,6 +525,10 @@ footer{
 
 /* Header ---------------------------------------------------------*/
 
+#ul-nav{
+    padding-left: 1rem;
+}
+
 header nav{
     flex-direction: column;
     justify-content: space-between;
@@ -545,7 +549,7 @@ header nav div ul li{
 }
 
 header nav div ul li a{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.4em 0.4em;
 }
 

@@ -484,11 +484,15 @@ footer{
 
 /* Footer 4 */
 
- .footer-cuatro{
+.footer-cuatro{
     display: flex;
     flex-direction: column;
     background-color: #ffa07a;
     border: #2e3436 solid 2px;
+}
+
+.footer-cuatro h4{
+    display: flex;
 }
 
 .footer-cuatro form {
@@ -541,7 +545,7 @@ header nav div ul li{
 }
 
 header nav div ul li a{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0.4em 0.4em;
 }
 
@@ -761,6 +765,7 @@ header nav div ul li a{
 
 .footer-cuatro h4 {
     font-size: 1.2rem;
+    justify-content: center;
 }
 
 .footer-cuatro form {
@@ -777,7 +782,7 @@ header nav div ul li a{
 /* Footer 5 */
 
 .footer-cinco span{
-    font-size: 0.6rem;  
+    font-size: 1rem;  
 }
 
 }
@@ -836,8 +841,8 @@ header nav div ul li a{
     /* Transformacion de escala para las imagenes */
 
     .div-img-bodega:hover{
-        transform: scale(1.5,1);
-        -webkit-transform: scale(1.5,1);
+        transform: scale(1.2,1);
+        -webkit-transform: scale(1.2,1);
         transition: all 2s;
     }
 
@@ -1138,8 +1143,5 @@ header nav div ul li a{
     .footer-cinco span{
         font-size: 1rem;
         padding-left: 1em ;
-        padding-top: 0.7em;
-        padding-bottom: 0.7em;
-
     }
 }

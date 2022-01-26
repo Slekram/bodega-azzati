@@ -170,75 +170,46 @@ header nav div ul li a{
 
 /* PAGINA VINOS -------------------------------------------------*/
 
-.grid-vinos{
-    display:grid;
-    grid-template-areas: 
-    "header header header"
-    "blanco malbec blanco2"
-    "blanco3 merlot blanco4"
-    "blanco5 cabernet blanco6"
-    "footer footer footer";
+.seccion-vinos{
+    background-color: #FAEBD7;
+    padding-bottom: 2em;
 }
 
 .malbec{
-    grid-area: malbec;
-}
-
-.merlot{
-    grid-area: merlot;
-
-}
-
-.cabernet{
-    grid-area: cabernet;
+    padding-top: 2em;
 }
 
 .cepa{
     font-family: saintCapitan;
     background-color: #2e3436;
     color: #FAEBD7;
-
 }
 
 
-.cepa h2 {
-    
+.cepa div h2 {  
     display: flex;
     justify-content: center;
     font-family: saintCapital;
     font-weight: bold;
     border: #FAEBD7 solid 5px;
-
-
-}
-
-.vino-container{
-    display: flex;
 }
 
 .vino-container-interior{
     display: flex;
-    border: #FAEBD7 solid 5px;
     flex-direction: column;
+    border: #FAEBD7 solid 5px;
     align-items: center;
 }
-
-
-
-
 
 .vino-container-interior h3{
     text-align: center;
     font-family: saintCapitan;
     border: #FAEBD7 solid 5px;
-  
 }
 
 .vino-container-interior p{
     font-family: saintCapitan;
     text-align: justify;
-
-    
 }
 
 /* PUNTOS DE VENTA ------------------------------------------------*/
@@ -599,21 +570,16 @@ header nav div ul li a{
 
 /* PAGINA VINOS -------------------------------------------------*/
 
-.grid-vinos{
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 10rem 143rem 143rem 143rem 17rem;
-    row-gap: 50px;
-}
+
 
 .cepa h2 {
     font-size: 2.9rem;
 }
 
 
-.vino-container{
+    .vino-container{
     flex-direction: column;
-}
-
+} 
 
 
 .vino-container-interior h3{

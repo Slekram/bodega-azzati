@@ -214,17 +214,10 @@ header nav div ul li a{
 
 /* PUNTOS DE VENTA ------------------------------------------------*/
 
-
-.grid-puntos{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "blanco puntos blanco2"
-    "footer footer footer";
-}
-
-.puntos{
-    grid-area: puntos;
+.puntos-container{
+    background-color: #FAEBD7;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .puntos h2 {
@@ -235,7 +228,6 @@ header nav div ul li a{
     font-family: saintCapital;
     text-decoration: underline;
     color: #2e3436;
-
 }
 
 .mapa-local-mendoza{
@@ -243,12 +235,13 @@ header nav div ul li a{
     flex-direction: column;
     align-items: center;
     border: #2e3436 5px solid;
+    margin-bottom: 2em;
 }
 
 .mapa-local-mendoza h3{
     color: #2e3436;
     text-decoration: underline;
-    
+    font-family: saintCapital;
 }
 
 .sala-turismo{
@@ -265,6 +258,7 @@ header nav div ul li a{
     flex-direction: column;
     align-items: center;
     border: #2e3436 5px solid;
+    margin-bottom: 2em;
 }
 
 .mapa-local h3{
@@ -287,24 +281,20 @@ header nav div ul li a{
 
 /* CONTACTO ---------------------------------------------------*/
 
-.grid-contacto{
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "blanco contacto blanco2"
-    "blanco3 atencion blanco4"
-    "footer footer footer";
-   
-}
-
 /* Formulario de contato */
 
+.contacto-container{
+    background-color: #FAEBD7;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
 .formulario-contacto{
-    grid-area: contacto;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: #2e3436 10px solid;
+    margin-bottom: 2em;
 }
 
 .formulario-contacto h2{
@@ -328,11 +318,11 @@ header nav div ul li a{
 /* Atencion al consumidor */
 
 .atencion-consumidor{
-    grid-area: atencion ;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: #2e3436 10px solid;
+    margin-bottom: 2em;
 } 
 
 
@@ -594,27 +584,15 @@ header nav div ul li a{
 
 /* PUNTOS DE VENTA ------------------------------------------------*/
 
-
-.grid-puntos{
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 10rem 203rem 16rem;
-    row-gap: 1rem;
- 
-}
-
-
 .puntos h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     margin: 1em;
 }
 
-.mapa-local-mendoza{
-    margin-bottom: 2em;
-}
 
 .mapa-local-mendoza h3{
     margin: 1em;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .sala-turismo{
@@ -622,22 +600,13 @@ header nav div ul li a{
     margin: 1em;
 }
 
-
-
-.mapa-local{
-    margin-bottom: 2em;
-
-}
-
 .mapa-local h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 1em;
 }
 
-
-.mapa-interno{
-    flex-direction: column;
-    
+.mapa-interno iframe{
+    max-width: 250px;
 }
 
 .mapa-interno svg, .mapa-interno iframe{
@@ -646,16 +615,7 @@ header nav div ul li a{
 
 /* CONTACTO ---------------------------------------------------*/
 
-.grid-contacto{
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 8rem 23rem 10rem 17rem;
-    row-gap: 20px;
-   
-}
-
 /* Formulario de contato */
-
-
 
 .formulario-contacto h2{
     font-size: 2.5rem;
@@ -669,9 +629,6 @@ header nav div ul li a{
 .formulario-contacto form{
     flex-direction: column;
 }
-
-/* Atencion al consumidor */
-
 
 /* FOOTER --------------------------------------------------------*/
 
@@ -837,11 +794,6 @@ header nav div ul li a{
 
     /* PAGINA VINOS -------------------------------------------------*/
 
-    .grid-vinos{
-        grid-template-rows: 6rem 55rem 55rem 55rem 17rem;
-        row-gap: 50px;
-
-    }
 
     .cepa h2 {
         font-size: 3em;
@@ -850,7 +802,6 @@ header nav div ul li a{
     .vino-container{
         display: flex;
         flex-direction: row;
-        
     }
 
 /* Transformacion de escala con transicion para los vinos */
@@ -873,12 +824,6 @@ header nav div ul li a{
     }
 
     /* PUNTOS DE VENTA ------------------------------------------------*/
-
-    .grid-puntos{
-        grid-template-rows: 7rem 160rem 20rem;
-        row-gap: 3rem;
-    
-    }
 
     .puntos h2 {
         font-size: 3rem;
@@ -906,10 +851,8 @@ header nav div ul li a{
     }
 
     .mapa-interno{
-    
         flex-direction: row;
         align-items: center;
-        
     }
 
 /* Transformacion con transicion para los mapas */
@@ -933,10 +876,6 @@ header nav div ul li a{
 
     /* CONTACTO ---------------------------------------------------*/
 
-    .grid-contacto{
-        grid-template-rows: 7rem 15rem 13rem 17rem; 
-        row-gap: 30px;
-    }
 
     /* Formulario de contato */
 
@@ -970,8 +909,6 @@ header nav div ul li a{
 
     @keyframes boton-wsup{
     
-        
-    
 
         50%{
         
@@ -985,8 +922,6 @@ header nav div ul li a{
             border-radius: 20% 30% 90% 70%;
         }
     }
-
-
 
     /* FOOTER --------------------------------------------------------*/
 

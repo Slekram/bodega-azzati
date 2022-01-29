@@ -1,0 +1,122 @@
+/* PAGINA INDEX -----------------------------------------*/
+/* SECCION BODEGA */
+
+#bodega{
+    background-color: #FAEBD7;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: #2e3436 solid 5px;
+
+    h2{
+        display: flex;
+        justify-content:center;
+        font-family: saintCapital;
+        background-color: #FAEBD7;
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+}
+
+.primera-linea{
+    align-items: center;
+}
+.segunda-linea{
+    align-items: center;
+}
+
+.parrafo-bodega{
+    font-family: saintCapital;
+    text-align: justify;
+}
+
+.div-img-bodega{
+    width: 100%;
+    
+    img{
+        width: 100%;
+        height: auto;
+    } 
+}
+
+.video-recorrido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa07a;
+    padding: 2em;
+}
+
+@media screen and (min-width:360px){
+
+    /* PAGINA INDEX -----------------------------------------*/
+    /* SECCION BODEGA */
+    
+    #bodega{
+        max-width: 95%;
+        h2{
+            font-size: 2rem;
+        }
+    }
+
+    .segunda-linea{
+        flex-direction: column-reverse;
+    }
+    
+    .caja-parrafo{
+        font-size: 1rem;
+    }
+
+    .parrafo-bodega {
+        font-size: 1rem;
+    }
+    
+    .div-img-bodega{
+        max-width: 330px;
+    
+        img{
+            max-height: 350px;
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    #bodega{
+        
+        h2{
+            font-size: 3rem;
+            justify-content:start;
+        }
+    }
+
+    .primera-linea{
+        flex-direction: row;
+    }
+    .segunda-linea{
+        flex-direction: row;
+    }
+
+    .parrafo-bodega {
+        font-size: 1.2rem;
+    }
+
+    .div-img-bodega{
+
+        
+        &:hover{
+            /* Transformacion de escala para las imagenes */
+            transform: scale(1.2,1);
+            -webkit-transform: scale(1.2,1);
+            transition: all 2s;
+        }
+    }
+
+    .video-recorrido iframe {
+        width: 700px;
+    }
+
+}
+

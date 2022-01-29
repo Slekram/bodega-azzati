@@ -1,5 +1,8 @@
-@import "components/_header";
-@import "components/_footer";
+@import "components/header";
+@import "components/index/bodega";
+@import "components/index/nosotros";
+@import "components/footer";
+
 /* Parametros generales */
 *{
     margin: 0px ;
@@ -23,116 +26,20 @@ html{
     background-color: #FAEBD7; 
 }
 
-
-
-/* PAGINA INDEX -----------------------------------------*/
-/* SECCION BODEGA */
-.la-bodega{
-    background-color: #FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    border: #2e3436 solid 5px;
-
-}
-
-.la-bodega h2{
-    display: flex;
-    /* align-items: center; */
-    justify-content:center;
-    border: #2e3436 2px solid;
-    font-family: saintCapital;
-    background-color: #FAEBD7;
-    color: #2e3436;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.primera-linea{
-    align-items: center;
-}
-
-.parrafo-bodega{
-    font-family: saintCapital;
-    text-align: justify;
-}
-
-.div-img-bodega{
-    width: 100%;
-}
-
-.div-img-bodega img{
-    width: 100%;
-    height: auto;
-} 
-
-.segunda-linea{
-    align-items: center;
-}
-
-.video-recorrido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffa07a;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-/* SECCION NOSOTROS */
-#nosotros{
-    background-color:#FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border: #2e3436 solid 5px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-
-    div{
-       
-        h2{
-            display: flex;
-            justify-content: center;
-            border: #2e3436 2px solid;
-            font-family: saintCapital;
-            background-color: #FAEBD7;
-            color: #2e3436;
-            font-style: italic;
-            font-weight: bold;
-        }
-
-        h3{
-            display: flex;
-            justify-content: center;
-            border: #2e3436 2px solid;
-            font-style: italic;
-            font-weight: bold;
-        }
-    }
-}
-
-
-
-.div-nosotros 
-
 /* PAGINA VINOS -------------------------------------------------*/
 .seccion-vinos{
     background-color: #FAEBD7;
-    padding-bottom: 2em;
-}
-
-.malbec{
-    padding-top: 2em;
-}
-
-.cepa{
+    margin-bottom: 2em;
     font-family: saintCapitan;
     background-color: #2e3436;
     color: #FAEBD7;
 }
 
-.cepa div h2 {  
+.malbec{
+    margin-top: 2em;
+}
+
+.seccion-vinos div h2 {  
     display: flex;
     justify-content: center;
     font-family: saintCapital;
@@ -160,7 +67,7 @@ html{
 
 /* PUNTOS DE VENTA ------------------------------------------------*/
 
-.puntos-container{
+.puntos{
     background-color: #FAEBD7;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -224,11 +131,6 @@ html{
 
 /* CONTACTO ---------------------------------------------------*/
 /* Formulario de contato */
-.contacto-container{
-    background-color: #FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
 
 .formulario-contacto{
     display: flex;
@@ -236,6 +138,9 @@ html{
     align-items: center;
     border: #2e3436 10px solid;
     margin-bottom: 2em;
+    background-color: #FAEBD7;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .formulario-contacto h2{
@@ -275,56 +180,11 @@ html{
     padding: 20px;
 }
 
-
-
 /* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
-
 @media screen and (min-width:360px){
-
-    /* Header ---------------------------------------------------------*/
-
-    
-
-    /* PAGINA INDEX -----------------------------------------*/
-    /* Contenedor Grid Index */
-    /* SECCION BODEGA */
-    .segunda-linea{
-        flex-direction: column-reverse;
-    }
-    
-    .div-bodega h2{
-        font-size: 2rem;
-    }
-
-    .caja-parrafo{
-        font-size: 1rem;
-    }
-
-    .parrafo-bodega {
-        font-size: 1rem;
-    }
-
-    .div-img-bodega{
-        max-width: 330px;
-    }
-
-    .div-img-bodega img{
-        max-height: 350px;
-    }
-
-    /* SECCION NOSOTROS */
-        
-    .div-nosotros h2{
-        font-size: 2rem;
-    }
-
-    .div-nosotros h3{
-        font-size: 1.2rem;
-    }
-
     /* PAGINA VINOS -------------------------------------------------*/
-    .cepa h2 {
+    .seccion-vinos h2 {
         font-size: 2.9rem;
     }
 
@@ -385,149 +245,15 @@ html{
         flex-direction: column;
     }
 
-    /* FOOTER --------------------------------------------------------*/
-
-    .footer-superior{
-        justify-content: center;
-    }
-
-    .footer-inferior{
-        justify-content: center;
-    }
-
-    /* Footer 1 */
-
-    .footer-uno h4 {
-        font-size: 1.2rem;
-        justify-content: center;
-    }
-
-    .container-premios h5{
-        font-size: 0.9rem; 
-        margin-right: 0.4em;
-    }
-
-    /* Footer 2 */
-
-    .footer-dos h4{
-        font-size: 1.2rem;
-        margin-bottom: 0.5em;
-        justify-content: center;
-        
-    } 
-
-    .container-redes div a{
-        font-size: 0.7rem;
-        
-    }
-
-    .container-redes div h5 {
-        text-decoration: underline;
-        font-weight: bold;
-        color: #2e3436;
-    }
-
-    /* Footer 3 */
-
-    .footer-tres h4{
-        font-size: 1.2rem;
-        justify-content: center;
-    }
-
-    .container-mapa iframe{
-        width: 300px;
-    }
-
-    /* Footer 4 */
-
-    .footer-cuatro h4 {
-        font-size: 1.2rem;
-        justify-content: center;
-    }
-
-    .footer-cuatro form {
-        margin-bottom: 1em;
-    }
-
-    .footer-cuatro form label{
-        font-size: 1.2rem;    }
-
-    .footer-cuatro form input {
-        font-size: 1.5rem;
-    }  
-
-    /* Footer 5 */
-
-    .footer-cinco span{
-        font-size: 1rem;  
-    }
-}
+}    
 
 /* Parametros Desktop *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (min-width:1200px){
-    /* Header ---------------------------------------------------------*/
-    /* PAGINA INDEX -----------------------------------------*/
-    /* SECCION BODEGA */
     
-    .la-bodega{
-        div{
-            h2{
-                font-size: 3rem;
-                border: none;
-                text-decoration: underline;
-                justify-content:start;
-            }
-        } 
-    }
-
-    .primera-linea{
-        flex-direction: row;
-    }
-
-    .parrafo-bodega {
-        font-size: 1.2rem;
-    }
-
-    .segunda-linea{
-        flex-direction: row;
-    }
-
-    .video-recorrido iframe {
-    width: 700px;
-    }
-
-    /* Transformacion de escala para las imagenes */
-    .div-img-bodega:hover{
-        transform: scale(1.2,1);
-        -webkit-transform: scale(1.2,1);
-        transition: all 2s;
-    }
-
-    /* SECCION NOSOTROS */
-    
-    #nosotros{
-        
-        div{
-            h2{
-                font-size: 3rem;
-                border: none;
-                text-decoration: underline;
-                justify-content:start;
-            }
-            h3{
-                font-size: 2rem;
-                border: none;
-                text-decoration: underline;
-                justify-content:start;
-            }
-        }
-    }
-    
-
     /* PAGINA VINOS -------------------------------------------------*/
-    .cepa h2 {
+    .seccion-vinos h2 {
         font-size: 3em;
     }
 
@@ -638,120 +364,5 @@ html{
         70%{
             border-radius: 20% 30% 90% 70%;
         }
-    }
-
-    /* FOOTER --------------------------------------------------------*/
-
-    .footer-superior{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .footer-inferior{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    /* Footer 1 */
-
-    .footer-uno h4 {
-        font-size: 1.7rem;
-        justify-content: flex-start;
-    }
-
-    .gran-container-premios{
-        margin-left: 2em;
-    }
-
-    .container-premios{
-        margin-right: 2em;
-        font-size: 1.5rem; 
-    }
-
-    /* Footer 2 */
-    .footer-dos h4{
-        font-size: 1.7rem;
-        margin-bottom: 0.5em;
-        margin-left: 1em;
-        justify-content: flex-start;
-    } 
-
-    .container-redes{
-     margin-left: 3em;
-    }
-
-    .container-redes{
-        flex-direction: row;
-    }
-
-    .container-redes div a{
-        font-size: 1.5rem;
-        margin-right: 1em;
-    }
-
-    .container-redes div h5 {
-        text-decoration: underline;
-        font-weight: bold;
-        color: #2e3436;
-    }
-
-    /* Footer 3 */
-
-    .footer-tres h4{
-        font-size: 1.7rem;
-        margin-left: 1em;
-        margin-bottom: 0.5em;
-        justify-content: flex-start;
-    }
-
-    .container-mapa{
-        margin-left: 2.5em;
-        margin-right: 2.5em;
-    }
-
-    .container-mapa svg{
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: 1.7rem;
-    }
-
-    .container-mapa iframe{
-        width: 500px;
-        margin-right: 1em;
-    }
-
-    /* Footer 4 */
-
-    .footer-cuatro h4 {
-        font-size: 1.7rem;
-        margin-bottom: 1em;
-        margin-left: 1em;
-        justify-content: flex-start;
-    }
-
-    .footer-cuatro form {
-        flex-direction: row;
-        margin-left: 1.8em;
-        margin-right: 1.8em;
-        margin-bottom: 1em;
-    }
-
-    .footer-cuatro form label{
-        font-size: 1.5rem;
-        margin-left: 1em;
-        margin-right: 1.1em;
-    }
-
-    .footer-cuatro form input {
-        font-size: 1rem;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    }  
-
-    /* Footer 5 */
-
-    .footer-cinco span{
-        font-size: 1rem;
-        padding-left: 1em ;
     }
 }

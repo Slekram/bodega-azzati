@@ -12,60 +12,57 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>Bodega Flia. Azzati</title>    
     </head>
-    <body>
-        <header>
+    <body id="body" class="container-fluid px-0">
+        <header class="row px-0 gx-0">
             <nav>
-                <div class="container-fluid navegador">
-                    <h1><a href="../../index.html">Bodega Flia Azzati </a></h1>
-                    <div class="lista-nav">
-                        <ul id="ul-nav">
-                            <li>
-                                <a href="../../index.html#nosotros">Nosotros</a>
-                            </li>
-                            <li><a href="vinos.html">Vinos</a></li>
-                            <li>
-                                <a href="puntos-de-venta.html">Venta</a>
-                            </li>
-                            <li>
-                                <a href="contacto.html">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
+                <h1 class="col-md-7 col-sm-12">
+                    <a id="logo" href="../../index.html">Bodega Flia Azzati </a>
+                </h1>
+                <div class="d-flex col-md-5 col-sm-12 gx-0">
+                    <ul id="ul-nav">
+                        <li>
+                            <a href="../../index.html#nosotros">Nosotros</a>
+                        </li>
+                        <li><a href="vinos.html">Vinos</a></li>
+                        <li>
+                            <a href="puntos-de-venta.html">Venta</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
-        <section class="container-fluid malbec seccion-vinos"> 
-            <div class="container cepa">
-                <div class="row">
-                    <h2>Malbec</h2>
+        <section class="container cepa malbec seccion-vinos"> 
+            <div class="row">
+                <h2>Malbec</h2>
+            </div>
+            <div class="row vino-container">
+                <div class="col-md-4 col-sm-12 vino-container-interior">
+                    <h3>Vino Joven</h3>
+                    <img src="../assets/img/vino.jpeg" alt="vino-uno">
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
+                    </p>
                 </div>
-                <div class="row vino-container">
-                    <div class="col-md-4 col-sm-12 vino-container-interior">
-                        <h3>Vino Joven</h3>
-                        <img src="../assets/img/vino.jpeg" alt="vino-uno">
-                        <p> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 vino-container-interior"> 
-                        <h3>Vino de Guarda</h3>
-                        <img src="../assets/img/vino.jpeg" alt="vino-dos">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-12  vino-container-interior">
-                        <h3>Vino Premium</h3>  
-                        <img src="../assets/img/vino.jpeg" alt="vino-tres">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
-                        </p>
-                    </div>
-                </div>    
-            </div>    
+                <div class="col-md-4 col-sm-12 vino-container-interior"> 
+                    <h3>Vino de Guarda</h3>
+                    <img src="../assets/img/vino.jpeg" alt="vino-dos">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12  vino-container-interior">
+                    <h3>Vino Premium</h3>  
+                    <img src="../assets/img/vino.jpeg" alt="vino-tres">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
+                    </p>
+                </div>
+            </div>        
         </section>    
-        <section class="container-fluid seccion-vinos"> 
-            <div class="container cepa">
+        <section class="container cepa seccion-vinos"> 
                 <div class="row">
                     <h2>Merlot</h2>
                 </div>
@@ -91,41 +88,38 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
                         </p>
                     </div>
-                </div>    
-            </div>    
+                </div>      
         </section>    
-        <section class="container-fluid seccion-vinos"> 
-            <div class="container cepa">
-                <div class="row">
-                    <h2>Cabernet</h2>
+        <section class="container cepa seccion-vinos"> 
+            <div class="row">
+                <h2>Cabernet</h2>
+            </div>
+            <div class="row vino-container">
+                <div class="col-md-4 col-sm-12 vino-container-interior">
+                    <h3>Vino Joven</h3>
+                    <img src="../assets/img/vino.jpeg" alt="vino-uno">
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
+                    </p>
                 </div>
-                <div class="row vino-container">
-                    <div class="col-md-4 col-sm-12 vino-container-interior">
-                        <h3>Vino Joven</h3>
-                        <img src="../assets/img/vino.jpeg" alt="vino-uno">
-                        <p> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 vino-container-interior"> 
-                        <h3>Vino de Guarda</h3>
-                        <img src="../assets/img/vino.jpeg" alt="vino-dos">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
-                        </p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 vino-container-interior">
-                        <h3>Vino Premium</h3>  
-                        <img src="../assets/img/vino.jpeg" alt="vino-tres">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
-                        </p>
-                    </div>
-                </div>    
-            </div>    
+                <div class="col-md-4 col-sm-12 vino-container-interior"> 
+                    <h3>Vino de Guarda</h3>
+                    <img src="../assets/img/vino.jpeg" alt="vino-dos">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-12 vino-container-interior">
+                    <h3>Vino Premium</h3>  
+                    <img src="../assets/img/vino.jpeg" alt="vino-tres">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non sapiente laborum adipisci voluptatum qui reiciendis odit quidem quo, earum, nam harum et vitae minus fuga esse enim mollitia repellendus laudantium!
+                    </p>
+                </div>
+            </div>       
         </section>     
-        <footer class="container-fluid"> <!--Tiene 5 secciones diferenciadas-->  
-            <div class="row footer-superior">   
+        <footer class="row gx-0"> <!--Tiene 5 secciones diferenciadas-->  
+            <div class="row footer-superior gx-0">   
                 <section class="col-lg-7  footer-uno">
                     <h4>Premios</h4>
                     <div class="gran-container-premios">
@@ -173,7 +167,7 @@
                     </div>   
                 </nav> 
             </div> 
-            <div class="row footer-inferior">
+            <div class="row footer-inferior gx-0">
                 <section class="col-lg-7  footer-tres"> <!--ubicacion de la bodega en mapa de google insertado-->  
                     <h4>Donde encontrarnos</h4> 
                     <div class="container-mapa">

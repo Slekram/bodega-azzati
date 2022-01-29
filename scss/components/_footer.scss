@@ -1,0 +1,309 @@
+/* FOOTER */
+footer{
+    background-color: #FAEBD7;
+
+    .footer-uno{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffa07a;
+        border: #2e3436 solid 2px;
+
+        h4 {
+            color: #2e3436;
+            display: flex;
+        }
+
+        .gran-container-premios{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1em;
+
+            .container-premios{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                h5{
+                    text-align: center;
+                    text-decoration: underline;
+                    font-weight: bold;
+                    color: #2e3436;
+                }
+            }
+        }
+    }
+
+    .footer-dos{ 
+        display: flex;
+        flex-direction: column;
+        background-color: #ffa07a;
+        border: #2e3436 solid 2px;
+        
+        h4{
+            color: #2e3436;
+            display: flex;
+        } 
+        
+        .container-redes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1em;
+
+                h5 {
+                    text-decoration: underline;
+                    font-weight: bold;
+                    color: #2e3436;
+                    margin-left: 0.5em;
+                }                
+            }
+        }
+    }
+
+    .footer-tres{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffa07a;
+        border: #2e3436 solid 2px;
+
+        h4{
+            color: #2e3436;
+            display: flex;
+        }
+
+        .container-mapa{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1em;
+        }
+
+    }
+
+    .footer-cuatro{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffa07a;
+        border: #2e3436 solid 2px;
+
+        h4{
+            display: flex;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .footer-cinco{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffa07a;
+        border: #2e3436 solid 2px;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            color: #2e3436;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (min-width:360px){
+
+    .footer-superior{
+        justify-content: center;
+
+        .footer-uno{
+            h4 {
+                font-size: 1.2rem;
+                justify-content: center;
+            }
+            .container-premios h5{
+                font-size: 0.9rem; 
+                margin-right: 0.4em;
+            }
+        }
+        .footer-dos{
+            h4{
+                font-size: 1.2rem;
+                margin-bottom: 0.5em;
+                justify-content: center;
+            } 
+
+            .container-redes{ 
+                a{
+                    font-size: 0.7rem;
+
+                }
+                h5 {
+                    text-decoration: underline;
+                    font-weight: bold;
+                    color: #2e3436;
+                }
+            }    
+        }
+    }
+
+    .footer-inferior{
+        justify-content: center;
+
+        .footer-tres{
+            h4{
+                font-size: 1.2rem;
+                justify-content: center;
+            }
+
+            .container-mapa iframe{
+                width: 300px;
+            }
+
+        }
+        .footer-cuatro{
+            h4 {
+                font-size: 1.2rem;
+                justify-content: center;
+            }
+
+            form {
+                margin-bottom: 1em;
+
+                label{
+                    font-size: 1.2rem;   
+                }
+            
+                input {
+                    font-size: 1.5rem;
+                }  
+            }
+
+        }
+        .footer-cinco span{
+            font-size: 1rem;  
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    .footer-superior{
+        flex-direction: row;
+        justify-content: center;
+
+        .footer-uno{
+            h4 {
+                font-size: 1.7rem;
+                justify-content: flex-start;
+            }
+
+            .gran-container-premios{
+                margin-left: 2em;
+
+                .container-premios{
+                    margin-right: 2em;
+                    font-size: 1.5rem; 
+                }
+            }
+            
+        }
+        
+        .footer-dos{
+            h4{
+                font-size: 1.7rem;
+                margin-bottom: 0.5em;
+                margin-left: 1em;
+                justify-content: flex-start;
+            } 
+
+            .container-redes{ 
+                margin-left: 3em;
+                flex-direction: row;
+
+                a{
+                    font-size: 1.5rem;
+                    margin-right: 1em;
+
+                }
+                h5 {
+                    text-decoration: underline;
+                    font-weight: bold;
+                    color: #2e3436;
+                }
+            }    
+        }
+    }
+
+    .footer-inferior{
+        flex-direction: row;
+        justify-content: center;
+
+        .footer-tres{
+            h4{
+                font-size: 1.7rem;
+                margin-left: 1em;
+                margin-bottom: 0.5em;
+                justify-content: flex-start;
+            }
+
+            .container-mapa {
+                margin-left: 2.5em;
+                margin-right: 2.5em;
+             
+                iframe{
+                    width: 500px;
+                    margin-right: 1em;
+                   
+                    svg{
+                        margin-left: 1em;
+                        margin-right: 1em;
+                        font-size: 1.7rem;
+                    }
+                }
+            }    
+        }
+
+        .footer-cuatro{
+            h4 {
+                font-size: 1.7rem;
+                margin-bottom: 1em;
+                margin-left: 1em;
+                justify-content: flex-start;
+            }
+
+            form {
+                flex-direction: row;
+                margin-left: 1.8em;
+                margin-right: 1.8em;
+                margin-bottom: 1em;
+
+                label{
+                    font-size: 1.5rem;
+                    margin-left: 1em;
+                    margin-right: 1.1em;  
+                }
+            
+                input {
+                    font-size: 1rem;
+                    margin-left: 0.5em;
+                    margin-right: 0.5em;
+                }  
+            }
+        }
+        .footer-cinco span{
+            font-size: 1rem;
+            padding-left: 1em ; 
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.footer-cinco{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa07a;
+    border: #2e3436 solid 2px;
+    align-items: center;
+    justify-content: center;
+
+    span{
+        color: #2e3436;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width:360px){
+    
+    .footer-cinco {
+        span{
+            font-size: 1rem;
+        }      
+    }
+}
+
+@media screen and (min-width:1200px){
+    .footer-cinco {
+        span{
+            font-size: 1rem;
+            padding-left: 1em ; 
+        }   
+    }
+}

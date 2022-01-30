@@ -1,32 +1,18 @@
 /* SECCION NOSOTROS */
 
 #nosotros{
-    background-color:#FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    border: #2e3436 solid 5px;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+   @extend %secciones;
 
     div{
        
         h2{
-            display: flex;
-            justify-content: center;
-            text-decoration: underline;
-            font-family: saintCapital;
-            background-color: #FAEBD7;
-            color: #2e3436;
-            font-style: italic;
-            font-weight: bold;
+            @extend %flex;
+            @extend %encabezados;
         }
 
         h3{
-            display: flex;
-            justify-content: center;
-            text-decoration: underline;
-            font-style: italic;
-            font-weight: bold;
+            @extend %flex;
+            @extend %encabezados;
         }
     }
 }

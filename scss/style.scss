@@ -1,6 +1,9 @@
+@import "basic/listas";
+@import "basic/exteds";
+@import "basic/mixins";
 @import "components/header";
-@import "components/index/bodega";
-@import "components/index/nosotros";
+@import "components/bodega";
+@import "components/nosotros";
 @import "components/footer-uno";
 @import "components/footer-dos";
 @import "components/footer-tres";
@@ -27,7 +30,7 @@ html{
 
 /* Fondo */
 #body {
-    background-color: #FAEBD7; 
+    background-color: nth($color, 2); 
 }
 
 /* PAGINA VINOS -------------------------------------------------*/
@@ -142,6 +145,7 @@ html{
     align-items: center;
     border: #2e3436 10px solid;
     margin-bottom: 2em;
+    margin-top: 2em;
     background-color: #FAEBD7;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -366,7 +370,7 @@ html{
         }
 
         70%{
-            border-radius: 20% 30% 90% 70%;
+            border-radius: 20%;
         }
     }
 }

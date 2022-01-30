@@ -1,12 +1,8 @@
 .footer-uno{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffa07a;
-    border: #2e3436 solid 2px;
-
+    @extend %footer;
+    
     h4 {
-        color: #2e3436;
-        display: flex;
+       @extend %encabezados;
     }
 
     div{
@@ -16,16 +12,11 @@
         margin-bottom: 1em;
     
         div{
-            display: flex;
+            @extend %flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
     
             h5{
-                text-align: center;
-                text-decoration: underline;
-                font-weight: bold;
-                color: #2e3436;
+                @extend %encabezados;
             }
         }
     }

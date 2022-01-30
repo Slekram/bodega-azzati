@@ -1,0 +1,6 @@
+@mixin prefijos($valor) {
+    transform: ($valor);
+    -webkit-transform: ($valor);
+    -moz-transform: ($valor);
+    -o-transform: ($valor);
+}

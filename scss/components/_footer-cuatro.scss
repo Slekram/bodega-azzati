@@ -1,18 +1,13 @@
 .footer-cuatro{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffa07a;
-    border: #2e3436 solid 2px;
+    @extend %footer;
 
     h4{
-        display: flex;
-    }
+        @extend %encabezados;
+    } 
     
     form {
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 }
 

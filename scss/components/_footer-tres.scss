@@ -1,18 +1,12 @@
 .footer-tres{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffa07a;
-    border: #2e3436 solid 2px;
-
+    @extend %footer;
+    
     h4{
-        color: #2e3436;
-        display: flex;
-    }
+        @extend %encabezados;
+    } 
 
     div{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex;
         margin-bottom: 1em;
     }
 }

@@ -2,21 +2,11 @@
 /* SECCION BODEGA */
 
 #bodega{
-    background-color: #FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    border: #2e3436 solid 5px;
+    @extend %secciones;
 
     h2{
-        display: flex;
-        justify-content:center;
-        font-family: saintCapital;
-        background-color: #FAEBD7;
-        text-decoration: underline;
-        font-style: italic;
-        font-weight: bold;
+        @extend %flex;
+        @extend %encabezados;
     }
     
 }
@@ -43,10 +33,8 @@
 }
 
 .video-recorrido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffa07a;
+    @extend %flex;
+    background-color: nth($color, 3);
     padding: 2em;
 }
 
@@ -108,8 +96,7 @@
         
         &:hover{
             /* Transformacion de escala para las imagenes */
-            transform: scale(1.2,1);
-            -webkit-transform: scale(1.2,1);
+            @include prefijos(scale(1.2,1));
             transition: all 2s;
         }
     }

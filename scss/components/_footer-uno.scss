@@ -1,8 +1,11 @@
 .footer-uno{
     @extend %footer;
     
+    
     h4 {
-       @extend %encabezados;
+        @extend %encabezados;
+        font-weight: map-get($encabezado , h-font-weight);
+        text-decoration: map-get($encabezado , h-text-decoration);
     }
 
     div{
@@ -44,6 +47,8 @@
     .footer-uno{
         h4 {
             font-size: 1.7rem;
+            margin-left: 1em;
+            margin-bottom: 0.5em;
             justify-content: flex-start;
         }
         

@@ -9,9 +9,6 @@
 .footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos div a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4, #nosotros div h3, #nosotros div h2, #bodega h2 {
   display: flex;
   font-family: saintCapital;
-  text-decoration: underline;
-  font-style: italic;
-  font-weight: bold;
   color: #2e3436;
 }
 
@@ -105,6 +102,12 @@ header nav div #ul-nav a {
 }
 /* PAGINA INDEX -----------------------------------------*/
 /* SECCION BODEGA */
+#bodega h2 {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 .primera-linea {
   align-items: center;
 }
@@ -192,6 +195,17 @@ header nav div #ul-nav a {
   }
 }
 /* SECCION NOSOTROS */
+#nosotros div h2 {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+#nosotros div h3 {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 360px) {
   #nosotros {
     max-width: 95%;
@@ -212,6 +226,10 @@ header nav div #ul-nav a {
     font-size: 2rem;
     justify-content: start;
   }
+}
+.footer-uno h4 {
+  font-weight: bold;
+  text-decoration: underline;
 }
 .footer-uno div {
   display: flex;
@@ -235,6 +253,8 @@ header nav div #ul-nav a {
 @media screen and (min-width: 1200px) {
   .footer-uno h4 {
     font-size: 1.7rem;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
     justify-content: flex-start;
   }
   .footer-uno div {
@@ -244,6 +264,10 @@ header nav div #ul-nav a {
     margin-right: 2em;
     font-size: 1.5rem;
   }
+}
+.footer-dos h4 {
+  font-weight: bold;
+  text-decoration: underline;
 }
 .footer-dos div {
   display: flex;
@@ -284,6 +308,10 @@ header nav div #ul-nav a {
     margin-right: 1em;
   }
 }
+.footer-tres h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .footer-tres div {
   margin-bottom: 1em;
 }
@@ -317,6 +345,10 @@ header nav div #ul-nav a {
     width: 500px;
     margin-right: 1em;
   }
+}
+.footer-cuatro h4 {
+  font-weight: bold;
+  text-decoration: underline;
 }
 .footer-cuatro form {
   flex-direction: column;

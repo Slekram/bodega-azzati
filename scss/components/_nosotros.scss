@@ -8,11 +8,17 @@
         h2{
             @extend %flex;
             @extend %encabezados;
+            font-weight: map-get($encabezado , h-font-weight);
+            font-style: map-get($encabezado , h-font-style);
+            text-decoration: map-get($encabezado , h-text-decoration);
         }
 
         h3{
             @extend %flex;
             @extend %encabezados;
+            font-weight: map-get($encabezado , h-font-weight);
+            font-style: map-get($encabezado , h-font-style);
+            text-decoration: map-get($encabezado , h-text-decoration);
         }
     }
 }

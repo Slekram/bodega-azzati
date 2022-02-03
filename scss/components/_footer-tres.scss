@@ -1,8 +1,11 @@
 .footer-tres{
     @extend %footer;
     
+    
     h4{
         @extend %encabezados;
+        font-weight: map-get($encabezado , h-font-weight);
+        text-decoration: map-get($encabezado , h-text-decoration);
     } 
 
     div{

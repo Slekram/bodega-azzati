@@ -12,8 +12,8 @@ header{
         #logo{
             text-decoration: none;
             font-family: saintCapital;
-            font-style: italic;
-            font-weight: bold;
+            font-style: map-get($encabezado , h-font-style);
+            font-weight: map-get($encabezado , h-font-weight);
             background-color:nth($color, 1);
             color:nth($color, 2);
             text-align: center;
@@ -33,7 +33,7 @@ header{
                     color: nth($color, 2);
                     font-family: saintCapital;
                     background-color:nth($color, 1);
-                    font-weight: bold;
+                    font-weight: map-get($encabezado , h-font-weight);
                     padding: 0.5em 0.5em;
                     margin: 0.5em;
                 }

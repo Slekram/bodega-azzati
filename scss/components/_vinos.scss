@@ -1,0 +1,88 @@
+/* PAGINA VINOS -------------------------------------------------*/
+
+.seccion-vinos{
+    margin-bottom: 2em;
+    background-color: #2e3436;
+    color: #FAEBD7;
+}
+
+.malbec{
+    margin-top: 2em;
+}
+
+.seccion-vinos div h2 {  
+    display: flex;
+    justify-content: center;
+    font-family: saintCapital;
+    font-weight: bold;
+    border: #FAEBD7 solid 5px;
+}
+
+.vino-container-interior{
+    display: flex;
+    flex-direction: column;
+    border: #FAEBD7 solid 5px;
+    align-items: center;
+}
+
+.vino-container-interior h3{
+    text-align: center;
+    font-family: saintCapitan;
+    border: #FAEBD7 solid 5px;
+}
+
+.vino-container-interior p{
+    font-family: saintCapitan;
+    text-align: justify;
+}
+
+@media screen and (min-width:360px){
+    /* PAGINA VINOS -------------------------------------------------*/
+    .seccion-vinos h2 {
+        font-size: 2.9rem;
+    }
+
+    .vino-container{
+        flex-direction: column;
+    } 
+
+    .vino-container-interior h3{
+        font-size: 2rem;
+    }
+
+    .vino-container-interior p{
+        font-size: 1.5rem;
+        margin: 1em; 
+    }
+}
+
+@media screen and (min-width:1200px){
+    
+    /* PAGINA VINOS -------------------------------------------------*/
+    .seccion-vinos h2 {
+        font-size: 3em;
+    }
+
+    .vino-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Transformacion de escala con transicion para los vinos */
+    .vino-container-interior:hover{
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transition: 2s;
+        z-index: 1;
+        background-color: #2e3436;
+    }
+
+    .vino-container-interior h3{
+        font-size: 2.5em;
+    }
+
+    .vino-container-interior p{
+        font-size: 1.5rem;
+        margin: 1em;
+    }
+}    

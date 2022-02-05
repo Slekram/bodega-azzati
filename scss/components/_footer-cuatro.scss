@@ -1,69 +1,59 @@
 .footer-cuatro{
     @extend %footer;
     
-
     h4{
         @extend %encabezados;
         font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
-    } 
-    
-    form {
-        @extend %flex;
-        flex-direction: column;
-    }
-}
 
-@media screen and (min-width:360px){
-    .footer-cuatro{
-        h4 {
+        @media screen and (min-width:360px){
             font-size: 1.2rem;
             justify-content: center;
         }
 
-        form {
-            margin-bottom: 1em;
-
-            label{
-                font-size: 1.2rem;   
-            }
-        
-            input {
-                font-size: 1.5rem;
-            }  
-        }
-
-    }
-}
-
-@media screen and (min-width:1200px){
-
-    .footer-cuatro{
-        h4 {
+        @media screen and (min-width:1200px){
             font-size: 1.7rem;
             margin-bottom: 1em;
             margin-left: 1em;
             justify-content: flex-start;
         }
+    } 
+    
+    form {
+        @extend %flex;
+        flex-direction: row;
+        margin-bottom: 1em;
 
-        form {
+        @media screen and (min-width:1200px){
             flex-direction: row;
             margin-left: 1.8em;
             margin-right: 1.8em;
-            margin-bottom: 1em;
-
-            label{
-                font-size: 1.5rem;
-                margin-left: 1em;
-                margin-right: 1.1em;  
-            }
-        
-            input {
-                font-size: 1rem;
-                margin-left: 0.5em;
-                margin-right: 0.5em;
-            }  
         }
-    }
 
+        label{
+            margin-left: 1em;
+            margin-right: 1.1em; 
+
+            @media screen and (min-width:360px){
+                font-size: 0.8rem; 
+            }
+
+            @media screen and (min-width:1200px){
+                font-size: 1.5rem;
+            }
+        }
+
+        input {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+
+            @media screen and (min-width:360px){
+                font-size: 0.8rem;
+            }
+
+            @media screen and (min-width:1200px){
+                font-size: 1rem;
+            }
+        }  
+    }
 }

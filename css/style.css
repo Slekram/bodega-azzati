@@ -1,12 +1,12 @@
-#nosotros, #bodega {
-  padding-top: 2em;
-  padding-bottom: 2em;
+#bodega, #nosotros {
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin-bottom: 1rem;
   margin-top: 1rem;
   border: #2e3436 solid 5px;
 }
 
-.footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos div a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4, #nosotros div h3, #nosotros div h2, #bodega h2 {
+.footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
   display: flex;
   font-family: saintCapital;
   color: #2e3436;
@@ -21,7 +21,7 @@
   border: #2e3436 solid 2px;
 }
 
-.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos div a, .footer-uno div div, #nosotros div h3, #nosotros div h2, .video-recorrido, #bodega h2 {
+.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +36,17 @@ header nav {
   align-items: center;
   flex-wrap: nowrap;
 }
+@media screen and (min-width: 360px) {
+  header nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header nav {
+    flex-direction: row;
+  }
+}
 header nav #logo {
   text-decoration: none;
   font-family: saintCapital;
@@ -46,12 +57,39 @@ header nav #logo {
   text-align: center;
   white-space: nowrap;
 }
+@media screen and (min-width: 360px) {
+  header nav #logo {
+    font-size: 2.7rem;
+    padding: 0.2em 0.2em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header nav #logo {
+    font-size: 4rem;
+    padding: 0.1em 0.1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header nav div {
+    justify-content: flex-end;
+  }
+}
 header nav div #ul-nav {
   display: flex;
   list-style: none;
   margin-top: 0.5rem;
 }
-header nav div #ul-nav a {
+@media screen and (min-width: 360px) {
+  header nav div #ul-nav {
+    padding-left: 1rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  header nav div #ul-nav li {
+    margin-right: 0.5em;
+  }
+}
+header nav div #ul-nav li a {
   text-decoration: none;
   text-align: center;
   border: solid #FAEBD7 2px;
@@ -62,126 +100,93 @@ header nav div #ul-nav a {
   padding: 0.5em 0.5em;
   margin: 0.5em;
 }
-
 @media screen and (min-width: 360px) {
-  header nav {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  header nav #logo {
-    font-size: 2.7rem;
-    padding: 0.2em 0.2em;
-  }
-  header nav #ul-nav {
-    padding-left: 1rem;
-  }
-  header nav #ul-nav li {
-    margin-right: 0.5em;
-  }
-  header nav #ul-nav li a {
+  header nav div #ul-nav li a {
     font-size: 1rem;
     padding: 0.3em 0.3em;
     margin: 0.4em;
   }
 }
 @media screen and (min-width: 1200px) {
-  header nav {
-    justify-content: space-between;
-    flex-direction: row;
-  }
-  header nav #logo {
-    font-size: 4rem;
-    padding: 0.1em 0.1em;
-  }
-  header nav div {
-    justify-content: flex-end;
-  }
-  header nav div a {
+  header nav div #ul-nav li a {
     font-size: 2rem;
   }
 }
+
 /* PAGINA INDEX -----------------------------------------*/
 /* SECCION BODEGA */
-#bodega h2 {
+@media screen and (min-width: 360px) {
+  #bodega, #nosotros {
+    max-width: 95%;
+  }
+}
+#bodega h2, #nosotros h2 {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
 }
-
-.primera-linea {
-  align-items: center;
-}
-
-.segunda-linea {
-  align-items: center;
-}
-
-.parrafo-bodega {
-  font-family: saintCapital;
-  text-align: justify;
-}
-
-.div-img-bodega {
-  width: 100%;
-}
-.div-img-bodega img {
-  width: 100%;
-  height: auto;
-}
-
-.video-recorrido {
-  background-color: #ffa07a;
-  padding: 2em;
-}
-
 @media screen and (min-width: 360px) {
-  /* PAGINA INDEX -----------------------------------------*/
-  /* SECCION BODEGA */
-  #bodega {
-    max-width: 95%;
-  }
-  #bodega h2 {
+  #bodega h2, #nosotros h2 {
     font-size: 2rem;
-  }
-
-  .segunda-linea {
-    flex-direction: column-reverse;
-  }
-
-  .caja-parrafo {
-    font-size: 1rem;
-  }
-
-  .parrafo-bodega {
-    font-size: 1rem;
-  }
-
-  .div-img-bodega {
-    max-width: 330px;
-  }
-  .div-img-bodega img {
-    max-height: 350px;
   }
 }
 @media screen and (min-width: 1200px) {
-  #bodega h2 {
+  #bodega h2, #nosotros h2 {
     font-size: 3rem;
     justify-content: start;
   }
-
-  .primera-linea {
-    flex-direction: row;
-  }
-
-  .segunda-linea {
-    flex-direction: row;
-  }
-
-  .parrafo-bodega {
+}
+#bodega h3, #nosotros h3 {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+@media screen and (min-width: 360px) {
+  #bodega h3, #nosotros h3 {
     font-size: 1.2rem;
   }
-
-  .div-img-bodega:hover {
+}
+@media screen and (min-width: 1200px) {
+  #bodega h3, #nosotros h3 {
+    font-size: 2rem;
+    justify-content: start;
+  }
+}
+#bodega .linea, #nosotros .linea {
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  #bodega .linea, #nosotros .linea {
+    flex-direction: row;
+  }
+}
+#bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
+  font-family: saintCapital;
+  text-align: justify;
+}
+@media screen and (min-width: 360px) {
+  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
+    font-size: 1.2rem;
+  }
+}
+#bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
+  width: 100%;
+}
+@media screen and (min-width: 360px) {
+  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
+    max-width: 470px;
+  }
+  #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
     /* Transformacion de escala para las imagenes */
     transform: scale(1.2, 1);
     -webkit-transform: scale(1.2, 1);
@@ -189,248 +194,40 @@ header nav div #ul-nav a {
     -o-transform: scale(1.2, 1);
     transition: all 2s;
   }
+}
+#bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (min-width: 360px) {
+  #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
+    max-height: 350px;
+  }
+}
+@media screen and (min-width: 360px) {
+  #bodega .segunda-linea, #nosotros .segunda-linea {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #bodega .segunda-linea, #nosotros .segunda-linea {
+    flex-direction: row;
+  }
+}
 
+.video-recorrido {
+  background-color: #ffa07a;
+  padding: 2em;
+}
+@media screen and (min-width: 1200px) {
   .video-recorrido iframe {
     width: 700px;
   }
 }
-/* SECCION NOSOTROS */
-#nosotros div h2 {
-  font-weight: bold;
-  font-style: italic;
-  text-decoration: underline;
-}
-#nosotros div h3 {
-  font-weight: bold;
-  font-style: italic;
-  text-decoration: underline;
-}
-
-@media screen and (min-width: 360px) {
-  #nosotros {
-    max-width: 95%;
-  }
-  #nosotros h2 {
-    font-size: 2rem;
-  }
-  #nosotros h3 {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  #nosotros div h2 {
-    font-size: 3rem;
-    justify-content: start;
-  }
-  #nosotros div h3 {
-    font-size: 2rem;
-    justify-content: start;
-  }
-}
-.footer-uno h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.footer-uno div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1em;
-}
-.footer-uno div div {
-  flex-direction: column;
-}
-@media screen and (min-width: 360px) {
-  .footer-uno h4 {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
-  .footer-uno div h5 {
-    font-size: 0.9rem;
-    margin-right: 0.4em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-uno h4 {
-    font-size: 1.7rem;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    justify-content: flex-start;
-  }
-  .footer-uno div {
-    margin-left: 1em;
-  }
-  .footer-uno div div {
-    margin-right: 2em;
-    font-size: 1.5rem;
-  }
-}
-.footer-dos h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.footer-dos div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer-dos div a {
-  margin-bottom: 1em;
-}
-.footer-dos div a h5 {
-  margin-left: 0.5em;
-}
-
-@media screen and (min-width: 360px) {
-  .footer-dos h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5em;
-    justify-content: center;
-  }
-  .footer-dos div a {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-dos h4 {
-    font-size: 1.7rem;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
-    justify-content: flex-start;
-  }
-  .footer-dos div {
-    margin-left: 1em;
-    flex-direction: row;
-  }
-  .footer-dos div a {
-    font-size: 1.5rem;
-    margin-right: 1em;
-  }
-}
-.footer-tres h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.footer-tres div {
-  margin-bottom: 1em;
-}
-
-@media screen and (min-width: 360px) {
-  .footer-tres h4 {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
-  .footer-tres div iframe {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-tres h4 {
-    font-size: 1.7rem;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    justify-content: flex-start;
-  }
-  .footer-tres div {
-    margin-left: 2.5em;
-    margin-right: 2.5em;
-  }
-  .footer-tres div svg {
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1.7rem;
-  }
-  .footer-tres div iframe {
-    width: 500px;
-    margin-right: 1em;
-  }
-}
-.footer-cuatro h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.footer-cuatro form {
-  flex-direction: column;
-}
-
-@media screen and (min-width: 360px) {
-  .footer-cuatro h4 {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
-  .footer-cuatro form {
-    margin-bottom: 1em;
-  }
-  .footer-cuatro form label {
-    font-size: 1.2rem;
-  }
-  .footer-cuatro form input {
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-cuatro h4 {
-    font-size: 1.7rem;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    justify-content: flex-start;
-  }
-  .footer-cuatro form {
-    flex-direction: row;
-    margin-left: 1.8em;
-    margin-right: 1.8em;
-    margin-bottom: 1em;
-  }
-  .footer-cuatro form label {
-    font-size: 1.5rem;
-    margin-left: 1em;
-    margin-right: 1.1em;
-  }
-  .footer-cuatro form input {
-    font-size: 1rem;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-  }
-}
-@media screen and (min-width: 360px) {
-  .footer-cinco span {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-cinco span {
-    font-size: 1rem;
-    padding-left: 1em;
-  }
-}
-/* Parametros generales */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* font size del html */
-html {
-  font-size: 1em;
-}
-
-/* Fuente Saint Capital*/
-@font-face {
-  font-family: saintCapital;
-  src: url(src/assets/fonts/saint-capital.ttf);
-  font-display: swap;
-}
-/* Fondo */
-#body {
-  background-color: #FAEBD7;
-}
 
 /* PAGINA VINOS -------------------------------------------------*/
 .seccion-vinos {
-  background-color: #FAEBD7;
   margin-bottom: 2em;
-  font-family: saintCapitan;
   background-color: #2e3436;
   color: #FAEBD7;
 }
@@ -463,6 +260,297 @@ html {
 .vino-container-interior p {
   font-family: saintCapitan;
   text-align: justify;
+}
+
+@media screen and (min-width: 360px) {
+  /* PAGINA VINOS -------------------------------------------------*/
+  .seccion-vinos h2 {
+    font-size: 2.9rem;
+  }
+
+  .vino-container {
+    flex-direction: column;
+  }
+
+  .vino-container-interior h3 {
+    font-size: 2rem;
+  }
+
+  .vino-container-interior p {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* PAGINA VINOS -------------------------------------------------*/
+  .seccion-vinos h2 {
+    font-size: 3em;
+  }
+
+  .vino-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Transformacion de escala con transicion para los vinos */
+  .vino-container-interior:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transition: 2s;
+    z-index: 1;
+    background-color: #2e3436;
+  }
+
+  .vino-container-interior h3 {
+    font-size: 2.5em;
+  }
+
+  .vino-container-interior p {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+}
+.footer-uno h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (min-width: 360px) {
+  .footer-uno h4 {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-uno h4 {
+    font-size: 1.7rem;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: flex-start;
+  }
+}
+.footer-uno div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 1200px) {
+  .footer-uno div {
+    margin-left: 1em;
+  }
+}
+.footer-uno div div {
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer-uno div div {
+    margin-right: 2em;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  .footer-uno div div h5 {
+    font-size: 0.9rem;
+    margin-right: 0.4em;
+  }
+}
+
+.footer-dos h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (min-width: 360px) {
+  .footer-dos h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-dos h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    justify-content: flex-start;
+  }
+}
+.footer-dos .container-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-dos .container-redes {
+    margin-left: 1em;
+  }
+}
+.footer-dos .container-redes a {
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 360px) {
+  .footer-dos .container-redes a {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-dos .container-redes a {
+    font-size: 1.5rem;
+    margin-right: 1em;
+  }
+}
+@media screen and (min-width: 360px) {
+  .footer-dos .container-redes a svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-dos .container-redes a svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+.footer-dos .container-redes a h5 {
+  margin-left: 0.5em;
+}
+
+.footer-tres h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (min-width: 360px) {
+  .footer-tres h4 {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tres h4 {
+    font-size: 1.7rem;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: flex-start;
+  }
+}
+.footer-tres div {
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 1200px) {
+  .footer-tres div {
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tres div svg {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 360px) {
+  .footer-tres div iframe {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tres div iframe {
+    width: 500px;
+    margin-right: 1em;
+  }
+}
+
+.footer-cuatro h4 {
+  font-weight: bold;
+  text-decoration: underline;
+}
+@media screen and (min-width: 360px) {
+  .footer-cuatro h4 {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-cuatro h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    justify-content: flex-start;
+  }
+}
+.footer-cuatro form {
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 1200px) {
+  .footer-cuatro form {
+    flex-direction: row;
+    margin-left: 1.8em;
+    margin-right: 1.8em;
+  }
+}
+.footer-cuatro form label {
+  margin-left: 1em;
+  margin-right: 1.1em;
+}
+@media screen and (min-width: 360px) {
+  .footer-cuatro form label {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-cuatro form label {
+    font-size: 1.5rem;
+  }
+}
+.footer-cuatro form input {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+@media screen and (min-width: 360px) {
+  .footer-cuatro form input {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-cuatro form input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .footer-cinco span {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-cinco span {
+    font-size: 1rem;
+    padding-left: 1em;
+  }
+}
+
+/* Parametros generales */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* font size del html */
+html {
+  font-size: 1em;
+}
+
+/* Fuente Saint Capital*/
+@font-face {
+  font-family: saintCapital;
+  src: url(src/assets/fonts/saint-capital.ttf);
+  font-display: swap;
+}
+/* Fondo */
+#body {
+  background-color: #FAEBD7;
 }
 
 /* PUNTOS DE VENTA ------------------------------------------------*/
@@ -581,53 +669,6 @@ html {
 /* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 360px) {
-  /* PAGINA VINOS -------------------------------------------------*/
-  .seccion-vinos h2 {
-    font-size: 2.9rem;
-  }
-
-  .vino-container {
-    flex-direction: column;
-  }
-
-  .vino-container-interior h3 {
-    font-size: 2rem;
-  }
-
-  .vino-container-interior p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-
-  /* PUNTOS DE VENTA ------------------------------------------------*/
-  .puntos h2 {
-    font-size: 2.5rem;
-    margin: 1em;
-  }
-
-  .mapa-local-mendoza h3 {
-    margin: 1em;
-    font-size: 1rem;
-  }
-
-  .sala-turismo {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-
-  .mapa-local h3 {
-    font-size: 1rem;
-    margin: 1em;
-  }
-
-  .mapa-interno iframe {
-    max-width: 250px;
-  }
-
-  .mapa-interno svg, .mapa-interno iframe {
-    margin: 1em;
-  }
-
   /* CONTACTO ---------------------------------------------------*/
   /* Formulario de contato */
   .formulario-contacto h2 {
@@ -646,34 +687,6 @@ html {
 /* Parametros Desktop *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
-  /* PAGINA VINOS -------------------------------------------------*/
-  .seccion-vinos h2 {
-    font-size: 3em;
-  }
-
-  .vino-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  /* Transformacion de escala con transicion para los vinos */
-  .vino-container-interior:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transition: 2s;
-    z-index: 1;
-    background-color: #2e3436;
-  }
-
-  .vino-container-interior h3 {
-    font-size: 2.5em;
-  }
-
-  .vino-container-interior p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-
   /* PUNTOS DE VENTA ------------------------------------------------*/
   .puntos h2 {
     font-size: 3rem;

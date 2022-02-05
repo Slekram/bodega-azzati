@@ -4,7 +4,7 @@
 @import "basic/maps";
 @import "components/header";
 @import "components/bodega";
-@import "components/nosotros";
+@import "components/vinos";
 @import "components/footer-uno";
 @import "components/footer-dos";
 @import "components/footer-tres";
@@ -32,45 +32,6 @@ html{
 /* Fondo */
 #body {
     background-color: nth($color, 2); 
-}
-
-/* PAGINA VINOS -------------------------------------------------*/
-.seccion-vinos{
-    background-color: #FAEBD7;
-    margin-bottom: 2em;
-    font-family: saintCapitan;
-    background-color: #2e3436;
-    color: #FAEBD7;
-}
-
-.malbec{
-    margin-top: 2em;
-}
-
-.seccion-vinos div h2 {  
-    display: flex;
-    justify-content: center;
-    font-family: saintCapital;
-    font-weight: bold;
-    border: #FAEBD7 solid 5px;
-}
-
-.vino-container-interior{
-    display: flex;
-    flex-direction: column;
-    border: #FAEBD7 solid 5px;
-    align-items: center;
-}
-
-.vino-container-interior h3{
-    text-align: center;
-    font-family: saintCapitan;
-    border: #FAEBD7 solid 5px;
-}
-
-.vino-container-interior p{
-    font-family: saintCapitan;
-    text-align: justify;
 }
 
 /* PUNTOS DE VENTA ------------------------------------------------*/
@@ -192,53 +153,7 @@ html{
 /* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:360px){
-    /* PAGINA VINOS -------------------------------------------------*/
-    .seccion-vinos h2 {
-        font-size: 2.9rem;
-    }
-
-    .vino-container{
-        flex-direction: column;
-    } 
-
-    .vino-container-interior h3{
-        font-size: 2rem;
-    }
-
-    .vino-container-interior p{
-        font-size: 1.5rem;
-        margin: 1em; 
-    }
-
-    /* PUNTOS DE VENTA ------------------------------------------------*/
-    .puntos h2 {
-        font-size: 2.5rem;
-        margin: 1em;
-    }
-
-    .mapa-local-mendoza h3{
-        margin: 1em;
-        font-size: 1rem;
-    }
-
-    .sala-turismo{
-        font-size: 1.5rem;
-        margin: 1em;
-    }
-
-    .mapa-local h3{
-        font-size: 1rem;
-        margin: 1em;
-    }
-
-    .mapa-interno iframe{
-        max-width: 250px;
-    }
-
-    .mapa-interno svg, .mapa-interno iframe{
-        margin: 1em;
-    }
-
+    
     /* CONTACTO ---------------------------------------------------*/
     /* Formulario de contato */
     .formulario-contacto h2{
@@ -261,34 +176,6 @@ html{
 
 @media screen and (min-width:1200px){
     
-    /* PAGINA VINOS -------------------------------------------------*/
-    .seccion-vinos h2 {
-        font-size: 3em;
-    }
-
-    .vino-container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    /* Transformacion de escala con transicion para los vinos */
-    .vino-container-interior:hover{
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transition: 2s;
-        z-index: 1;
-        background-color: #2e3436;
-    }
-
-    .vino-container-interior h3{
-        font-size: 2.5em;
-    }
-
-    .vino-container-interior p{
-        font-size: 1.5rem;
-        margin: 1em;
-    }
-
     /* PUNTOS DE VENTA ------------------------------------------------*/
     .puntos h2 {
         font-size: 3rem;

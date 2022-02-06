@@ -21,7 +21,7 @@
   border: #2e3436 solid 2px;
 }
 
-.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
+.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div, .puntos .grid-container h3, .puntos .grid-container-2 h3, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,6 +330,156 @@ header nav div #ul-nav li a {
   margin-top: 2em;
 }
 
+/* PUNTOS DE VENTA ------------------------------------------------*/
+.puntos {
+  background-color: #FAEBD7;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.puntos h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-family: saintCapital;
+  text-decoration: underline;
+  color: #2e3436;
+}
+@media screen and (min-width: 360px) {
+  .puntos h2 {
+    font-size: 2.5rem;
+    margin: 1em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .puntos h2 {
+    font-size: 3rem;
+    margin: 0.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .puntos .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 5em 40em;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas: "blanco1 titulo titulo blanco2" "turismo turismo san-rafael san-rafael";
+  }
+}
+.puntos .grid-container h3 {
+  grid-area: titulo;
+}
+.puntos .grid-container .turismo {
+  grid-area: turismo;
+}
+.puntos .grid-container .san-rafael {
+  grid-area: san-rafael;
+}
+@media screen and (min-width: 1200px) {
+  .puntos .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5em 40em;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    grid-template-areas: "blanco1 titulo blanco2" "caba cba rosario";
+  }
+  .puntos .grid-container-2 h3 {
+    grid-area: titulo;
+  }
+  .puntos .grid-container-2 .caba {
+    grid-area: caba;
+  }
+  .puntos .grid-container-2 .cba {
+    grid-area: cba;
+  }
+  .puntos .grid-container-2 .rosario {
+    grid-area: rosario;
+  }
+}
+.puntos .grid-container h3, .puntos .grid-container-2 h3 {
+  color: #2e3436;
+  text-decoration: underline;
+  font-family: saintCapital;
+  border: #2e3436 5px solid;
+  margin-left: 50%;
+}
+@media screen and (min-width: 360px) {
+  .puntos .grid-container h3, .puntos .grid-container-2 h3 {
+    margin: 1em;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .puntos .grid-container h3, .puntos .grid-container-2 h3 {
+    color: #2e3436;
+    margin: 0.5em;
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+}
+.puntos .grid-container .mapa-local, .puntos .grid-container-2 .mapa-local {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #2e3436 5px solid;
+  margin-bottom: 2em;
+}
+.puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
+  color: #2e3436;
+  text-decoration: underline;
+  font-family: saintCapital;
+}
+@media screen and (min-width: 360px) {
+  .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
+    margin: 1em;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
+    color: #2e3436;
+    margin: 0.5em;
+    text-decoration: underline;
+    font-size: 2rem;
+  }
+}
+.puntos .grid-container .mapa-local .mapa-interno, .puntos .grid-container-2 .mapa-local .mapa-interno {
+  background-color: #2e3436;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .puntos .grid-container .mapa-local .mapa-interno, .puntos .grid-container-2 .mapa-local .mapa-interno {
+    align-items: center;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno:hover, .puntos .grid-container-2 .mapa-local .mapa-interno:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transition: 2s;
+    z-index: 1;
+    background-color: #2e3436;
+  }
+}
+.puntos .grid-container .mapa-local .mapa-interno svg, .puntos .grid-container-2 .mapa-local .mapa-interno svg {
+  margin: 1em;
+}
+.puntos .grid-container .mapa-local .mapa-interno iframe, .puntos .grid-container-2 .mapa-local .mapa-interno iframe {
+  margin: 1em;
+}
+@media screen and (min-width: 360px) {
+  .puntos .grid-container .mapa-local .mapa-interno iframe, .puntos .grid-container-2 .mapa-local .mapa-interno iframe {
+    max-width: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .puntos .grid-container .mapa-local .mapa-interno .mapa, .puntos .grid-container-2 .mapa-local .mapa-interno .mapa {
+    max-width: 500px;
+  }
+}
+
 .footer-uno h4 {
   font-weight: bold;
   text-decoration: underline;
@@ -573,69 +723,6 @@ html {
   background-color: #FAEBD7;
 }
 
-/* PUNTOS DE VENTA ------------------------------------------------*/
-.puntos {
-  background-color: #FAEBD7;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.puntos h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  font-family: saintCapital;
-  text-decoration: underline;
-  color: #2e3436;
-}
-
-.mapa-local-mendoza {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: #2e3436 5px solid;
-  margin-bottom: 2em;
-}
-
-.mapa-local-mendoza h3 {
-  color: #2e3436;
-  text-decoration: underline;
-  font-family: saintCapital;
-}
-
-.sala-turismo {
-  font-size: 1.5rem;
-  margin: 1em;
-}
-
-.mapa-local-mendoza div {
-  background-color: #2e3436;
-}
-
-.mapa-local {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: #2e3436 5px solid;
-  margin-bottom: 2em;
-}
-
-.mapa-local h3 {
-  color: #2e3436;
-  text-decoration: underline;
-}
-
-.mapa-local div {
-  background-color: #2e3436;
-}
-
-.mapa-interno {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 /* CONTACTO ---------------------------------------------------*/
 /* Formulario de contato */
 .formulario-contacto {
@@ -689,35 +776,6 @@ html {
 /* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 360px) {
-  /* PUNTOS DE VENTA ------------------------------------------------*/
-  .puntos h2 {
-    font-size: 2.5rem;
-    margin: 1em;
-  }
-
-  .mapa-local-mendoza h3 {
-    margin: 1em;
-    font-size: 1rem;
-  }
-
-  .sala-turismo {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-
-  .mapa-local h3 {
-    font-size: 1rem;
-    margin: 1em;
-  }
-
-  .mapa-interno iframe {
-    max-width: 250px;
-  }
-
-  .mapa-interno svg, .mapa-interno iframe {
-    margin: 1em;
-  }
-
   /* CONTACTO ---------------------------------------------------*/
   /* Formulario de contato */
   .formulario-contacto h2 {
@@ -736,53 +794,6 @@ html {
 /* Parametros Desktop *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1200px) {
-  /* PUNTOS DE VENTA ------------------------------------------------*/
-  .puntos h2 {
-    font-size: 3rem;
-    margin: 0.5em;
-  }
-
-  .mapa-local-mendoza h3 {
-    color: #2e3436;
-    margin: 0.5em;
-    text-decoration: underline;
-    font-size: 2.5rem;
-  }
-
-  .sala-turismo {
-    font-size: 2.5rem;
-    margin: 0.5em;
-  }
-
-  .mapa-local h3 {
-    color: #2e3436;
-    text-decoration: underline;
-    font-size: 2.5rem;
-    margin: 0.5em;
-  }
-
-  .mapa-interno {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  /* Transformacion con transicion para los mapas */
-  .mapa-interno:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    transition: 2s;
-    z-index: 1;
-    background-color: #2e3436;
-  }
-
-  .mapa-interno svg, .mapa-interno iframe {
-    margin: 1em;
-  }
-
-  .mapa-interno iframe {
-    width: 700px;
-  }
-
   /* CONTACTO ---------------------------------------------------*/
   /* Formulario de contato */
   .formulario-contacto form {

@@ -5,6 +5,7 @@
 @import "components/header";
 @import "components/bodega";
 @import "components/vinos";
+@import "components/venta";
 @import "components/footer-uno";
 @import "components/footer-dos";
 @import "components/footer-tres";
@@ -34,69 +35,6 @@ html{
     background-color: nth($color, 2); 
 }
 
-/* PUNTOS DE VENTA ------------------------------------------------*/
-
-.puntos{
-    background-color: #FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.puntos h2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: bold;
-    font-family: saintCapital;
-    text-decoration: underline;
-    color: #2e3436;
-}
-
-.mapa-local-mendoza{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: #2e3436 5px solid;
-    margin-bottom: 2em;
-}
-
-.mapa-local-mendoza h3{
-    color: #2e3436;
-    text-decoration: underline;
-    font-family: saintCapital;
-}
-
-.sala-turismo{
-    font-size: 1.5rem;
-    margin: 1em;
-}
-
-.mapa-local-mendoza div {
-    background-color: #2e3436;
-}
-
-.mapa-local{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: #2e3436 5px solid;
-    margin-bottom: 2em;
-}
-
-.mapa-local h3{
-    color: #2e3436;
-    text-decoration: underline;
-}
-
-.mapa-local div {
-    background-color: #2e3436;
-}
-
-.mapa-interno{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 /* CONTACTO ---------------------------------------------------*/
 /* Formulario de contato */
@@ -154,34 +92,6 @@ html{
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:360px){
     
-/* PUNTOS DE VENTA ------------------------------------------------*/
-.puntos h2 {
-    font-size: 2.5rem;
-    margin: 1em;
-}
-
-.mapa-local-mendoza h3{
-    margin: 1em;
-    font-size: 1rem;
-}
-
-.sala-turismo{
-    font-size: 1.5rem;
-    margin: 1em;
-}
-
-.mapa-local h3{
-    font-size: 1rem;
-    margin: 1em;
-}
-
-.mapa-interno iframe{
-    max-width: 250px;
-}
-
-.mapa-interno svg, .mapa-interno iframe{
-    margin: 1em;
-}
 
 
     /* CONTACTO ---------------------------------------------------*/
@@ -206,52 +116,6 @@ html{
 
 @media screen and (min-width:1200px){
     
-    /* PUNTOS DE VENTA ------------------------------------------------*/
-    .puntos h2 {
-        font-size: 3rem;
-        margin: 0.5em;
-    }
-
-    .mapa-local-mendoza h3{
-        color: #2e3436;
-        margin: 0.5em;
-        text-decoration: underline;
-        font-size: 2.5rem;
-    }
-
-    .sala-turismo{
-        font-size: 2.5rem;
-        margin: 0.5em;
-    }
-
-    .mapa-local h3{
-        color: #2e3436;
-        text-decoration: underline;
-        font-size: 2.5rem;
-        margin: 0.5em;
-    }
-
-    .mapa-interno{
-        flex-direction: row;
-        align-items: center;
-    }
-    /* Transformacion con transicion para los mapas */
-    .mapa-interno:hover{
-        transform: scale(1.5);
-        -webkit-transform: scale(1.5);
-        transition: 2s;
-        z-index: 1;
-        background-color: #2e3436;
-    }
-    
-    .mapa-interno svg, .mapa-interno iframe{
-        margin: 1em;
-    }
-
-    .mapa-interno iframe{
-        width: 700px;
-    }
-
     /* CONTACTO ---------------------------------------------------*/
     /* Formulario de contato */
     .formulario-contacto form{

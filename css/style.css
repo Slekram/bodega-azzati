@@ -231,85 +231,105 @@ header nav div #ul-nav li a {
   background-color: #2e3436;
   color: #FAEBD7;
 }
-
-.malbec {
-  margin-top: 2em;
+@media screen and (min-width: 1200px) {
+  .seccion-vinos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.25fr 1.5fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "blanco titulo titulo blanco2" "joven guarda organico premium";
+  }
 }
-
-.seccion-vinos div h2 {
-  display: flex;
-  justify-content: center;
+.seccion-vinos h2 {
   font-family: saintCapital;
   font-weight: bold;
   border: #FAEBD7 solid 5px;
+  grid-area: titulo;
 }
-
-.vino-container-interior {
+@media screen and (min-width: 360px) {
+  .seccion-vinos h2 {
+    font-size: 2.9rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .seccion-vinos h2 {
+    font-size: 3em;
+  }
+}
+.seccion-vinos .joven {
+  grid-area: joven;
+}
+.seccion-vinos .guarda {
+  grid-area: guarda;
+}
+.seccion-vinos .organico {
+  grid-area: organico;
+}
+.seccion-vinos .premium {
+  grid-area: premium;
+}
+.seccion-vinos .vino-container {
   display: flex;
   flex-direction: column;
   border: #FAEBD7 solid 5px;
   align-items: center;
 }
-
-.vino-container-interior h3 {
-  text-align: center;
-  font-family: saintCapitan;
-  border: #FAEBD7 solid 5px;
-}
-
-.vino-container-interior p {
-  font-family: saintCapitan;
-  text-align: justify;
-}
-
-@media screen and (min-width: 360px) {
-  /* PAGINA VINOS -------------------------------------------------*/
-  .seccion-vinos h2 {
-    font-size: 2.9rem;
-  }
-
-  .vino-container {
-    flex-direction: column;
-  }
-
-  .vino-container-interior h3 {
-    font-size: 2rem;
-  }
-
-  .vino-container-interior p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-}
 @media screen and (min-width: 1200px) {
-  /* PAGINA VINOS -------------------------------------------------*/
-  .seccion-vinos h2 {
-    font-size: 3em;
-  }
-
-  .vino-container {
-    display: flex;
-    flex-direction: row;
-  }
-
-  /* Transformacion de escala con transicion para los vinos */
-  .vino-container-interior:hover {
+  .seccion-vinos .vino-container:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transition: 2s;
     z-index: 1;
     background-color: #2e3436;
   }
-
-  .vino-container-interior h3 {
-    font-size: 2.5em;
+}
+.seccion-vinos .vino-container h3 {
+  text-align: center;
+  font-family: saintCapitan;
+  border: #FAEBD7 solid 5px;
+}
+@media screen and (min-width: 360px) {
+  .seccion-vinos .vino-container h3 {
+    font-size: 2rem;
   }
-
-  .vino-container-interior p {
+}
+@media screen and (min-width: 1200px) {
+  .seccion-vinos .vino-container h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .seccion-vinos .vino-container img {
+    max-width: 250px;
+  }
+}
+.seccion-vinos .vino-container p {
+  font-family: saintCapitan;
+  text-align: justify;
+}
+@media screen and (min-width: 360px) {
+  .seccion-vinos .vino-container p {
     font-size: 1.5rem;
     margin: 1em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .seccion-vinos .vino-container p {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+}
+
+.malbec {
+  margin-top: 2em;
+}
+
 .footer-uno h4 {
   font-weight: bold;
   text-decoration: underline;
@@ -669,6 +689,35 @@ html {
 /* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width: 360px) {
+  /* PUNTOS DE VENTA ------------------------------------------------*/
+  .puntos h2 {
+    font-size: 2.5rem;
+    margin: 1em;
+  }
+
+  .mapa-local-mendoza h3 {
+    margin: 1em;
+    font-size: 1rem;
+  }
+
+  .sala-turismo {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+
+  .mapa-local h3 {
+    font-size: 1rem;
+    margin: 1em;
+  }
+
+  .mapa-interno iframe {
+    max-width: 250px;
+  }
+
+  .mapa-interno svg, .mapa-interno iframe {
+    margin: 1em;
+  }
+
   /* CONTACTO ---------------------------------------------------*/
   /* Formulario de contato */
   .formulario-contacto h2 {

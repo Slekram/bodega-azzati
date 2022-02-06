@@ -154,6 +154,36 @@ html{
 ---------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (min-width:360px){
     
+/* PUNTOS DE VENTA ------------------------------------------------*/
+.puntos h2 {
+    font-size: 2.5rem;
+    margin: 1em;
+}
+
+.mapa-local-mendoza h3{
+    margin: 1em;
+    font-size: 1rem;
+}
+
+.sala-turismo{
+    font-size: 1.5rem;
+    margin: 1em;
+}
+
+.mapa-local h3{
+    font-size: 1rem;
+    margin: 1em;
+}
+
+.mapa-interno iframe{
+    max-width: 250px;
+}
+
+.mapa-interno svg, .mapa-interno iframe{
+    margin: 1em;
+}
+
+
     /* CONTACTO ---------------------------------------------------*/
     /* Formulario de contato */
     .formulario-contacto h2{

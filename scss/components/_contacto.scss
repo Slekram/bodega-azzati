@@ -1,0 +1,118 @@
+/* CONTACTO ---------------------------------------------------*/
+/* Formulario de contato */
+
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #2e3436 10px solid;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background-color: #FAEBD7;
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    h2{
+        font-family: saintCapital;
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bold;
+
+        @media screen and (min-width:360px){
+            font-size: 2.5rem;
+        }
+    }
+
+    p{
+        font-family: saintCapital;
+        text-align: justify;
+
+        @media screen and (min-width:360px){
+            font-size: 1.5rem;
+            margin: 1em;
+        }
+    }
+
+    form{
+        color:#FAEBD7;
+        background-color: #2e3436; 
+        display: flex;
+
+        @media screen and (min-width:360px){
+            flex-direction: column;
+        }
+
+        @media screen and (min-width:1200px){
+            flex-direction: row;
+        }
+
+        label{
+            @media screen and (min-width:1200px){
+                font-size: 1.4rem;
+                margin-right: 0.5em;
+            }
+        }
+
+        input{
+
+            @media screen and (min-width:1200px){
+                font-size: 1.4rem;
+                margin-right: 0.5em;
+                
+            }
+        }
+
+    }
+}
+
+/* Atencion al consumidor */
+.atencion-consumidor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #2e3436 10px solid;
+    margin-bottom: 2em;
+
+    @media screen and (min-width:1200px){
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    h3{
+        @media screen and (min-width:1200px){
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    .boton-wsup {
+    
+        fill: #41e175;
+        border: #2e3436 solid 2px;
+        background-color: #FAEBD7;
+        border-radius: 30px;
+        padding: 20px;
+
+        @media screen and (min-width:1200px){
+            
+            &:hover{
+                animation-name: boton-wsup;
+                animation-duration: 10s;
+    
+                @keyframes boton-wsup{
+                    50%{
+                    
+                        background-color: #41e175;
+                        fill: #FAEBD7;
+                        transform: scale(2);
+                        -webkit-transform: scale(2);
+                    }
+            
+                    70%{
+                        border-radius: 20%;
+                    }
+                }
+            }
+        }
+    }
+} 

@@ -480,6 +480,113 @@ header nav div #ul-nav li a {
   }
 }
 
+/* CONTACTO ---------------------------------------------------*/
+/* Formulario de contato */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #2e3436 10px solid;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  background-color: #FAEBD7;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.formulario-contacto h2 {
+  font-family: saintCapital;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+@media screen and (min-width: 360px) {
+  .formulario-contacto h2 {
+    font-size: 2.5rem;
+  }
+}
+.formulario-contacto p {
+  font-family: saintCapital;
+  text-align: justify;
+}
+@media screen and (min-width: 360px) {
+  .formulario-contacto p {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+}
+.formulario-contacto form {
+  color: #FAEBD7;
+  background-color: #2e3436;
+  display: flex;
+}
+@media screen and (min-width: 360px) {
+  .formulario-contacto form {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formulario-contacto form {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formulario-contacto form label {
+    font-size: 1.4rem;
+    margin-right: 0.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .formulario-contacto form input {
+    font-size: 1.4rem;
+    margin-right: 0.5em;
+  }
+}
+
+/* Atencion al consumidor */
+.atencion-consumidor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: #2e3436 10px solid;
+  margin-bottom: 2em;
+}
+@media screen and (min-width: 1200px) {
+  .atencion-consumidor {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .atencion-consumidor h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.atencion-consumidor .boton-wsup {
+  fill: #41e175;
+  border: #2e3436 solid 2px;
+  background-color: #FAEBD7;
+  border-radius: 30px;
+  padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .atencion-consumidor .boton-wsup:hover {
+    animation-name: boton-wsup;
+    animation-duration: 10s;
+  }
+  @keyframes boton-wsup {
+    50% {
+      background-color: #41e175;
+      fill: #FAEBD7;
+      transform: scale(2);
+      -webkit-transform: scale(2);
+    }
+    70% {
+      border-radius: 20%;
+    }
+  }
+}
+
 .footer-uno h4 {
   font-weight: bold;
   text-decoration: underline;
@@ -721,117 +828,6 @@ html {
 /* Fondo */
 #body {
   background-color: #FAEBD7;
-}
-
-/* CONTACTO ---------------------------------------------------*/
-/* Formulario de contato */
-.formulario-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: #2e3436 10px solid;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  background-color: #FAEBD7;
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.formulario-contacto h2 {
-  font-family: saintCapital;
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.formulario-contacto p {
-  font-family: saintCapital;
-  text-align: justify;
-}
-
-.formulario-contacto form {
-  color: #FAEBD7;
-  background-color: #2e3436;
-  display: flex;
-}
-
-/* Atencion al consumidor */
-.atencion-consumidor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: #2e3436 10px solid;
-  margin-bottom: 2em;
-}
-
-/* Animacion para el boton de watsapp */
-.boton-wsup {
-  fill: #41e175;
-  border: #2e3436 solid 2px;
-  background-color: #FAEBD7;
-  border-radius: 30px;
-  padding: 20px;
-}
-
-/* Parametros mobile *-------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 360px) {
-  /* CONTACTO ---------------------------------------------------*/
-  /* Formulario de contato */
-  .formulario-contacto h2 {
-    font-size: 2.5rem;
-  }
-
-  .formulario-contacto p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-
-  .formulario-contacto form {
-    flex-direction: column;
-  }
-}
-/* Parametros Desktop *-------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (min-width: 1200px) {
-  /* CONTACTO ---------------------------------------------------*/
-  /* Formulario de contato */
-  .formulario-contacto form {
-    flex-direction: row;
-  }
-
-  .formulario-contacto form label, .formulario-contacto form input {
-    font-size: 1.4rem;
-    margin-right: 0.5em;
-  }
-
-  /* Atencion al consumidor */
-  .atencion-consumidor {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
-
-  .atencion-consumidor h3 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .animacion-wsup:hover {
-    animation-name: boton-wsup;
-    animation-duration: 10s;
-  }
-
-  @keyframes boton-wsup {
-    50% {
-      background-color: #41e175;
-      fill: #FAEBD7;
-      transform: scale(2);
-      -webkit-transform: scale(2);
-    }
-    70% {
-      border-radius: 20%;
-    }
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

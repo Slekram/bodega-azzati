@@ -1,12 +1,12 @@
-#bodega, #nosotros {
+.atencion-consumidor, .formulario-contacto, .seccion-vinos, #bodega, #nosotros {
   padding-top: 1em;
   padding-bottom: 1em;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1em;
+  margin-top: 1em;
   border: #2e3436 solid 5px;
 }
 
-.footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
+.footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4, .atencion-consumidor h3, .formulario-contacto h2, .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
   display: flex;
   font-family: saintCapital;
   color: #2e3436;
@@ -21,7 +21,7 @@
   border: #2e3436 solid 2px;
 }
 
-.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div, .puntos .grid-container h3, .puntos .grid-container-2 h3, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
+.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div, .atencion-consumidor, .formulario-contacto, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, .seccion-vinos .vino-container, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,6 +158,7 @@ header nav div #ul-nav li a {
 @media screen and (min-width: 1200px) {
   #bodega .linea, #nosotros .linea {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
@@ -171,7 +172,7 @@ header nav div #ul-nav li a {
 }
 @media screen and (min-width: 1200px) {
   #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
@@ -182,9 +183,22 @@ header nav div #ul-nav li a {
     max-width: 330px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
   #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
     max-width: 470px;
+  }
+  #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
+    /* Transformacion de escala para las imagenes */
+    transform: scale(1.2, 1);
+    -webkit-transform: scale(1.2, 1);
+    -moz-transform: scale(1.2, 1);
+    -o-transform: scale(1.2, 1);
+    transition: all 2s;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
+    max-width: 550px;
   }
   #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
     /* Transformacion de escala para las imagenes */
@@ -227,7 +241,6 @@ header nav div #ul-nav li a {
 
 /* PAGINA VINOS -------------------------------------------------*/
 .seccion-vinos {
-  margin-bottom: 2em;
   background-color: #2e3436;
   color: #FAEBD7;
 }
@@ -235,10 +248,9 @@ header nav div #ul-nav li a {
   .seccion-vinos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.25fr 1.5fr;
-    grid-column-gap: 50px;
+    grid-template-rows: 0.25fr 1fr;
+    grid-column-gap: 20px;
     grid-row-gap: 10px;
-    align-content: center;
     align-items: center;
     justify-items: center;
     grid-template-areas: "blanco titulo titulo blanco2" "joven guarda organico premium";
@@ -246,6 +258,7 @@ header nav div #ul-nav li a {
 }
 .seccion-vinos h2 {
   font-family: saintCapital;
+  color: #FAEBD7;
   font-weight: bold;
   border: #FAEBD7 solid 5px;
   grid-area: titulo;
@@ -253,13 +266,13 @@ header nav div #ul-nav li a {
 @media screen and (min-width: 360px) {
   .seccion-vinos h2 {
     font-size: 2.9rem;
-    display: flex;
     justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .seccion-vinos h2 {
     font-size: 3em;
+    padding: 0.2em;
   }
 }
 .seccion-vinos .joven {
@@ -275,15 +288,15 @@ header nav div #ul-nav li a {
   grid-area: premium;
 }
 .seccion-vinos .vino-container {
-  display: flex;
   flex-direction: column;
   border: #FAEBD7 solid 5px;
-  align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .seccion-vinos .vino-container:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
     transition: 2s;
     z-index: 1;
     background-color: #2e3436;
@@ -302,6 +315,7 @@ header nav div #ul-nav li a {
 @media screen and (min-width: 1200px) {
   .seccion-vinos .vino-container h3 {
     font-size: 1.5rem;
+    padding: 0.2em;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -333,17 +347,14 @@ header nav div #ul-nav li a {
 /* PUNTOS DE VENTA ------------------------------------------------*/
 .puntos {
   background-color: #FAEBD7;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 .puntos h2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   font-weight: bold;
-  font-family: saintCapital;
   text-decoration: underline;
-  color: #2e3436;
 }
 @media screen and (min-width: 360px) {
   .puntos h2 {
@@ -399,9 +410,7 @@ header nav div #ul-nav li a {
   }
 }
 .puntos .grid-container h3, .puntos .grid-container-2 h3 {
-  color: #2e3436;
   text-decoration: underline;
-  font-family: saintCapital;
   border: #2e3436 5px solid;
   margin-left: 50%;
 }
@@ -413,9 +422,7 @@ header nav div #ul-nav li a {
 }
 @media screen and (min-width: 1200px) {
   .puntos .grid-container h3, .puntos .grid-container-2 h3 {
-    color: #2e3436;
     margin: 0.5em;
-    text-decoration: underline;
     font-size: 2.5rem;
   }
 }
@@ -427,9 +434,7 @@ header nav div #ul-nav li a {
   margin-bottom: 2em;
 }
 .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
-  color: #2e3436;
   text-decoration: underline;
-  font-family: saintCapital;
 }
 @media screen and (min-width: 360px) {
   .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
@@ -441,7 +446,6 @@ header nav div #ul-nav li a {
   .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
     color: #2e3436;
     margin: 0.5em;
-    text-decoration: underline;
     font-size: 2rem;
   }
 }
@@ -458,6 +462,8 @@ header nav div #ul-nav li a {
   .puntos .grid-container .mapa-local .mapa-interno:hover, .puntos .grid-container-2 .mapa-local .mapa-interno:hover {
     transform: scale(1.5);
     -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
     transition: 2s;
     z-index: 1;
     background-color: #2e3436;
@@ -483,18 +489,10 @@ header nav div #ul-nav li a {
 /* CONTACTO ---------------------------------------------------*/
 /* Formulario de contato */
 .formulario-contacto {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  border: #2e3436 10px solid;
-  margin-bottom: 2em;
-  margin-top: 2em;
   background-color: #FAEBD7;
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 .formulario-contacto h2 {
-  font-family: saintCapital;
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
@@ -544,17 +542,11 @@ header nav div #ul-nav li a {
 
 /* Atencion al consumidor */
 .atencion-consumidor {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  border: #2e3436 10px solid;
-  margin-bottom: 2em;
 }
-@media screen and (min-width: 1200px) {
-  .atencion-consumidor {
-    margin-left: 30%;
-    margin-right: 30%;
-  }
+.atencion-consumidor h3 {
+  text-decoration: underline;
+  font-weight: bold;
 }
 @media screen and (min-width: 1200px) {
   .atencion-consumidor h3 {
@@ -580,6 +572,8 @@ header nav div #ul-nav li a {
       fill: #FAEBD7;
       transform: scale(2);
       -webkit-transform: scale(2);
+      -moz-transform: scale(2);
+      -o-transform: scale(2);
     }
     70% {
       border-radius: 20%;

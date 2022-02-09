@@ -1,23 +1,19 @@
 /* CONTACTO ---------------------------------------------------*/
 /* Formulario de contato */
 
+
 .formulario-contacto{
-    display: flex;
+    @extend %secciones;
+    @extend %flex;
     flex-direction: column;
-    align-items: center;
-    border: #2e3436 10px solid;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    background-color: #FAEBD7;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    background-color: nth($color, 2);
 
     h2{
-        font-family: saintCapital;
+        
+        @extend %encabezados;
         text-align: center;
-        text-decoration: underline;
-        font-weight: bold;
-
+        text-decoration: map-get($encabezado, h-text-decoration);
+        font-weight: map-get($encabezado, h-font-weight);
         @media screen and (min-width:360px){
             font-size: 2.5rem;
         }
@@ -34,8 +30,8 @@
     }
 
     form{
-        color:#FAEBD7;
-        background-color: #2e3436; 
+        color: nth($color, 2); 
+        background-color: nth($color, 1); 
         display: flex;
 
         @media screen and (min-width:360px){
@@ -61,24 +57,19 @@
                 
             }
         }
-
     }
 }
 
 /* Atencion al consumidor */
 .atencion-consumidor{
-    display: flex;
+    @extend %secciones;
+    @extend %flex;
     flex-direction: column;
-    align-items: center;
-    border: #2e3436 10px solid;
-    margin-bottom: 2em;
-
-    @media screen and (min-width:1200px){
-        margin-left: 30%;
-        margin-right: 30%;
-    }
 
     h3{
+        @extend %encabezados;
+        text-decoration: map-get($encabezado, h-text-decoration);
+        font-weight: map-get($encabezado, h-font-weight);
         @media screen and (min-width:1200px){
             font-size: 2rem;
             text-align: center;
@@ -88,8 +79,8 @@
     .boton-wsup {
     
         fill: #41e175;
-        border: #2e3436 solid 2px;
-        background-color: #FAEBD7;
+        border: nth($color, 1) solid 2px;
+        background-color: nth($color, 2);
         border-radius: 30px;
         padding: 20px;
 
@@ -104,8 +95,7 @@
                     
                         background-color: #41e175;
                         fill: #FAEBD7;
-                        transform: scale(2);
-                        -webkit-transform: scale(2);
+                        @include prefijos(scale(2));
                     }
             
                     70%{

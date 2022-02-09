@@ -1,17 +1,16 @@
 /* PAGINA VINOS -------------------------------------------------*/
 
 .seccion-vinos{
-    margin-bottom: 2em;
-    background-color: #2e3436;
-    color: #FAEBD7;
+    @extend %secciones;
+    background-color: nth($color, 1);
+    color: nth($color, 2);
     
     @media screen and (min-width:1200px) {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 0.25fr 1.5fr;
-        grid-column-gap: 50px;
+        grid-template-rows: 0.25fr 1fr;
+        grid-column-gap: 20px;
         grid-row-gap: 10px;
-        align-content: center;
         align-items: center;
         justify-items: center;
         grid-template-areas: 
@@ -21,18 +20,19 @@
     
     h2 {  
         font-family: saintCapital;
-        font-weight: bold;
-        border: #FAEBD7 solid 5px;
+        color: nth($color, 2);
+        font-weight: map-get($encabezado, h-font-weight);
+        border: nth($color, 2) solid 5px;
         grid-area: titulo;
 
         @media screen and (min-width:360px){
             font-size: 2.9rem;
-            display: flex;
             justify-content: center;
         }
         @media screen and (min-width:1200px){
 
             font-size: 3em;
+            padding: 0.2em;
         }
     }
 
@@ -53,25 +53,24 @@
     }
 
     .vino-container{
-        display: flex;
+        @extend %flex;
         flex-direction: column;
-        border: #FAEBD7 solid 5px;
-        align-items: center;
+        border: nth($color, 2) solid 5px;
+        
 
         @media screen and (min-width:1200px){
             &:hover{
-                transform: scale(1.5);
-                -webkit-transform: scale(1.5);
+                @include prefijos (scale(1.5));
                 transition: 2s;
                 z-index: 1;
-                background-color: #2e3436;
+                background-color: nth($color, 1);
             } 
         }
 
         h3{
             text-align: center;
             font-family: saintCapitan;
-            border: #FAEBD7 solid 5px;
+            border:  nth($color, 2) solid 5px;
 
             @media screen and (min-width:360px){
                 font-size: 2rem;
@@ -79,11 +78,11 @@
 
             @media screen and (min-width:1200px){
                 font-size: 1.5rem;
+                padding: 0.2em;
             }
         }
 
         img {
-
             @media screen and (min-width:1200px){
                 max-width: 250px;
             }

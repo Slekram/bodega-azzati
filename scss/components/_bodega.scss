@@ -48,6 +48,7 @@
 
         @media screen and (min-width:1200px){
             flex-direction: row;
+            justify-content: space-between;
         }
 
         .parrafo-bodega{
@@ -59,7 +60,8 @@
             }
 
             @media screen and (min-width:1200px){
-                font-size: 1.2rem;
+                font-size: 1rem;
+                
             }
         }
 
@@ -70,8 +72,18 @@
                 max-width: 330px;
             }
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:1200px) and (max-width:1400px) {
                 max-width: 470px;
+
+                &:hover{
+                    /* Transformacion de escala para las imagenes */
+                    @include prefijos(scale(1.2,1));
+                    transition: all 2s;
+                }
+            }
+
+            @media screen and (min-width:1400px) {
+                max-width: 550px;
 
                 &:hover{
                     /* Transformacion de escala para las imagenes */
@@ -102,7 +114,6 @@
             flex-direction: row;
         }
     }
- 
 }
 
 .video-recorrido{

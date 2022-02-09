@@ -6,12 +6,12 @@
         @extend %encabezados;
 
         @media screen and (min-width:360px){
-            font-size: 1rem;
+            font-size: 0.78rem;
         }      
 
         @media screen and (min-width:1200px){
             font-size: 1rem;
-            padding-left: 1em ; 
+            padding: 1em ; 
         }      
     } 
 }

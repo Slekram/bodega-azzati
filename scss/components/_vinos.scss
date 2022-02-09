@@ -19,6 +19,7 @@
     }
     
     h2 {  
+        display: flex;
         font-family: saintCapital;
         color: nth($color, 2);
         font-weight: map-get($encabezado, h-font-weight);

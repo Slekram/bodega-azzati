@@ -46,15 +46,19 @@
     .linea {
         align-items: center;
 
-        
-
         @media screen and (max-width:$mobile){
             justify-content: center;
             flex-direction: column;
             
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$mobile) and (max-width:$tablet){
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+
+        @media screen and (min-width:$desktop){
             flex-direction: row;
             justify-content: space-between;
         }
@@ -115,7 +119,11 @@
             flex-direction: column-reverse;
         }
 
-        @media screen and (min-width:$desktop){
+        @media screen and (min-width:$mobile) and (max-width:$tablet){
+            flex-direction: column-reverse;
+        }
+
+        @media screen and (min-width:$tablet) and (max-width:$desktop){
             flex-direction: row;
         }
     }

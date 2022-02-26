@@ -8,12 +8,12 @@ header{
         align-items: center;
         flex-wrap: nowrap;
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             flex-direction: column;
             justify-content: space-between;
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             flex-direction: row;
         }
         
@@ -27,12 +27,12 @@ header{
             text-align: center;
             white-space: nowrap;
 
-            @media screen and (min-width:360px){
-                font-size: 2.7rem;
+            @media screen and (max-width:$mobile){
+                font-size: 2.4rem;
                 padding: 0.2em 0.2em;
             }
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 font-size: 4rem;
                 padding: 0.1em 0.1em;
             }
@@ -40,7 +40,11 @@ header{
         
         div{
 
-            @media screen and (min-width:1200px){
+            @media screen and (max-width:$mobile){
+                width: max-content;
+            }
+
+            @media screen and (min-width:$desktop){
                 justify-content: flex-end; 
             }
 
@@ -49,12 +53,14 @@ header{
                 list-style: none;
                 margin-top: 0.5rem;
     
-                @media screen and (min-width:360px){
+                @media screen and (max-width:$mobile){
                     padding-left: 1rem;
                 }
         
                 li{
-                    @media screen and (min-width:360px){
+                    display: flex;
+                    
+                    @media screen and (max-width:$mobile){
                         margin-right: 0.5em;
                     }
     
@@ -69,13 +75,13 @@ header{
                         padding: 0.5em 0.5em;
                         margin: 0.5em;
     
-                        @media screen and (min-width:360px){
-                            font-size: 1rem;
+                        @media screen and (max-width:$mobile){
+                            font-size: 0.9rem;
                             padding: 0.3em 0.3em;
-                            margin: 0.4em;
+                            margin: 0.2em;
                         }
     
-                        @media screen and (min-width:1200px){
+                        @media screen and (min-width:$desktop){
                             font-size: 1.8rem; 
                         }
                     } 

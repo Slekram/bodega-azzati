@@ -6,12 +6,12 @@
         font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             font-size: 1.2rem;
             justify-content: center;
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             font-size: 1.7rem;
             margin-bottom: 1em;
             margin-left: 1em;
@@ -24,7 +24,7 @@
         flex-direction: row;
         margin-bottom: 1em;
 
-        @media screen and (min-width:1200px){
+        @media screen and (max-width:$mobile){
             flex-direction: row;
             margin-left: 1.8em;
             margin-right: 1.8em;
@@ -34,11 +34,11 @@
             margin-left: 1em;
             margin-right: 1.1em; 
 
-            @media screen and (min-width:360px){
+            @media screen and (max-width:$mobile){
                 font-size: 0.8rem; 
             }
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 font-size: 1.5rem;
             }
         }
@@ -47,11 +47,11 @@
             margin-left: 0.5em;
             margin-right: 0.5em;
 
-            @media screen and (min-width:360px){
+            @media screen and (max-width:$mobile){
                 font-size: 0.8rem;
             }
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 font-size: 1rem;
             }
         }  

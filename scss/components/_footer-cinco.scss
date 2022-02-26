@@ -5,11 +5,11 @@
     span{
         @extend %encabezados;
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             font-size: 0.78rem;
         }      
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             font-size: 1rem;
             padding: 1em ; 
         }      

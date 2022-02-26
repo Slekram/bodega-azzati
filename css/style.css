@@ -36,13 +36,13 @@ header nav {
   align-items: center;
   flex-wrap: nowrap;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   header nav {
     flex-direction: column;
     justify-content: space-between;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   header nav {
     flex-direction: row;
   }
@@ -57,19 +57,24 @@ header nav #logo {
   text-align: center;
   white-space: nowrap;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   header nav #logo {
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     padding: 0.2em 0.2em;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   header nav #logo {
     font-size: 4rem;
     padding: 0.1em 0.1em;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 480px) {
+  header nav div {
+    width: max-content;
+  }
+}
+@media screen and (min-width: 1024px) {
   header nav div {
     justify-content: flex-end;
   }
@@ -79,12 +84,15 @@ header nav div #ul-nav {
   list-style: none;
   margin-top: 0.5rem;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   header nav div #ul-nav {
     padding-left: 1rem;
   }
 }
-@media screen and (min-width: 360px) {
+header nav div #ul-nav li {
+  display: flex;
+}
+@media screen and (max-width: 480px) {
   header nav div #ul-nav li {
     margin-right: 0.5em;
   }
@@ -100,14 +108,14 @@ header nav div #ul-nav li a {
   padding: 0.5em 0.5em;
   margin: 0.5em;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   header nav div #ul-nav li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     padding: 0.3em 0.3em;
-    margin: 0.4em;
+    margin: 0.2em;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   header nav div #ul-nav li a {
     font-size: 1.8rem;
   }
@@ -115,7 +123,7 @@ header nav div #ul-nav li a {
 
 /* PAGINA INDEX -----------------------------------------*/
 /* SECCION BODEGA */
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega, #nosotros {
     max-width: 95%;
   }
@@ -125,12 +133,12 @@ header nav div #ul-nav li a {
   font-style: italic;
   text-decoration: underline;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega h2, #nosotros h2 {
     font-size: 2rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #bodega h2, #nosotros h2 {
     font-size: 3rem;
     justify-content: start;
@@ -141,12 +149,12 @@ header nav div #ul-nav li a {
   font-style: italic;
   text-decoration: underline;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega h3, #nosotros h3 {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #bodega h3, #nosotros h3 {
     font-size: 2rem;
     justify-content: start;
@@ -155,7 +163,7 @@ header nav div #ul-nav li a {
 #bodega .linea, #nosotros .linea {
   align-items: center;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega .linea, #nosotros .linea {
     justify-content: center;
     flex-direction: column;
@@ -171,78 +179,37 @@ header nav div #ul-nav li a {
   font-family: saintCapital;
   text-align: justify;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
     font-size: 1rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-    font-size: 1.3rem;
   }
 }
 #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
   width: 100%;
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 480px) {
   #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
     max-width: 330px;
   }
 }
-@media screen and (min-width: 450px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 440px;
-  }
-}
-@media screen and (min-width: 600px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 580px;
-  }
-}
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
     max-width: 700px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
     max-width: 470px;
-  }
-  #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
-    /* Transformacion de escala para las imagenes */
-    transform: scale(1.2, 1);
-    -webkit-transform: scale(1.2, 1);
-    -moz-transform: scale(1.2, 1);
-    -o-transform: scale(1.2, 1);
-    transition: all 2s;
-  }
-}
-@media screen and (min-width: 1400px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 550px;
-  }
-  #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
-    /* Transformacion de escala para las imagenes */
-    transform: scale(1.2, 1);
-    -webkit-transform: scale(1.2, 1);
-    -moz-transform: scale(1.2, 1);
-    -o-transform: scale(1.2, 1);
-    transition: all 2s;
-  }
-}
-@media screen and (min-width: 1600px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 600px;
   }
   #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
     /* Transformacion de escala para las imagenes */
@@ -257,17 +224,17 @@ header nav div #ul-nav li a {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
     max-height: 350px;
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   #bodega .segunda-linea, #nosotros .segunda-linea {
     flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   #bodega .segunda-linea, #nosotros .segunda-linea {
     flex-direction: row;
   }
@@ -277,7 +244,7 @@ header nav div #ul-nav li a {
   background-color: #ffa07a;
   padding: 2em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .video-recorrido iframe {
     width: 700px;
   }
@@ -630,13 +597,13 @@ header nav div #ul-nav li a {
   font-weight: bold;
   text-decoration: underline;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-uno h4 {
     font-size: 1.2rem;
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-uno h4 {
     font-size: 1.7rem;
     margin-left: 1em;
@@ -650,7 +617,7 @@ header nav div #ul-nav li a {
   justify-content: space-between;
   margin-bottom: 1em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-uno div {
     margin-left: 1em;
   }
@@ -658,13 +625,13 @@ header nav div #ul-nav li a {
 .footer-uno div div {
   flex-direction: column;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-uno div div {
     margin-right: 2em;
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-uno div div h5 {
     font-size: 0.9rem;
     margin-right: 0.4em;
@@ -675,14 +642,14 @@ header nav div #ul-nav li a {
   font-weight: bold;
   text-decoration: underline;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-dos h4 {
     font-size: 1.2rem;
     margin-bottom: 0.5em;
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-dos h4 {
     font-size: 1.7rem;
     margin-bottom: 0.5em;
@@ -704,24 +671,19 @@ header nav div #ul-nav li a {
 .footer-dos .container-redes a {
   margin-bottom: 1em;
 }
-@media screen and (min-width: 360px) {
-  .footer-dos .container-redes a {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-dos .container-redes a {
     font-size: 1.5rem;
     margin-right: 1em;
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-dos .container-redes a svg {
     width: 40px;
     height: 40px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-dos .container-redes a svg {
     width: 60px;
     height: 60px;
@@ -730,18 +692,23 @@ header nav div #ul-nav li a {
 .footer-dos .container-redes a h5 {
   margin-left: 0.5em;
 }
+@media screen and (max-width: 480px) {
+  .footer-dos .container-redes a h5 {
+    font-size: 1rem;
+  }
+}
 
 .footer-tres h4 {
   font-weight: bold;
   text-decoration: underline;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-tres h4 {
     font-size: 1.2rem;
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-tres h4 {
     font-size: 1.7rem;
     margin-left: 1em;
@@ -752,25 +719,25 @@ header nav div #ul-nav li a {
 .footer-tres div {
   margin-bottom: 1em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 480px) {
   .footer-tres div {
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-tres div svg {
     margin-left: 1em;
     margin-right: 1em;
     font-size: 1.7rem;
   }
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-tres div iframe {
     width: 300px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-tres div iframe {
     width: 500px;
     margin-right: 1em;
@@ -781,13 +748,13 @@ header nav div #ul-nav li a {
   font-weight: bold;
   text-decoration: underline;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-cuatro h4 {
     font-size: 1.2rem;
     justify-content: center;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-cuatro h4 {
     font-size: 1.7rem;
     margin-bottom: 1em;
@@ -799,7 +766,7 @@ header nav div #ul-nav li a {
   flex-direction: row;
   margin-bottom: 1em;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 480px) {
   .footer-cuatro form {
     flex-direction: row;
     margin-left: 1.8em;
@@ -810,12 +777,12 @@ header nav div #ul-nav li a {
   margin-left: 1em;
   margin-right: 1.1em;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-cuatro form label {
     font-size: 0.8rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-cuatro form label {
     font-size: 1.5rem;
   }
@@ -824,23 +791,23 @@ header nav div #ul-nav li a {
   margin-left: 0.5em;
   margin-right: 0.5em;
 }
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-cuatro form input {
     font-size: 0.8rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-cuatro form input {
     font-size: 1rem;
   }
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 480px) {
   .footer-cinco span {
     font-size: 0.78rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .footer-cinco span {
     font-size: 1rem;
     padding: 1em;

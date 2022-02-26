@@ -6,12 +6,12 @@
         font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             font-size: 1.2rem;
             justify-content: center;
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             font-size: 1.7rem;
             margin-left: 1em;
             margin-bottom: 0.5em;
@@ -23,13 +23,13 @@
         @extend %flex;
         margin-bottom: 1em;
 
-        @media screen and (min-width:1200px){
+        @media screen and (max-width:$mobile){
             margin-left: 2.5em;
             margin-right: 2.5em;
         }
 
         svg{
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 margin-left: 1em;
                 margin-right: 1em;
                 font-size: 1.7rem;
@@ -37,11 +37,11 @@
         }
 
         iframe{
-            @media screen and (min-width:360px){
+            @media screen and (max-width:$mobile){
                 width: 300px;
             }
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 width: 500px;
                 margin-right: 1em;
             }

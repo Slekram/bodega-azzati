@@ -4,7 +4,7 @@
 #bodega, #nosotros{
     @extend %secciones;
 
-    @media screen and (min-width:360px){
+    @media screen and (max-width:$mobile){
         max-width: 95%;
     }
 
@@ -15,11 +15,11 @@
         font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             font-size: 2rem;
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             font-size: 3rem;
             justify-content:start;
         }
@@ -33,11 +33,11 @@
         font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             font-size: 1.2rem;
         }
         
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             font-size: 2rem;
             justify-content:start;
         }        
@@ -48,7 +48,7 @@
 
         
 
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             justify-content: center;
             flex-direction: column;
             
@@ -63,44 +63,31 @@
             font-family: saintCapital;
             text-align: justify;
 
-            @media screen and (min-width:360px){
+            @media screen and (max-width:$mobile){
                 font-size: 1rem;
             }
 
-            @media screen and (min-width: 768px){
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
                 font-size: 1.2rem;
             } 
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 font-size: 1rem;
-                
             }
-
-            @media screen and (min-width:1400px) {
-                font-size: 1.3rem;
-            }    
         }
 
         .div-img-bodega{
             width: 100%;
 
-            @media screen and (min-width:360px){
+            @media screen and (min-width:$mobile){
                 max-width: 330px;
             }
 
-            @media screen and (min-width:450px){
-                max-width: 440px;
-            }
-
-            @media screen and (min-width:600px){
-                max-width: 580px;
-            }
-
-            @media screen and (min-width:900px){
+            @media screen and (min-width: $mobile) and (max-width: $tablet){
                 max-width: 700px;
             }
 
-            @media screen and (min-width:1200px){
+            @media screen and (min-width:$desktop){
                 max-width: 470px;
 
                 &:hover{
@@ -110,31 +97,11 @@
                 }
             }
 
-            @media screen and (min-width:1400px) {
-                max-width: 550px;
-
-                &:hover{
-                    /* Transformacion de escala para las imagenes */
-                    @include prefijos(scale(1.2,1));
-                    transition: all 2s;
-                }
-            }
-
-            @media screen and (min-width:1600px) {
-                max-width: 600px;
-
-                &:hover{
-                    /* Transformacion de escala para las imagenes */
-                    @include prefijos(scale(1.2,1));
-                    transition: all 2s;
-                }
-            }
-            
             img{
                 width: 100%;
                 height: auto;
 
-                @media screen and (min-width:360px){
+                @media screen and (max-width:$mobile){
                     max-height: 350px;
                 }
             } 
@@ -144,11 +111,11 @@
 
     .segunda-linea{
         
-        @media screen and (min-width:360px){
+        @media screen and (max-width:$mobile){
             flex-direction: column-reverse;
         }
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             flex-direction: row;
         }
     }
@@ -161,7 +128,7 @@
 
     iframe{
 
-        @media screen and (min-width:1200px){
+        @media screen and (min-width:$desktop){
             width: 700px;
         }
 

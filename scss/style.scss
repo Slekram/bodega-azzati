@@ -3,16 +3,14 @@
 @import "basic/mixins";
 @import "basic/maps";
 @import "basic/variables";
+
 @import "components/header";
+@import "components/footer";
 @import "components/bodega";
 @import "components/vinos";
 @import "components/venta";
 @import "components/contacto";
-@import "components/footer-uno";
-@import "components/footer-dos";
-@import "components/footer-tres";
-@import "components/footer-cuatro";
-@import "components/footer-cinco";
+@import "components/media-queries";
 
 /* Parametros generales */
 *{

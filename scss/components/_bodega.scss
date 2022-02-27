@@ -1,29 +1,17 @@
 /* PAGINA INDEX -----------------------------------------*/
-/* SECCION BODEGA */
+/* SECCION BODEGA y NOSOTROS */
 
 #bodega, #nosotros{
     @extend %secciones;
-
-    @media screen and (max-width:$mobile){
-        max-width: 95%;
-    }
-
+    max-width: 95%;
+    
     h2{
         @extend %flex;
         @extend %encabezados;
         font-weight: map-get($encabezado , h-font-weight);
         font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
-
-        @media screen and (max-width:$mobile){
-            font-size: 2rem;
-        }
-
-        @media screen and (min-width:$desktop){
-            font-size: 3rem;
-            justify-content:start;
-        }
-
+        font-size: 2rem;
     }
 
     h3{
@@ -32,100 +20,35 @@
         font-weight: map-get($encabezado , h-font-weight);
         font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
-
-        @media screen and (max-width:$mobile){
-            font-size: 1.2rem;
-        }
-        
-        @media screen and (min-width:$desktop){
-            font-size: 2rem;
-            justify-content:start;
-        }        
+        font-size: 1.2rem;      
     }
     
     .linea {
         align-items: center;
-
-        @media screen and (max-width:$mobile){
-            justify-content: center;
-            flex-direction: column;
-            
-        }
-
-        @media screen and (min-width:$mobile) and (max-width:$tablet){
-            justify-content: center;
-            flex-direction: column;
-            
-        }
-
-        @media screen and (min-width:$desktop){
-            flex-direction: row;
-            justify-content: space-between;
-        }
+        justify-content: center;
+        flex-direction: column;
 
         .parrafo-bodega{
             font-family: saintCapital;
             text-align: justify;
-
-            @media screen and (max-width:$mobile){
-                font-size: 1rem;
-            }
-
-            @media screen and (min-width: $mobile) and (max-width: $tablet) {
-                font-size: 1.2rem;
-            } 
-
-            @media screen and (min-width:$desktop){
-                font-size: 1rem;
-            }
+            font-size: 1rem;
         }
 
         .div-img-bodega{
             width: 100%;
-
-            @media screen and (min-width:$mobile){
-                max-width: 330px;
-            }
-
-            @media screen and (min-width: $mobile) and (max-width: $tablet){
-                max-width: 700px;
-            }
-
-            @media screen and (min-width:$desktop){
-                max-width: 470px;
-
-                &:hover{
-                    /* Transformacion de escala para las imagenes */
-                    @include prefijos(scale(1.2,1));
-                    transition: all 2s;
-                }
-            }
+            max-width: auto;
 
             img{
                 width: 100%;
                 height: auto;
-
-                @media screen and (max-width:$mobile){
-                    max-height: 350px;
-                }
+                max-height: 350px;
             } 
         }
 
     }
 
     .segunda-linea{
-        
-        @media screen and (max-width:$mobile){
-            flex-direction: column-reverse;
-        }
-
-        @media screen and (min-width:$mobile) and (max-width:$tablet){
-            flex-direction: column-reverse;
-        }
-
-        @media screen and (min-width:$tablet) and (max-width:$desktop){
-            flex-direction: row;
-        }
+        flex-direction: column-reverse;
     }
 }
 
@@ -135,10 +58,6 @@
     padding: 2em;
 
     iframe{
-
-        @media screen and (min-width:$desktop){
-            width: 700px;
-        }
 
     }
 }

@@ -1,0 +1,137 @@
+.footer-uno{
+    @extend %footer;
+    
+    h4 {
+        @extend %encabezados;
+        font-weight: map-get($encabezado , h-font-weight);
+        text-decoration: map-get($encabezado , h-text-decoration);
+        font-size: 1.2rem;
+        justify-content: center;
+        
+    }
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        
+        div{
+            @extend %flex;
+            flex-direction: column;
+
+            h5{
+                @extend %encabezados;
+                font-size: 0.9rem; 
+                margin-right: 0.4em;
+            }
+        }
+    }
+}
+
+.footer-dos{ 
+    @extend %footer;
+    
+    h4{
+        @extend %encabezados;
+        font-weight: map-get($encabezado , h-font-weight);
+        text-decoration: map-get($encabezado , h-text-decoration);
+        font-size: 1.2rem;
+        margin-bottom: 0.5em;
+        justify-content: center;
+        
+    } 
+
+    .container-redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+            @extend %flex;
+            margin-bottom: 1em;
+
+            svg{
+                width: 40px;
+                height: 40px;
+            }
+    
+            h5 {
+                @extend %encabezados;
+                margin-left: 0.5em;
+                font-size: 1rem;
+            }                
+        }
+    }
+}
+
+.footer-tres{
+    @extend %footer;
+    
+    h4{
+        @extend %encabezados;
+        font-weight: map-get($encabezado , h-font-weight);
+        text-decoration: map-get($encabezado , h-text-decoration);
+        font-size: 1.2rem;
+        justify-content: center;
+        
+    } 
+
+    div{
+        @extend %flex;
+        margin-bottom: 1em;
+        margin-left: 2.5em;
+        margin-right: 2.5em;
+        
+        svg{
+        }
+
+        iframe{
+            width: 300px;
+        }    
+    }
+}
+
+.footer-cuatro{
+    @extend %footer;
+    
+    h4{
+        @extend %encabezados;
+        font-weight: map-get($encabezado , h-font-weight);
+        text-decoration: map-get($encabezado , h-text-decoration);
+        font-size: 1.2rem;
+        justify-content: center;
+    } 
+    
+    form {
+        @extend %flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+        flex-direction: row;
+        margin-left: 1.8em;
+        margin-right: 1.8em;
+
+        label{
+            margin-left: 1em;
+            margin-right: 1.1em; 
+            font-size: 0.8rem; 
+        }
+
+        input {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            font-size: 0.8rem;
+        }  
+    }
+}
+
+.footer-cinco{
+    @extend %footer;
+    @extend %flex;
+    
+    span{
+        @extend %encabezados;
+        font-size: 0.78rem;
+    } 
+}

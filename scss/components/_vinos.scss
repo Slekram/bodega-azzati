@@ -5,19 +5,6 @@
     background-color: nth($color, 1);
     color: nth($color, 2);
     
-    @media screen and (min-width:1200px) {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 0.25fr 1fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 10px;
-        align-items: center;
-        justify-items: center;
-        grid-template-areas: 
-        "blanco titulo titulo blanco2"
-        "joven guarda organico premium";
-    }
-    
     h2 {  
         display: flex;
         font-family: saintCapital;
@@ -25,32 +12,9 @@
         font-weight: map-get($encabezado, h-font-weight);
         border: nth($color, 2) solid 5px;
         grid-area: titulo;
-
-        @media screen and (min-width:360px){
-            font-size: 2.9rem;
-            justify-content: center;
-        }
-        @media screen and (min-width:1200px){
-
-            font-size: 3em;
-            padding: 0.2em;
-        }
-    }
-
-    .joven{
-        grid-area: joven; 
-    }
-
-    .guarda{
-        grid-area: guarda;
-    }
-
-    .organico{
-        grid-area: organico;
-    }
-
-    .premium{
-        grid-area: premium;
+        font-size: 2.9rem;
+        justify-content: center;
+    
     }
 
     .vino-container{
@@ -58,50 +22,21 @@
         flex-direction: column;
         border: nth($color, 2) solid 5px;
         
-
-        @media screen and (min-width:1200px){
-            &:hover{
-                @include prefijos (scale(1.5));
-                transition: 2s;
-                z-index: 1;
-                background-color: nth($color, 1);
-            } 
-        }
-
         h3{
             text-align: center;
             font-family: saintCapitan;
             border:  nth($color, 2) solid 5px;
-
-            @media screen and (min-width:360px){
-                font-size: 2rem;
-            }
-
-            @media screen and (min-width:1200px){
-                font-size: 1.5rem;
-                padding: 0.2em;
-            }
+            font-size: 2rem;
         }
 
         img {
-            @media screen and (min-width:1200px){
-                max-width: 250px;
-            }
         }
 
         p{
             font-family: saintCapitan;
             text-align: justify;
-            
-            @media screen and (min-width:360px){
-                font-size: 1.5rem;
-                margin: 1em; 
-            }
-
-            @media screen and (min-width:1200px){
-                font-size: 1.5rem;
-                margin: 1em;
-            }
+            font-size: 1.5rem;
+            margin: 1em; 
         }
     }
 }
@@ -109,4 +44,3 @@
 .malbec{
     margin-top: 2em;
 }
-

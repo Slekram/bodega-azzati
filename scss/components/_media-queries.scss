@@ -1,0 +1,390 @@
+@media screen and (min-width:$desktop){
+    
+    /* Header */
+
+    header{
+        nav{
+            h1{
+                #logo{
+                    font-size: 4rem;
+                    padding: 0.1em 0.1em;
+                }    
+            }
+
+            #ul-nav{
+                li{
+                    a{
+                        font-size: 1.8rem; 
+                    } 
+                }           
+            } 
+        }   
+    } 
+
+    /* Footer */
+
+    .footer-uno{  
+        h4 {
+            font-size: 1.7rem;
+            margin-left: 1em;
+            margin-bottom: 0.5em;
+            justify-content: flex-start;
+        }
+    
+        div{
+            margin-left: 1em;
+        
+            div{
+                margin-right: 2em;
+                font-size: 1.5rem; 
+
+                h5{
+                    
+                }
+            }
+        }
+    }
+
+    .footer-dos{ 
+        
+        h4{
+            font-size: 1.7rem;
+            margin-bottom: 0.5em;
+            margin-left: 1em;
+            justify-content: flex-start;
+        } 
+    
+        .container-redes{
+            margin-left: 1em;
+            
+            a{
+                font-size: 1.5rem;
+                margin-right: 1em;
+        
+                svg{
+                    width: 60px;
+                    height: 60px;
+                }
+        
+                h5 {      
+                }                
+            }
+        }
+    }
+
+    .footer-tres{
+
+        h4{
+            font-size: 1.7rem;
+            margin-left: 1em;
+            margin-bottom: 0.5em;
+            justify-content: flex-start;
+        } 
+    
+        div{
+            svg{
+                margin-left: 1em;
+                margin-right: 1em;
+                font-size: 1.7rem;
+            }
+    
+            iframe{
+                width: 500px;
+                margin-right: 1em;
+            }    
+        }
+    }
+
+    .footer-cuatro{
+        h4{
+            font-size: 1.7rem;
+            margin-bottom: 1em;
+            margin-left: 1em;
+            justify-content: flex-start;
+        } 
+        
+        form {
+            label{
+                font-size: 1.5rem;
+            }
+    
+            input {
+                font-size: 1rem;
+            }  
+        }
+    }
+
+    .footer-cinco{
+        span{
+            font-size: 1rem;
+            padding: 1em ;      
+        } 
+    }  
+
+    /* INDEX */
+
+    #bodega, #nosotros{
+
+        h2{
+            font-size: 3rem;
+            justify-content:start;
+        }
+    
+        h3{
+            font-size: 2rem;
+            justify-content:start;
+        }
+        
+        .linea {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .parrafo-bodega{
+                font-size: 1rem;
+            }
+    
+            .div-img-bodega{
+                max-width: 470px;
+
+                &:hover{
+                    /* Transformacion de escala para las imagenes */
+                    @include prefijos(scale(1.2,1));
+                    transition: all 2s;
+                }
+                
+                img{
+
+                } 
+            }
+    
+        }
+    
+        .segunda-linea{
+        flex-direction: column-reverse;
+            flex-direction: row;
+        }
+    }
+    
+    .video-recorrido{
+        iframe{
+            width: 700px;
+        }
+    }
+
+    /* PAGINA VINOS */
+
+    .seccion-vinos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 0.25fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "blanco titulo titulo blanco2"
+        "joven guarda organico premium";
+        
+        h2 {  
+            font-size: 3em;
+            padding: 0.2em;
+        }
+
+        .joven{
+            grid-area: joven; 
+        }
+
+        .guarda{
+            grid-area: guarda;
+        }
+
+        .organico{
+            grid-area: organico;
+        }
+
+        .premium{
+            grid-area: premium;
+        }
+
+        .vino-container{
+            &:hover{
+                @include prefijos (scale(1.5));
+                transition: 2s;
+                z-index: 1;
+                background-color: nth($color, 1);
+            } 
+
+            h3{
+                font-size: 1.5rem;
+                padding: 0.2em;
+            }
+
+            img {
+                max-width: 250px
+            }
+
+            p{
+                font-size: 1.5rem;
+                margin: 1em;
+            }
+        }
+    }
+
+    /* PUNTOS DE VENTA ------------------------------------------------*/
+
+    .puntos{
+
+        h2 {
+            font-size: 3rem;
+            margin: 0.5em;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 5em 40em;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px; 
+            grid-template-areas: 
+            "blanco1 titulo titulo blanco2"
+            "turismo turismo san-rafael san-rafael";
+            
+
+            h3{
+                grid-area: titulo;
+            }
+
+            .turismo{
+                grid-area: turismo;
+            }
+
+            .san-rafael{
+                grid-area: san-rafael;
+            } 
+
+        }
+
+        .grid-container-2{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 5em 40em;
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
+            grid-template-areas: 
+            "blanco1 titulo blanco2"
+            "caba cba rosario";
+        
+            h3{
+                grid-area: titulo;
+            }
+
+            .caba{
+                grid-area: caba;
+            }
+
+            .cba{
+                grid-area: cba;
+            }
+
+            .rosario{
+                grid-area: rosario;
+            }
+        }   
+
+        .grid-container, .grid-container-2{
+            
+            h3{
+                margin: 0.5em;
+                font-size: 2.5rem;
+            }
+
+            .mapa-local{
+                h3{
+                    color:  nth($color, 1 );
+                    margin: 0.5em;
+                    font-size: 2rem;
+                }
+
+                .mapa-interno {
+                    align-items: center;
+        
+                    &:hover{
+                        @include prefijos (scale(1.5));
+                        transition: 2s;
+                        z-index: 1;
+                        background-color: nth($color, 1 );
+                    }
+
+                    svg{    
+                    }
+                    
+                    iframe{
+                    }
+
+                    .mapa{
+                        max-width: 500px;
+                    }
+                }
+            }
+        }   
+    }
+
+    /* CONTACTO ---------------------------------------------------*/
+        
+    /* Formulario de contato */
+
+    .formulario-contacto{
+
+        h2{
+            
+        }
+
+        p{
+            
+        }
+
+        form{
+            flex-direction: row;
+
+            label{
+                font-size: 1.4rem;
+                margin-right: 0.5em;
+            }
+
+            input{
+                font-size: 1.4rem;
+                margin-right: 0.5em;
+            }
+        }
+    }
+
+    /* Atencion al consumidor */
+    .atencion-consumidor{
+        
+        h3{
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .boton-wsup {      
+            &:hover{
+                animation-name: boton-wsup;
+                animation-duration: 10s;
+    
+                @keyframes boton-wsup{
+                    50%{
+                    
+                        background-color: #41e175;
+                        fill: #FAEBD7;
+                        @include prefijos(scale(2));
+                    }
+            
+                    70%{
+                        border-radius: 20%;
+                    }
+                }
+            }
+        }
+    } 
+}
+

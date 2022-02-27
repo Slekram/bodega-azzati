@@ -14,48 +14,28 @@
         text-align: center;
         text-decoration: map-get($encabezado, h-text-decoration);
         font-weight: map-get($encabezado, h-font-weight);
-        @media screen and (min-width:360px){
-            font-size: 2.5rem;
-        }
+        font-size: 2.5rem;
     }
 
     p{
         font-family: saintCapital;
         text-align: justify;
-
-        @media screen and (min-width:360px){
-            font-size: 1.5rem;
-            margin: 1em;
-        }
+        font-size: 1.5rem;
+        margin: 1em;
     }
 
     form{
         color: nth($color, 2); 
         background-color: nth($color, 1); 
         display: flex;
-
-        @media screen and (min-width:360px){
-            flex-direction: column;
-        }
-
-        @media screen and (min-width:1200px){
-            flex-direction: row;
-        }
+        flex-direction: column;
 
         label{
-            @media screen and (min-width:1200px){
-                font-size: 1.4rem;
-                margin-right: 0.5em;
-            }
+            
         }
 
         input{
-
-            @media screen and (min-width:1200px){
-                font-size: 1.4rem;
-                margin-right: 0.5em;
-                
-            }
+            
         }
     }
 }
@@ -70,10 +50,7 @@
         @extend %encabezados;
         text-decoration: map-get($encabezado, h-text-decoration);
         font-weight: map-get($encabezado, h-font-weight);
-        @media screen and (min-width:1200px){
-            font-size: 2rem;
-            text-align: center;
-        }
+        
     }
 
     .boton-wsup {
@@ -84,25 +61,5 @@
         border-radius: 30px;
         padding: 20px;
 
-        @media screen and (min-width:1200px){
-            
-            &:hover{
-                animation-name: boton-wsup;
-                animation-duration: 10s;
-    
-                @keyframes boton-wsup{
-                    50%{
-                    
-                        background-color: #41e175;
-                        fill: #FAEBD7;
-                        @include prefijos(scale(2));
-                    }
-            
-                    70%{
-                        border-radius: 20%;
-                    }
-                }
-            }
-        }
     }
 } 

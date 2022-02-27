@@ -6,7 +6,7 @@
   border: #2e3436 solid 5px;
 }
 
-.footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4, .atencion-consumidor h3, .formulario-contacto h2, .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
+.atencion-consumidor h3, .formulario-contacto h2, .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2, .footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4 {
   display: flex;
   font-family: saintCapital;
   color: #2e3436;
@@ -21,7 +21,7 @@
   border: #2e3436 solid 2px;
 }
 
-.footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div, .atencion-consumidor, .formulario-contacto, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, .seccion-vinos .vino-container, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2 {
+.atencion-consumidor, .formulario-contacto, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, .seccion-vinos .vino-container, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2, .footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,18 +46,8 @@ header nav h1 #logo {
   color: #FAEBD7;
   text-align: center;
   white-space: nowrap;
-}
-@media screen and (max-width: 480px) {
-  header nav h1 #logo {
-    font-size: 2.4rem;
-    padding: 0.2em 0.2em;
-  }
-}
-@media screen and (min-width: 1024px) {
-  header nav h1 #logo {
-    font-size: 4rem;
-    padding: 0.1em 0.1em;
-  }
+  font-size: 2.4rem;
+  padding: 0.2em 0.2em;
 }
 header nav #ul-nav {
   display: flex;
@@ -74,175 +64,146 @@ header nav #ul-nav li a {
   font-family: saintCapital;
   background-color: #2e3436;
   font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.3em;
 }
-@media screen and (max-width: 480px) {
-  header nav #ul-nav li a {
-    font-size: 1.2rem;
-    padding: 0.3em;
-  }
+
+.footer-uno h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  justify-content: center;
 }
-@media screen and (min-width: 1024px) {
-  header nav #ul-nav li a {
-    font-size: 1.8rem;
-  }
+.footer-uno div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.footer-uno div div {
+  flex-direction: column;
+}
+.footer-uno div div h5 {
+  font-size: 0.9rem;
+  margin-right: 0.4em;
+}
+
+.footer-dos h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  justify-content: center;
+}
+.footer-dos .container-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-dos .container-redes a {
+  margin-bottom: 1em;
+}
+.footer-dos .container-redes a svg {
+  width: 40px;
+  height: 40px;
+}
+.footer-dos .container-redes a h5 {
+  margin-left: 0.5em;
+  font-size: 1rem;
+}
+
+.footer-tres h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.footer-tres div {
+  margin-bottom: 1em;
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+.footer-tres div iframe {
+  width: 300px;
+}
+
+.footer-cuatro h4 {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+.footer-cuatro form {
+  flex-direction: row;
+  margin-bottom: 1em;
+  flex-direction: row;
+  margin-left: 1.8em;
+  margin-right: 1.8em;
+}
+.footer-cuatro form label {
+  margin-left: 1em;
+  margin-right: 1.1em;
+  font-size: 0.8rem;
+}
+.footer-cuatro form input {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.8rem;
+}
+
+.footer-cinco span {
+  font-size: 0.78rem;
 }
 
 /* PAGINA INDEX -----------------------------------------*/
-/* SECCION BODEGA */
-@media screen and (max-width: 480px) {
-  #bodega, #nosotros {
-    max-width: 95%;
-  }
+/* SECCION BODEGA y NOSOTROS */
+#bodega, #nosotros {
+  max-width: 95%;
 }
 #bodega h2, #nosotros h2 {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
-}
-@media screen and (max-width: 480px) {
-  #bodega h2, #nosotros h2 {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #bodega h2, #nosotros h2 {
-    font-size: 3rem;
-    justify-content: start;
-  }
+  font-size: 2rem;
 }
 #bodega h3, #nosotros h3 {
   font-weight: bold;
   font-style: italic;
   text-decoration: underline;
-}
-@media screen and (max-width: 480px) {
-  #bodega h3, #nosotros h3 {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #bodega h3, #nosotros h3 {
-    font-size: 2rem;
-    justify-content: start;
-  }
+  font-size: 1.2rem;
 }
 #bodega .linea, #nosotros .linea {
   align-items: center;
-}
-@media screen and (max-width: 480px) {
-  #bodega .linea, #nosotros .linea {
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  #bodega .linea, #nosotros .linea {
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #bodega .linea, #nosotros .linea {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  justify-content: center;
+  flex-direction: column;
 }
 #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
   font-family: saintCapital;
   text-align: justify;
-}
-@media screen and (max-width: 480px) {
-  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 }
 #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
   width: 100%;
-}
-@media screen and (min-width: 480px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 330px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 700px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 470px;
-  }
-  #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
-    /* Transformacion de escala para las imagenes */
-    transform: scale(1.2, 1);
-    -webkit-transform: scale(1.2, 1);
-    -moz-transform: scale(1.2, 1);
-    -o-transform: scale(1.2, 1);
-    transition: all 2s;
-  }
+  max-width: auto;
 }
 #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
   width: 100%;
   height: auto;
+  max-height: 350px;
 }
-@media screen and (max-width: 480px) {
-  #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
-    max-height: 350px;
-  }
-}
-@media screen and (max-width: 480px) {
-  #bodega .segunda-linea, #nosotros .segunda-linea {
-    flex-direction: column-reverse;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 768px) {
-  #bodega .segunda-linea, #nosotros .segunda-linea {
-    flex-direction: column-reverse;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  #bodega .segunda-linea, #nosotros .segunda-linea {
-    flex-direction: row;
-  }
+#bodega .segunda-linea, #nosotros .segunda-linea {
+  flex-direction: column-reverse;
 }
 
 .video-recorrido {
   background-color: #ffa07a;
   padding: 2em;
 }
-@media screen and (min-width: 1024px) {
-  .video-recorrido iframe {
-    width: 700px;
-  }
-}
-
 /* PAGINA VINOS -------------------------------------------------*/
 .seccion-vinos {
   background-color: #2e3436;
   color: #FAEBD7;
-}
-@media screen and (min-width: 1200px) {
-  .seccion-vinos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.25fr 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: "blanco titulo titulo blanco2" "joven guarda organico premium";
-  }
 }
 .seccion-vinos h2 {
   display: flex;
@@ -251,82 +212,24 @@ header nav #ul-nav li a {
   font-weight: bold;
   border: #FAEBD7 solid 5px;
   grid-area: titulo;
-}
-@media screen and (min-width: 360px) {
-  .seccion-vinos h2 {
-    font-size: 2.9rem;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .seccion-vinos h2 {
-    font-size: 3em;
-    padding: 0.2em;
-  }
-}
-.seccion-vinos .joven {
-  grid-area: joven;
-}
-.seccion-vinos .guarda {
-  grid-area: guarda;
-}
-.seccion-vinos .organico {
-  grid-area: organico;
-}
-.seccion-vinos .premium {
-  grid-area: premium;
+  font-size: 2.9rem;
+  justify-content: center;
 }
 .seccion-vinos .vino-container {
   flex-direction: column;
   border: #FAEBD7 solid 5px;
 }
-@media screen and (min-width: 1200px) {
-  .seccion-vinos .vino-container:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -o-transform: scale(1.5);
-    transition: 2s;
-    z-index: 1;
-    background-color: #2e3436;
-  }
-}
 .seccion-vinos .vino-container h3 {
   text-align: center;
   font-family: saintCapitan;
   border: #FAEBD7 solid 5px;
-}
-@media screen and (min-width: 360px) {
-  .seccion-vinos .vino-container h3 {
-    font-size: 2rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .seccion-vinos .vino-container h3 {
-    font-size: 1.5rem;
-    padding: 0.2em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .seccion-vinos .vino-container img {
-    max-width: 250px;
-  }
+  font-size: 2rem;
 }
 .seccion-vinos .vino-container p {
   font-family: saintCapitan;
   text-align: justify;
-}
-@media screen and (min-width: 360px) {
-  .seccion-vinos .vino-container p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .seccion-vinos .vino-container p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
+  font-size: 1.5rem;
+  margin: 1em;
 }
 
 .malbec {
@@ -344,12 +247,8 @@ header nav #ul-nav li a {
 .puntos h2 {
   font-weight: bold;
   text-decoration: underline;
-}
-@media screen and (min-width: 360px) {
-  .puntos h2 {
-    font-size: 1.4rem;
-    margin: 1em;
-  }
+  font-size: 1.4rem;
+  margin: 1em;
 }
 @media screen and (min-width: 1200px) {
   .puntos h2 {
@@ -401,13 +300,8 @@ header nav #ul-nav li a {
 .puntos .grid-container h3, .puntos .grid-container-2 h3 {
   text-decoration: underline;
   border: #2e3436 5px solid;
-  margin-left: 50%;
-}
-@media screen and (min-width: 360px) {
-  .puntos .grid-container h3, .puntos .grid-container-2 h3 {
-    margin: 1em;
-    font-size: 1rem;
-  }
+  margin: 1em;
+  font-size: 1rem;
 }
 @media screen and (min-width: 1200px) {
   .puntos .grid-container h3, .puntos .grid-container-2 h3 {
@@ -424,12 +318,8 @@ header nav #ul-nav li a {
 }
 .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
   text-decoration: underline;
-}
-@media screen and (min-width: 360px) {
-  .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
-    margin: 1em;
-    font-size: 1rem;
-  }
+  margin: 1em;
+  font-size: 1rem;
 }
 @media screen and (min-width: 1200px) {
   .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
@@ -463,11 +353,7 @@ header nav #ul-nav li a {
 }
 .puntos .grid-container .mapa-local .mapa-interno iframe, .puntos .grid-container-2 .mapa-local .mapa-interno iframe {
   margin: 1em;
-}
-@media screen and (min-width: 360px) {
-  .puntos .grid-container .mapa-local .mapa-interno iframe, .puntos .grid-container-2 .mapa-local .mapa-interno iframe {
-    max-width: 250px;
-  }
+  max-width: 250px;
 }
 @media screen and (min-width: 1200px) {
   .puntos .grid-container .mapa-local .mapa-interno .mapa, .puntos .grid-container-2 .mapa-local .mapa-interno .mapa {
@@ -485,50 +371,20 @@ header nav #ul-nav li a {
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
-}
-@media screen and (min-width: 360px) {
-  .formulario-contacto h2 {
-    font-size: 2.5rem;
-  }
+  font-size: 2.5rem;
 }
 .formulario-contacto p {
   font-family: saintCapital;
   text-align: justify;
-}
-@media screen and (min-width: 360px) {
-  .formulario-contacto p {
-    font-size: 1.5rem;
-    margin: 1em;
-  }
+  font-size: 1.5rem;
+  margin: 1em;
 }
 .formulario-contacto form {
   color: #FAEBD7;
   background-color: #2e3436;
   display: flex;
+  flex-direction: column;
 }
-@media screen and (min-width: 360px) {
-  .formulario-contacto form {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .formulario-contacto form {
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .formulario-contacto form label {
-    font-size: 1.4rem;
-    margin-right: 0.5em;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .formulario-contacto form input {
-    font-size: 1.4rem;
-    margin-right: 0.5em;
-  }
-}
-
 /* Atencion al consumidor */
 .atencion-consumidor {
   flex-direction: column;
@@ -537,12 +393,6 @@ header nav #ul-nav li a {
   text-decoration: underline;
   font-weight: bold;
 }
-@media screen and (min-width: 1200px) {
-  .atencion-consumidor h3 {
-    font-size: 2rem;
-    text-align: center;
-  }
-}
 .atencion-consumidor .boton-wsup {
   fill: #41e175;
   border: #2e3436 solid 2px;
@@ -550,7 +400,252 @@ header nav #ul-nav li a {
   border-radius: 30px;
   padding: 20px;
 }
-@media screen and (min-width: 1200px) {
+
+@media screen and (min-width: 1024px) {
+  /* Header */
+  header nav h1 #logo {
+    font-size: 4rem;
+    padding: 0.1em 0.1em;
+  }
+  header nav #ul-nav li a {
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  .footer-uno h4 {
+    font-size: 1.7rem;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: flex-start;
+  }
+  .footer-uno div {
+    margin-left: 1em;
+  }
+  .footer-uno div div {
+    margin-right: 2em;
+    font-size: 1.5rem;
+  }
+  .footer-dos h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    justify-content: flex-start;
+  }
+  .footer-dos .container-redes {
+    margin-left: 1em;
+  }
+  .footer-dos .container-redes a {
+    font-size: 1.5rem;
+    margin-right: 1em;
+  }
+  .footer-dos .container-redes a svg {
+    width: 60px;
+    height: 60px;
+  }
+  .footer-tres h4 {
+    font-size: 1.7rem;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: flex-start;
+  }
+  .footer-tres div svg {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1.7rem;
+  }
+  .footer-tres div iframe {
+    width: 500px;
+    margin-right: 1em;
+  }
+
+  .footer-cuatro h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    justify-content: flex-start;
+  }
+  .footer-cuatro form label {
+    font-size: 1.5rem;
+  }
+  .footer-cuatro form input {
+    font-size: 1rem;
+  }
+
+  .footer-cinco span {
+    font-size: 1rem;
+    padding: 1em;
+  }
+
+  /* INDEX */
+  #bodega h2, #nosotros h2 {
+    font-size: 3rem;
+    justify-content: start;
+  }
+  #bodega h3, #nosotros h3 {
+    font-size: 2rem;
+    justify-content: start;
+  }
+  #bodega .linea, #nosotros .linea {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
+    font-size: 1rem;
+  }
+  #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
+    max-width: 470px;
+  }
+  #bodega .linea .div-img-bodega:hover, #nosotros .linea .div-img-bodega:hover {
+    /* Transformacion de escala para las imagenes */
+    transform: scale(1.2, 1);
+    -webkit-transform: scale(1.2, 1);
+    -moz-transform: scale(1.2, 1);
+    -o-transform: scale(1.2, 1);
+    transition: all 2s;
+  }
+  #bodega .segunda-linea, #nosotros .segunda-linea {
+    flex-direction: column-reverse;
+    flex-direction: row;
+  }
+
+  .video-recorrido iframe {
+    width: 700px;
+  }
+
+  /* PAGINA VINOS */
+  .seccion-vinos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.25fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "blanco titulo titulo blanco2" "joven guarda organico premium";
+  }
+  .seccion-vinos h2 {
+    font-size: 3em;
+    padding: 0.2em;
+  }
+  .seccion-vinos .joven {
+    grid-area: joven;
+  }
+  .seccion-vinos .guarda {
+    grid-area: guarda;
+  }
+  .seccion-vinos .organico {
+    grid-area: organico;
+  }
+  .seccion-vinos .premium {
+    grid-area: premium;
+  }
+  .seccion-vinos .vino-container:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition: 2s;
+    z-index: 1;
+    background-color: #2e3436;
+  }
+  .seccion-vinos .vino-container h3 {
+    font-size: 1.5rem;
+    padding: 0.2em;
+  }
+  .seccion-vinos .vino-container img {
+    max-width: 250px;
+  }
+  .seccion-vinos .vino-container p {
+    font-size: 1.5rem;
+    margin: 1em;
+  }
+
+  /* PUNTOS DE VENTA ------------------------------------------------*/
+  .puntos h2 {
+    font-size: 3rem;
+    margin: 0.5em;
+  }
+  .puntos .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 5em 40em;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-areas: "blanco1 titulo titulo blanco2" "turismo turismo san-rafael san-rafael";
+  }
+  .puntos .grid-container h3 {
+    grid-area: titulo;
+  }
+  .puntos .grid-container .turismo {
+    grid-area: turismo;
+  }
+  .puntos .grid-container .san-rafael {
+    grid-area: san-rafael;
+  }
+  .puntos .grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5em 40em;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    grid-template-areas: "blanco1 titulo blanco2" "caba cba rosario";
+  }
+  .puntos .grid-container-2 h3 {
+    grid-area: titulo;
+  }
+  .puntos .grid-container-2 .caba {
+    grid-area: caba;
+  }
+  .puntos .grid-container-2 .cba {
+    grid-area: cba;
+  }
+  .puntos .grid-container-2 .rosario {
+    grid-area: rosario;
+  }
+  .puntos .grid-container h3, .puntos .grid-container-2 h3 {
+    margin: 0.5em;
+    font-size: 2.5rem;
+  }
+  .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
+    color: #2e3436;
+    margin: 0.5em;
+    font-size: 2rem;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno, .puntos .grid-container-2 .mapa-local .mapa-interno {
+    align-items: center;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno:hover, .puntos .grid-container-2 .mapa-local .mapa-interno:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transition: 2s;
+    z-index: 1;
+    background-color: #2e3436;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno .mapa, .puntos .grid-container-2 .mapa-local .mapa-interno .mapa {
+    max-width: 500px;
+  }
+
+  /* CONTACTO ---------------------------------------------------*/
+  /* Formulario de contato */
+  .formulario-contacto form {
+    flex-direction: row;
+  }
+  .formulario-contacto form label {
+    font-size: 1.4rem;
+    margin-right: 0.5em;
+  }
+  .formulario-contacto form input {
+    font-size: 1.4rem;
+    margin-right: 0.5em;
+  }
+
+  /* Atencion al consumidor */
+  .atencion-consumidor h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
   .atencion-consumidor .boton-wsup:hover {
     animation-name: boton-wsup;
     animation-duration: 10s;
@@ -569,228 +664,6 @@ header nav #ul-nav li a {
     }
   }
 }
-
-.footer-uno h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-@media screen and (max-width: 480px) {
-  .footer-uno h4 {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-uno h4 {
-    font-size: 1.7rem;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    justify-content: flex-start;
-  }
-}
-.footer-uno div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1em;
-}
-@media screen and (min-width: 1024px) {
-  .footer-uno div {
-    margin-left: 1em;
-  }
-}
-.footer-uno div div {
-  flex-direction: column;
-}
-@media screen and (min-width: 1024px) {
-  .footer-uno div div {
-    margin-right: 2em;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer-uno div div h5 {
-    font-size: 0.9rem;
-    margin-right: 0.4em;
-  }
-}
-
-.footer-dos h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-@media screen and (max-width: 480px) {
-  .footer-dos h4 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5em;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-dos h4 {
-    font-size: 1.7rem;
-    margin-bottom: 0.5em;
-    margin-left: 1em;
-    justify-content: flex-start;
-  }
-}
-.footer-dos .container-redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-@media screen and (min-width: 1200px) {
-  .footer-dos .container-redes {
-    margin-left: 1em;
-  }
-}
-.footer-dos .container-redes a {
-  margin-bottom: 1em;
-}
-@media screen and (min-width: 1024px) {
-  .footer-dos .container-redes a {
-    font-size: 1.5rem;
-    margin-right: 1em;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer-dos .container-redes a svg {
-    width: 40px;
-    height: 40px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-dos .container-redes a svg {
-    width: 60px;
-    height: 60px;
-  }
-}
-.footer-dos .container-redes a h5 {
-  margin-left: 0.5em;
-}
-@media screen and (max-width: 480px) {
-  .footer-dos .container-redes a h5 {
-    font-size: 1rem;
-  }
-}
-
-.footer-tres h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-@media screen and (max-width: 480px) {
-  .footer-tres h4 {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-tres h4 {
-    font-size: 1.7rem;
-    margin-left: 1em;
-    margin-bottom: 0.5em;
-    justify-content: flex-start;
-  }
-}
-.footer-tres div {
-  margin-bottom: 1em;
-}
-@media screen and (max-width: 480px) {
-  .footer-tres div {
-    margin-left: 2.5em;
-    margin-right: 2.5em;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-tres div svg {
-    margin-left: 1em;
-    margin-right: 1em;
-    font-size: 1.7rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .footer-tres div iframe {
-    width: 300px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-tres div iframe {
-    width: 500px;
-    margin-right: 1em;
-  }
-}
-
-.footer-cuatro h4 {
-  font-weight: bold;
-  text-decoration: underline;
-}
-@media screen and (max-width: 480px) {
-  .footer-cuatro h4 {
-    font-size: 1.2rem;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-cuatro h4 {
-    font-size: 1.7rem;
-    margin-bottom: 1em;
-    margin-left: 1em;
-    justify-content: flex-start;
-  }
-}
-.footer-cuatro form {
-  flex-direction: row;
-  margin-bottom: 1em;
-}
-@media screen and (max-width: 480px) {
-  .footer-cuatro form {
-    flex-direction: row;
-    margin-left: 1.8em;
-    margin-right: 1.8em;
-  }
-}
-.footer-cuatro form label {
-  margin-left: 1em;
-  margin-right: 1.1em;
-}
-@media screen and (max-width: 480px) {
-  .footer-cuatro form label {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-cuatro form label {
-    font-size: 1.5rem;
-  }
-}
-.footer-cuatro form input {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-@media screen and (max-width: 480px) {
-  .footer-cuatro form input {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-cuatro form input {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .footer-cinco span {
-    font-size: 0.78rem;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .footer-cinco span {
-    font-size: 1rem;
-    padding: 1em;
-  }
-}
-
 /* Parametros generales */
 * {
   margin: 0px;

@@ -1,4 +1,6 @@
+/*Extends*/
 
+/*Para las secciones que llevan estos atributos*/
 %secciones{
     padding-top: 1em;
     padding-bottom: 1em;
@@ -7,12 +9,14 @@
     border: nth($color, 1) solid 5px;
 }   
 
+/*Para los encabezados*/
 %encabezados{
     display: flex;
     font-family:butler-encabezados;
     color: nth($color, 1);
 }
 
+/*Para el footer*/
 %footer{
     display: flex;
     flex-direction: column;
@@ -22,6 +26,7 @@
     border: nth($color, 1) solid 2px;
 }
 
+/*Parametros repetidos de flex-box*/
 %flex{
     display: flex;
     justify-content: center;

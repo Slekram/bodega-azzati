@@ -1,3 +1,6 @@
+/*Mixin*/
+/*Para los tranform*/
+
 @mixin prefijos($valor) {
     transform: ($valor);
     -webkit-transform: ($valor);

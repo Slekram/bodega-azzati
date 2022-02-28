@@ -13,8 +13,6 @@ header{
                 display: flex;
                 text-decoration: none;
                 font-family: butler-logo;
-                // font-style: map-get($encabezado , h-font-style);
-                // font-weight: map-get($encabezado , h-font-weight);
                 background-color:nth($color, 1);
                 color:nth($color, 2);
                 text-align: center;

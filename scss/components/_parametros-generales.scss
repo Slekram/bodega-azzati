@@ -1,0 +1,15 @@
+/* Parametros generales */
+*{
+    margin: 0px ;
+    padding: 0px;
+}
+
+/* font size del html */
+html{
+    font-size: 1em;
+}
+
+/* Fondo */
+#body {
+    background-color: nth($color, 2); 
+}

@@ -1,3 +1,7 @@
+/*Listas*/
+/*Colores*/
+/*Extends*/
+/*Para las secciones que llevan estos atributos*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 .atencion-consumidor, .formulario-contacto, .seccion-vinos, #bodega, #nosotros {
   padding-top: 1em;
@@ -7,12 +11,14 @@
   border: #2e3436 solid 5px;
 }
 
+/*Para los encabezados*/
 .atencion-consumidor h3, .formulario-contacto h2, .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2, .footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4 {
   display: flex;
   font-family: butler-encabezados;
   color: #2e3436;
 }
 
+/*Para el footer*/
 .footer-cinco, .footer-cuatro, .footer-tres, .footer-dos, .footer-uno {
   display: flex;
   flex-direction: column;
@@ -22,13 +28,33 @@
   border: #2e3436 solid 2px;
 }
 
+/*Parametros repetidos de flex-box*/
 .atencion-consumidor, .formulario-contacto, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, .seccion-vinos .vino-container, .video-recorrido, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2, .footer-cinco, .footer-cuatro form, .footer-tres div, .footer-dos .container-redes a, .footer-uno div div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/*Mixin*/
+/*Para los tranform*/
+/* Caracteristicas que pueden usar algunos encabezados */
 /*Breakpoints Media Queries*/
+/* Parametros generales */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* font size del html */
+html {
+  font-size: 1em;
+}
+
+/* Fondo */
+#body {
+  background-color: #FAEBD7;
+}
+
 /*FUENTES LOCALES*/
 /*FUENTE BUTLER*/
 @font-face {
@@ -81,6 +107,8 @@ header nav #ul-nav li a {
   padding: 0.3em;
 }
 
+/*Footer dividido en 5 secciones*/
+/*Premios*/
 .footer-uno h4 {
   text-decoration: underline;
   font-size: 1.2rem;
@@ -100,6 +128,7 @@ header nav #ul-nav li a {
   margin-right: 0.4em;
 }
 
+/*Redes sociales*/
 .footer-dos h4 {
   text-decoration: underline;
   font-size: 1.2rem;
@@ -126,6 +155,7 @@ header nav #ul-nav li a {
   font-size: 1rem;
 }
 
+/*Mapa*/
 .footer-tres h4 {
   text-decoration: underline;
   font-size: 1.2rem;
@@ -143,6 +173,7 @@ header nav #ul-nav li a {
   width: 300px;
 }
 
+/*Newsletter*/
 .footer-cuatro h4 {
   text-decoration: underline;
   font-size: 1.2rem;
@@ -167,6 +198,7 @@ header nav #ul-nav li a {
   font-size: 0.8rem;
 }
 
+/*Copyright*/
 .footer-cinco span {
   font-size: 0.78rem;
 }
@@ -203,10 +235,12 @@ header nav #ul-nav li a {
   flex-direction: column-reverse;
 }
 
+/*Video recorrido del index*/
 .video-recorrido {
   background-color: #ffa07a;
   padding: 2em;
 }
+
 /* PAGINA VINOS -------------------------------------------------*/
 .seccion-vinos {
   background-color: #2e3436;
@@ -286,7 +320,8 @@ header nav #ul-nav li a {
   margin: 1em;
   max-width: 250px;
 }
-/* CONTACTO ---------------------------------------------------*/
+
+/* CONTACTO */
 /* Formulario de contato */
 .formulario-contacto {
   flex-direction: column;
@@ -311,6 +346,7 @@ header nav #ul-nav li a {
   flex-direction: column;
   font-family: butler-encabezados;
 }
+
 /* Atencion al consumidor */
 .atencion-consumidor {
   flex-direction: column;
@@ -347,6 +383,7 @@ header nav #ul-nav li a {
   .footer-uno div div {
     font-size: 1.5rem;
   }
+
   .footer-dos h4 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
@@ -364,6 +401,7 @@ header nav #ul-nav li a {
     width: 38px;
     height: 38px;
   }
+
   .footer-tres h4 {
     font-size: 1.7rem;
     margin-left: 1em;
@@ -417,6 +455,7 @@ header nav #ul-nav li a {
   #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
     max-height: 600px;
   }
+
   .video-recorrido iframe {
     width: 700px;
   }
@@ -507,6 +546,7 @@ header nav #ul-nav li a {
     text-align: center;
   }
 }
+/*Media querie para Laptop*/
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   /* Header */
   header nav h1 #logo {
@@ -529,6 +569,7 @@ header nav #ul-nav li a {
   .footer-uno div div {
     font-size: 1.5rem;
   }
+
   .footer-dos h4 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
@@ -600,6 +641,7 @@ header nav #ul-nav li a {
   #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
     max-height: 300px;
   }
+
   .video-recorrido iframe {
     width: 900px;
   }
@@ -742,6 +784,7 @@ header nav #ul-nav li a {
     }
   }
 }
+/*Media querie para Desktop*/
 @media screen and (min-width: 1200px) {
   /* Header */
   header nav h1 #logo {
@@ -766,6 +809,7 @@ header nav #ul-nav li a {
     margin-right: 2em;
     font-size: 1.5rem;
   }
+
   .footer-dos h4 {
     font-size: 1.7rem;
     margin-bottom: 0.5em;
@@ -783,6 +827,7 @@ header nav #ul-nav li a {
     width: 60px;
     height: 60px;
   }
+
   .footer-tres h4 {
     font-size: 1.7rem;
     margin-left: 1em;
@@ -827,7 +872,6 @@ header nav #ul-nav li a {
     justify-content: start;
   }
   #bodega .linea, #nosotros .linea {
-    flex-direction: row;
     justify-content: space-evenly;
   }
   #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
@@ -844,13 +888,9 @@ header nav #ul-nav li a {
     -o-transform: scale(1.2, 1);
     transition: all 2s;
   }
-  #bodega .segunda-linea, #nosotros .segunda-linea {
-    flex-direction: column-reverse;
-    flex-direction: row;
-  }
 
   .video-recorrido iframe {
-    width: 700px;
+    width: 1000px;
   }
 
   /* PAGINA VINOS */
@@ -1008,20 +1048,9 @@ header nav #ul-nav li a {
     }
   }
 }
-/* Parametros generales */
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* font size del html */
-html {
-  font-size: 1em;
-}
-
-/* Fondo */
-#body {
-  background-color: #FAEBD7;
+/*Fuera marca de agua*/
+.disclaimer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

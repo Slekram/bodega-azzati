@@ -9,7 +9,6 @@
         display: flex;
         font-family: butler-encabezados;
         color: nth($color, 2);
-        // font-weight: map-get($encabezado, h-font-weight);
         font-weight: lighter;
         text-decoration: underline;
         grid-area: titulo;
@@ -28,9 +27,6 @@
             font-family: butler-encabezados;
             border:  nth($color, 2) solid 5px;
             font-size: 2rem;
-        }
-
-        img {
         }
 
         p{

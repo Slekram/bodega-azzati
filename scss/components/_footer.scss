@@ -1,13 +1,14 @@
+/*Footer dividido en 5 secciones*/
+
+/*Premios*/
 .footer-uno{
     @extend %footer;
     
     h4 {
         @extend %encabezados;
-        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
-        justify-content: center;
-        
+        justify-content: center; 
     }
 
     div{
@@ -29,17 +30,16 @@
     }
 }
 
+/*Redes sociales*/
 .footer-dos{ 
     @extend %footer;
     
     h4{
         @extend %encabezados;
-        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         margin-bottom: 0.5em;
         justify-content: center;
-        
     } 
 
     .container-redes{
@@ -68,12 +68,12 @@
     }
 }
 
+/*Mapa*/
 .footer-tres{
     @extend %footer;
     
     h4{
         @extend %encabezados;
-        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         justify-content: center;
@@ -96,12 +96,12 @@
     }
 }
 
+/*Newsletter*/
 .footer-cuatro{
     @extend %footer;
     
     h4{
         @extend %encabezados;
-        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         justify-content: center;
@@ -130,6 +130,7 @@
     }
 }
 
+/*Copyright*/
 .footer-cinco{
     @extend %footer;
     @extend %flex;

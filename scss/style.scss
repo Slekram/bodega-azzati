@@ -4,6 +4,7 @@
 @import "basic/maps";
 @import "basic/variables";
 
+@import "components/parametros-generales";
 @import "components/fuentes";
 @import "components/header";
 @import "components/footer";
@@ -15,20 +16,7 @@
 @import "components/laptop-mq";
 @import "components/desktop-mq";
 
-
-/* Parametros generales */
-*{
-    margin: 0px ;
-    padding: 0px;
-}
-
-/* font size del html */
-html{
-    font-size: 1em;
-}
-
-
-/* Fondo */
-#body {
-    background-color: nth($color, 2); 
+/*Fuera marca de agua*/
+.disclaimer{
+    display: none;
 }

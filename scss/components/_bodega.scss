@@ -8,8 +8,6 @@
     h2{
         @extend %flex;
         @extend %encabezados;
-        // font-weight: map-get($encabezado , h-font-weight);
-        // font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 2rem;
     }
@@ -17,8 +15,6 @@
     h3{
         @extend %flex;
         @extend %encabezados;
-        // font-weight: map-get($encabezado , h-font-weight);
-        // font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
     }
@@ -36,15 +32,11 @@
         }
 
         .div-img-bodega{
-            // width: 100%;
-            // max-width: auto;
-
             img{
                 width: 100%;
                 height: auto;
             }
         }
-
     }
 
     .segunda-linea{
@@ -52,12 +44,10 @@
     }
 }
 
+/*Video recorrido del index*/
+
 .video-recorrido{
     @extend %flex;
     background-color: nth($color, 3);
     padding: 2em;
-
-    iframe{
-
-    }
 }

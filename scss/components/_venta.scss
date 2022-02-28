@@ -14,10 +14,8 @@
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.4rem;
         margin: 1em;
-
     }
 
-    
     .grid-container, .grid-container-2{
         
         h3{
@@ -40,7 +38,6 @@
                 text-decoration: map-get($encabezado, h-text-decoration);
                 margin: 1em;
                 font-size: 1rem;
-                
             }
 
             .mapa-interno {
@@ -56,10 +53,6 @@
                 iframe{
                     margin: 1em;
                     max-width: 250px;
-                }
-
-                .mapa{
-
                 }
             }
         }

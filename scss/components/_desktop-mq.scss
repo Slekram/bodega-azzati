@@ -1,3 +1,5 @@
+/*Media querie para Desktop*/
+
 @media screen and (min-width:$desktop){
     
     /* Header */
@@ -37,10 +39,6 @@
             div{
                 margin-right: 2em;
                 font-size: 1.5rem; 
-
-                h5{
-                    
-                }
             }
         }
     }
@@ -64,16 +62,12 @@
                 svg{
                     width: 60px;
                     height: 60px;
-                }
-        
-                h5 {      
-                }                
+                }           
             }
         }
     }
 
     .footer-tres{
-
         h4{
             font-size: 1.7rem;
             margin-left: 1em;
@@ -122,7 +116,6 @@
     }  
 
     /* INDEX */
-
     #bodega, #nosotros{
 
         h2{
@@ -136,7 +129,6 @@
         }
         
         .linea {
-            flex-direction: row;
             justify-content: space-evenly;
 
             .parrafo-bodega{
@@ -153,18 +145,12 @@
                 }
                 
             }
-    
-        }
-    
-        .segunda-linea{
-        flex-direction: column-reverse;
-        flex-direction: row;
         }
     }
     
     .video-recorrido{
         iframe{
-            width: 700px;
+            width: 1000px;
         }
     }
 
@@ -247,7 +233,6 @@
             "blanco1 titulo titulo blanco2"
             "turismo turismo san-rafael san-rafael";
             
-
             h3{
                 grid-area: titulo;
             }
@@ -259,7 +244,6 @@
             .san-rafael{
                 grid-area: san-rafael;
             } 
-
         }
 
         .grid-container-2{
@@ -312,13 +296,6 @@
                         z-index: 1;
                         background-color: nth($color, 1 );
                     }
-
-                    svg{    
-                    }
-                    
-                    iframe{
-                    }
-
                     .mapa{
                         max-width: 500px;
                     }
@@ -332,15 +309,6 @@
     /* Formulario de contato */
 
     .formulario-contacto{
-
-        h2{
-            
-        }
-
-        p{
-            
-        }
-
         form{
             flex-direction: row;
 

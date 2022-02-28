@@ -1,7 +1,6 @@
-/* CONTACTO ---------------------------------------------------*/
+/* CONTACTO */
+
 /* Formulario de contato */
-
-
 .formulario-contacto{
     @extend %secciones;
     @extend %flex;
@@ -9,11 +8,9 @@
     background-color: nth($color, 2);
 
     h2{
-        
         @extend %encabezados;
         text-align: center;
         text-decoration: map-get($encabezado, h-text-decoration);
-        // font-weight: map-get($encabezado, h-font-weight);
         font-size: 2.5rem;
     }
 
@@ -31,14 +28,6 @@
         display: flex;
         flex-direction: column;
         font-family: butler-encabezados;
-
-        label{
-            
-        }
-
-        input{
-            
-        }
     }
 }
 
@@ -51,17 +40,13 @@
     h3{
         @extend %encabezados;
         text-decoration: map-get($encabezado, h-text-decoration);
-        // font-weight: map-get($encabezado, h-font-weight);
-        
     }
 
     .boton-wsup {
-    
         fill: #41e175;
         border: nth($color, 1) solid 2px;
         background-color: nth($color, 2);
         border-radius: 30px;
         padding: 20px;
-
     }
 } 

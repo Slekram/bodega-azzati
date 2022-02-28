@@ -191,6 +191,8 @@
 
         .vino-container{
             height: 950px;
+            
+            /*Transformacion de escala para vinos*/
             &:hover{
                 @include prefijos (scale(1.5));
                 transition: 2s;
@@ -290,6 +292,7 @@
                 .mapa-interno {
                     align-items: center;
         
+                    /*Transform de escala para mapas*/
                     &:hover{
                         @include prefijos (scale(1.5));
                         transition: 2s;
@@ -333,6 +336,7 @@
         }
 
         .boton-wsup {      
+            /*Animacion para el boton de wsup*/
             &:hover{
                 animation-name: boton-wsup;
                 animation-duration: 10s;

@@ -916,6 +916,7 @@ header nav #ul-nav li a {
   }
   .seccion-vinos .vino-container {
     height: 950px;
+    /*Transformacion de escala para vinos*/
   }
   .seccion-vinos .vino-container:hover {
     transform: scale(1.5);
@@ -991,6 +992,7 @@ header nav #ul-nav li a {
   }
   .puntos .grid-container .mapa-local .mapa-interno, .puntos .grid-container-2 .mapa-local .mapa-interno {
     align-items: center;
+    /*Transform de escala para mapas*/
   }
   .puntos .grid-container .mapa-local .mapa-interno:hover, .puntos .grid-container-2 .mapa-local .mapa-interno:hover {
     transform: scale(1.5);
@@ -1023,6 +1025,9 @@ header nav #ul-nav li a {
   .atencion-consumidor h3 {
     font-size: 2rem;
     text-align: center;
+  }
+  .atencion-consumidor .boton-wsup {
+    /*Animacion para el boton de wsup*/
   }
   .atencion-consumidor .boton-wsup:hover {
     animation-name: boton-wsup;

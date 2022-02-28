@@ -3,7 +3,7 @@
     
     h4 {
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight);
+        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         justify-content: center;
@@ -34,7 +34,7 @@
     
     h4{
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight);
+        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         margin-bottom: 0.5em;
@@ -51,10 +51,12 @@
         a{
             @extend %flex;
             margin-bottom: 1em;
+            font-family: butler-encabezados;
 
             svg{
                 width: 40px;
                 height: 40px;
+                fill: nth($color, 1)
             }
     
             h5 {
@@ -71,7 +73,7 @@
     
     h4{
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight);
+        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         justify-content: center;
@@ -85,6 +87,7 @@
         margin-right: 2.5em;
         
         svg{
+            fill: nth($color, 1)
         }
 
         iframe{
@@ -98,7 +101,7 @@
     
     h4{
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight);
+        // font-weight: map-get($encabezado , h-font-weight);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.2rem;
         justify-content: center;
@@ -106,6 +109,7 @@
     
     form {
         @extend %flex;
+        font-family: butler-encabezados;
         flex-direction: row;
         margin-bottom: 1em;
         flex-direction: row;

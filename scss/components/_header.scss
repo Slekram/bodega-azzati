@@ -12,9 +12,9 @@ header{
             #logo{
                 display: flex;
                 text-decoration: none;
-                font-family: saintCapital;
-                font-style: map-get($encabezado , h-font-style);
-                font-weight: map-get($encabezado , h-font-weight);
+                font-family: butler-logo;
+                // font-style: map-get($encabezado , h-font-style);
+                // font-weight: map-get($encabezado , h-font-weight);
                 background-color:nth($color, 1);
                 color:nth($color, 2);
                 text-align: center;
@@ -37,7 +37,7 @@ header{
                     text-align: center;
                     border: solid nth($color, 2) 2px;
                     color: nth($color, 2);
-                    font-family: saintCapital;
+                    font-family: butler-logo;
                     background-color:nth($color, 1);
                     font-weight: map-get($encabezado , h-font-weight);
                     font-size: 1.2rem;

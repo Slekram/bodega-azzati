@@ -7,16 +7,17 @@
     
     h2 {  
         display: flex;
-        font-family: saintCapital;
+        font-family: butler-encabezados;
         color: nth($color, 2);
-        font-weight: map-get($encabezado, h-font-weight);
+        // font-weight: map-get($encabezado, h-font-weight);
+        font-weight: lighter;
         text-decoration: underline;
         grid-area: titulo;
         font-size: 2.9rem;
         justify-content: center;
     
     }
-
+    
     .vino-container{
         @extend %flex;
         flex-direction: column;
@@ -24,7 +25,7 @@
         
         h3{
             text-align: center;
-            font-family: saintCapitan;
+            font-family: butler-encabezados;
             border:  nth($color, 2) solid 5px;
             font-size: 2rem;
         }
@@ -33,8 +34,9 @@
         }
 
         p{
-            font-family: saintCapitan;
-            text-align: justify;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            text-align:justify;
             font-size: 1.5rem;
             margin: 1em; 
         }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 .atencion-consumidor, .formulario-contacto, .seccion-vinos, #bodega, #nosotros {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -8,7 +9,7 @@
 
 .atencion-consumidor h3, .formulario-contacto h2, .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3, .puntos .grid-container h3, .puntos .grid-container-2 h3, .puntos h2, #bodega h3, #nosotros h3, #bodega h2, #nosotros h2, .footer-cinco span, .footer-cuatro h4, .footer-tres h4, .footer-dos .container-redes a h5, .footer-dos h4, .footer-uno div div h5, .footer-uno h4 {
   display: flex;
-  font-family: saintCapital;
+  font-family: butler-encabezados;
   color: #2e3436;
 }
 
@@ -27,6 +28,19 @@
   align-items: center;
 }
 
+/*FUENTES LOCALES*/
+/*FUENTE BUTLER*/
+@font-face {
+  font-family: "butler-logo";
+  src: url("/src/assets/fonts/butler-black.otf") format("otf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "butler-encabezados";
+  src: url("/src/assets/fonts/butler-ultra-light.otf") format("otf");
+  font-display: swap;
+}
+/* FUENTE ROBOTO IMPORTADA DE GOOGLE FONTS*/
 /* Header */
 header {
   background-color: #2e3436;
@@ -39,9 +53,7 @@ header nav h1 {
 header nav h1 #logo {
   display: flex;
   text-decoration: none;
-  font-family: saintCapital;
-  font-style: italic;
-  font-weight: bold;
+  font-family: butler-logo;
   background-color: #2e3436;
   color: #FAEBD7;
   text-align: center;
@@ -61,7 +73,7 @@ header nav #ul-nav li a {
   text-align: center;
   border: solid #FAEBD7 2px;
   color: #FAEBD7;
-  font-family: saintCapital;
+  font-family: butler-logo;
   background-color: #2e3436;
   font-weight: bold;
   font-size: 1.2rem;
@@ -69,7 +81,6 @@ header nav #ul-nav li a {
 }
 
 .footer-uno h4 {
-  font-weight: bold;
   text-decoration: underline;
   font-size: 1.2rem;
   justify-content: center;
@@ -89,7 +100,6 @@ header nav #ul-nav li a {
 }
 
 .footer-dos h4 {
-  font-weight: bold;
   text-decoration: underline;
   font-size: 1.2rem;
   margin-bottom: 0.5em;
@@ -103,10 +113,12 @@ header nav #ul-nav li a {
 }
 .footer-dos .container-redes a {
   margin-bottom: 1em;
+  font-family: butler-encabezados;
 }
 .footer-dos .container-redes a svg {
   width: 40px;
   height: 40px;
+  fill: #2e3436;
 }
 .footer-dos .container-redes a h5 {
   margin-left: 0.5em;
@@ -114,7 +126,6 @@ header nav #ul-nav li a {
 }
 
 .footer-tres h4 {
-  font-weight: bold;
   text-decoration: underline;
   font-size: 1.2rem;
   justify-content: center;
@@ -124,17 +135,20 @@ header nav #ul-nav li a {
   margin-left: 2.5em;
   margin-right: 2.5em;
 }
+.footer-tres div svg {
+  fill: #2e3436;
+}
 .footer-tres div iframe {
   width: 300px;
 }
 
 .footer-cuatro h4 {
-  font-weight: bold;
   text-decoration: underline;
   font-size: 1.2rem;
   justify-content: center;
 }
 .footer-cuatro form {
+  font-family: butler-encabezados;
   flex-direction: row;
   margin-bottom: 1em;
   flex-direction: row;
@@ -162,14 +176,10 @@ header nav #ul-nav li a {
   max-width: 95%;
 }
 #bodega h2, #nosotros h2 {
-  font-weight: bold;
-  font-style: italic;
   text-decoration: underline;
   font-size: 2rem;
 }
 #bodega h3, #nosotros h3 {
-  font-weight: bold;
-  font-style: italic;
   text-decoration: underline;
   font-size: 1.2rem;
 }
@@ -179,18 +189,14 @@ header nav #ul-nav li a {
   flex-direction: column;
 }
 #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-  font-family: saintCapital;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
   text-align: justify;
   font-size: 1rem;
-}
-#bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-  width: 100%;
-  max-width: auto;
 }
 #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
   width: 100%;
   height: auto;
-  max-height: 350px;
 }
 #bodega .segunda-linea, #nosotros .segunda-linea {
   flex-direction: column-reverse;
@@ -207,9 +213,9 @@ header nav #ul-nav li a {
 }
 .seccion-vinos h2 {
   display: flex;
-  font-family: saintCapital;
+  font-family: butler-encabezados;
   color: #FAEBD7;
-  font-weight: bold;
+  font-weight: lighter;
   text-decoration: underline;
   grid-area: titulo;
   font-size: 2.9rem;
@@ -221,12 +227,13 @@ header nav #ul-nav li a {
 }
 .seccion-vinos .vino-container h3 {
   text-align: center;
-  font-family: saintCapitan;
+  font-family: butler-encabezados;
   border: #FAEBD7 solid 5px;
   font-size: 2rem;
 }
 .seccion-vinos .vino-container p {
-  font-family: saintCapitan;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
   text-align: justify;
   font-size: 1.5rem;
   margin: 1em;
@@ -245,7 +252,6 @@ header nav #ul-nav li a {
   margin-top: 1em;
 }
 .puntos h2 {
-  font-weight: bold;
   text-decoration: underline;
   font-size: 1.4rem;
   margin: 1em;
@@ -288,11 +294,11 @@ header nav #ul-nav li a {
 .formulario-contacto h2 {
   text-align: center;
   text-decoration: underline;
-  font-weight: bold;
   font-size: 2.5rem;
 }
 .formulario-contacto p {
-  font-family: saintCapital;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
   text-align: justify;
   font-size: 1.5rem;
   margin: 1em;
@@ -302,6 +308,7 @@ header nav #ul-nav li a {
   background-color: #2e3436;
   display: flex;
   flex-direction: column;
+  font-family: butler-encabezados;
 }
 /* Atencion al consumidor */
 .atencion-consumidor {
@@ -309,7 +316,6 @@ header nav #ul-nav li a {
 }
 .atencion-consumidor h3 {
   text-decoration: underline;
-  font-weight: bold;
 }
 .atencion-consumidor .boton-wsup {
   fill: #41e175;
@@ -319,14 +325,13 @@ header nav #ul-nav li a {
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
   /* Header */
   header nav h1 #logo {
-    font-size: 2rem;
-    padding: 0.1em 0.1em;
+    font-size: 3rem;
   }
   header nav #ul-nav li a {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   /* Footer */
@@ -391,7 +396,7 @@ header nav #ul-nav li a {
 
   .footer-cinco span {
     font-size: 0.6rem;
-    padding: 2em;
+    padding: 2.1em;
   }
 
   /* INDEX */
@@ -402,18 +407,15 @@ header nav #ul-nav li a {
     font-size: 2rem;
   }
   #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   #bodega .linea .div-img-bodega, #nosotros .linea .div-img-bodega {
-    max-width: 380px;
+    max-width: 700px;
+    height: auto;
   }
   #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
     max-height: 600px;
   }
-  #bodega .segunda-linea, #nosotros .segunda-linea {
-    flex-direction: column-reverse;
-  }
-
   .video-recorrido iframe {
     width: 700px;
   }
@@ -422,7 +424,7 @@ header nav #ul-nav li a {
   .seccion-vinos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     align-items: center;
@@ -462,6 +464,176 @@ header nav #ul-nav li a {
     font-size: 3rem;
     margin: 0.5em;
   }
+  .puntos .grid-container h3, .puntos .grid-container-2 h3 {
+    margin: 0.5em;
+    font-size: 2.5rem;
+  }
+  .puntos .grid-container .mapa-local h3, .puntos .grid-container-2 .mapa-local h3 {
+    color: #2e3436;
+    margin: 0.5em;
+    font-size: 1.5rem;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno, .puntos .grid-container-2 .mapa-local .mapa-interno {
+    align-items: center;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno iframe, .puntos .grid-container-2 .mapa-local .mapa-interno iframe {
+    max-width: 600px;
+  }
+  .puntos .grid-container .mapa-local .mapa-interno .mapa, .puntos .grid-container-2 .mapa-local .mapa-interno .mapa {
+    max-width: 600px;
+  }
+
+  /* CONTACTO ---------------------------------------------------*/
+  /* Formulario de contato */
+  .formulario-contacto form {
+    flex-direction: row;
+  }
+  .formulario-contacto form label {
+    font-size: 1rem;
+    margin-right: 0.5em;
+  }
+  .formulario-contacto form input {
+    font-size: 1rem;
+    margin-right: 0.5em;
+  }
+
+  /* Atencion al consumidor */
+  .atencion-consumidor h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Header */
+  header nav h1 #logo {
+    font-size: 3rem;
+    padding: 0.1em 0.1em;
+  }
+  header nav #ul-nav li a {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  .footer-uno h4 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5em;
+    justify-content: flex-start;
+  }
+  .footer-uno div {
+    margin-left: 0.2em;
+    justify-content: space-evenly;
+  }
+  .footer-uno div div {
+    font-size: 1.5rem;
+  }
+  .footer-dos h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    margin-left: 1em;
+    justify-content: flex-start;
+  }
+  .footer-dos .container-redes {
+    margin-left: 0.5em;
+  }
+  .footer-dos .container-redes a {
+    font-size: 2rem;
+    margin-right: 0.5em;
+  }
+  .footer-dos .container-redes a svg {
+    width: 50px;
+    height: 50px;
+  }
+  .footer-dos .container-redes a h5 {
+    font-size: 1.5rem;
+  }
+
+  .footer-tres h4 {
+    font-size: 1.7rem;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    justify-content: flex-start;
+  }
+  .footer-tres div svg {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .footer-tres div iframe {
+    width: 500px;
+    margin-right: 1em;
+  }
+
+  .footer-cuatro h4 {
+    font-size: 1.7rem;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    justify-content: flex-start;
+  }
+  .footer-cuatro form label {
+    font-size: 1.2rem;
+    margin-right: 0.1em;
+  }
+  .footer-cuatro form input {
+    font-size: 0.7rem;
+    margin-right: 0.1em;
+  }
+
+  .footer-cinco span {
+    font-size: 0.9rem;
+    padding: 2em;
+  }
+
+  /* INDEX */
+  #bodega h2, #nosotros h2 {
+    justify-content: flex-start;
+    font-size: 3rem;
+  }
+  #bodega h3, #nosotros h3 {
+    font-size: 2rem;
+    justify-content: flex-start;
+  }
+  #bodega .linea .parrafo-bodega, #nosotros .linea .parrafo-bodega {
+    font-size: 1rem;
+  }
+  #bodega .linea .div-img-bodega img, #nosotros .linea .div-img-bodega img {
+    max-height: 300px;
+  }
+  .video-recorrido iframe {
+    width: 900px;
+  }
+
+  /* PAGINA VINOS */
+  .seccion-vinos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "titulo titulo" "joven guarda" "organico premium";
+  }
+  .seccion-vinos h2 {
+    font-size: 3em;
+    padding: 0.2em;
+  }
+  .seccion-vinos .joven {
+    grid-area: joven;
+  }
+  .seccion-vinos .guarda {
+    grid-area: guarda;
+  }
+  .seccion-vinos .organico {
+    grid-area: organico;
+  }
+  .seccion-vinos .premium {
+    grid-area: premium;
+  }
+
+  /* PUNTOS DE VENTA ------------------------------------------------*/
+  .puntos h2 {
+    font-size: 3rem;
+    margin: 0.5em;
+  }
   .puntos .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -481,11 +653,11 @@ header nav #ul-nav li a {
   }
   .puntos .grid-container-2 {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 5em 40em 40em;
-    grid-column-gap: 10px;
-    grid-row-gap: 5px;
-    grid-template-areas: "blanco1 titulo blanco2" "blanco3 caba blanco4" "cba blanco5 rosario";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5em 40em;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    grid-template-areas: "blanco1 titulo blanco2" "caba cba rosario";
   }
   .puntos .grid-container-2 h3 {
     grid-area: titulo;
@@ -520,8 +692,11 @@ header nav #ul-nav li a {
     z-index: 1;
     background-color: #2e3436;
   }
+  .puntos .grid-container .mapa-local .mapa-interno iframe, .puntos .grid-container-2 .mapa-local .mapa-interno iframe {
+    max-width: 200px;
+  }
   .puntos .grid-container .mapa-local .mapa-interno .mapa, .puntos .grid-container-2 .mapa-local .mapa-interno .mapa {
-    max-width: 150px;
+    max-width: 400px;
   }
 
   /* CONTACTO ---------------------------------------------------*/
@@ -835,12 +1010,6 @@ html {
   font-size: 1em;
 }
 
-/* Fuente Saint Capital*/
-@font-face {
-  font-family: saintCapital;
-  src: url(src/assets/fonts/saint-capital.ttf);
-  font-display: swap;
-}
 /* Fondo */
 #body {
   background-color: #FAEBD7;

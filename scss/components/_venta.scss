@@ -10,7 +10,7 @@
     h2 {
         @extend %flex;
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight );
+        // font-weight: map-get($encabezado , h-font-weight );
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 1.4rem;
         margin: 1em;
@@ -24,7 +24,6 @@
             @extend %flex;
             @extend %encabezados;
             text-decoration: map-get($encabezado, h-text-decoration);
-            
             // margin-left: 50%;
             margin: 1em;
             font-size: 1rem;

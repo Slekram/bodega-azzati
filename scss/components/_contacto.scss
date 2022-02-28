@@ -13,12 +13,13 @@
         @extend %encabezados;
         text-align: center;
         text-decoration: map-get($encabezado, h-text-decoration);
-        font-weight: map-get($encabezado, h-font-weight);
+        // font-weight: map-get($encabezado, h-font-weight);
         font-size: 2.5rem;
     }
 
     p{
-        font-family: saintCapital;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
         text-align: justify;
         font-size: 1.5rem;
         margin: 1em;
@@ -29,6 +30,7 @@
         background-color: nth($color, 1); 
         display: flex;
         flex-direction: column;
+        font-family: butler-encabezados;
 
         label{
             
@@ -49,7 +51,7 @@
     h3{
         @extend %encabezados;
         text-decoration: map-get($encabezado, h-text-decoration);
-        font-weight: map-get($encabezado, h-font-weight);
+        // font-weight: map-get($encabezado, h-font-weight);
         
     }
 

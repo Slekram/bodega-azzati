@@ -4,12 +4,12 @@
 #bodega, #nosotros{
     @extend %secciones;
     max-width: 95%;
-    
+
     h2{
         @extend %flex;
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight);
-        font-style: map-get($encabezado , h-font-style);
+        // font-weight: map-get($encabezado , h-font-weight);
+        // font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
         font-size: 2rem;
     }
@@ -17,32 +17,32 @@
     h3{
         @extend %flex;
         @extend %encabezados;
-        font-weight: map-get($encabezado , h-font-weight);
-        font-style: map-get($encabezado , h-font-style);
+        // font-weight: map-get($encabezado , h-font-weight);
+        // font-style: map-get($encabezado , h-font-style);
         text-decoration: map-get($encabezado , h-text-decoration);
-        font-size: 1.2rem;      
+        font-size: 1.2rem;
     }
-    
+
     .linea {
         align-items: center;
         justify-content: center;
         flex-direction: column;
 
         .parrafo-bodega{
-            font-family: saintCapital;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
             text-align: justify;
             font-size: 1rem;
         }
 
         .div-img-bodega{
-            width: 100%;
-            max-width: auto;
+            // width: 100%;
+            // max-width: auto;
 
             img{
                 width: 100%;
                 height: auto;
-                max-height: 350px;
-            } 
+            }
         }
 
     }

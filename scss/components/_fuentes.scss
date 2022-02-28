@@ -1,0 +1,20 @@
+
+
+/*FUENTES LOCALES*/
+
+/*FUENTE BUTLER*/
+@font-face {
+    font-family: 'butler-logo';
+    src: url('/src/assets/fonts/butler-black.otf') format('otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'butler-encabezados';
+    src: url('/src/assets/fonts/butler-ultra-light.otf') format('otf');
+    font-display: swap;
+}
+
+/* FUENTE ROBOTO IMPORTADA DE GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');

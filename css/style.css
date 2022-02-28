@@ -1,8 +1,4 @@
-/*Listas*/
-/*Colores*/
-/*Extends*/
 /*Para las secciones que llevan estos atributos*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 .atencion-consumidor, .formulario-contacto, .seccion-vinos, #bodega, #nosotros {
   padding-top: 1em;
   padding-bottom: 1em;
@@ -35,10 +31,6 @@
   align-items: center;
 }
 
-/*Mixin*/
-/*Para los tranform*/
-/* Caracteristicas que pueden usar algunos encabezados */
-/*Breakpoints Media Queries*/
 /* Parametros generales */
 * {
   margin: 0px;
@@ -68,6 +60,8 @@ html {
   font-display: swap;
 }
 /* FUENTE ROBOTO IMPORTADA DE GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+
 /* Header */
 header {
   background-color: #2e3436;

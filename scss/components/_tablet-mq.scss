@@ -1,12 +1,11 @@
-@media screen and (min-width:$desktop){
-    
+@media screen and (min-width:$tablet) and (max-width:$desktop){
     /* Header */
 
     header{
         nav{
             h1{
                 #logo{
-                    font-size: 4rem;
+                    font-size: 2rem;
                     padding: 0.1em 0.1em;
                 }    
             }
@@ -14,7 +13,7 @@
             #ul-nav{
                 li{
                     a{
-                        font-size: 1.8rem; 
+                        font-size: 1rem; 
                     } 
                 }           
             } 
@@ -26,16 +25,15 @@
     .footer-uno{  
         h4 {
             font-size: 1.7rem;
-            margin-left: 1em;
             margin-bottom: 0.5em;
             justify-content: flex-start;
         }
     
         div{
-            margin-left: 1em;
+            margin-left: 0.2em;
         
             div{
-                margin-right: 2em;
+                
                 font-size: 1.5rem; 
 
                 h5{
@@ -48,22 +46,22 @@
     .footer-dos{ 
         
         h4{
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             margin-bottom: 0.5em;
             margin-left: 1em;
             justify-content: flex-start;
         } 
     
         .container-redes{
-            margin-left: 1em;
+            margin-left: 0.5em;
             
             a{
                 font-size: 1.5rem;
-                margin-right: 1em;
+                margin-right: 0.5em;
         
                 svg{
-                    width: 60px;
-                    height: 60px;
+                    width: 38px;
+                    height: 38px;
                 }
         
                 h5 {      
@@ -105,19 +103,21 @@
         
         form {
             label{
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                margin-right: 0.1em; 
             }
     
             input {
-                font-size: 1rem;
+                font-size: 0.7rem;
+                margin-right: 0.1em; 
             }  
         }
     }
 
     .footer-cinco{
         span{
-            font-size: 1rem;
-            padding: 1em ;      
+            font-size: 0.6rem;
+            padding: 2em ;      
         } 
     }  
 
@@ -127,41 +127,31 @@
 
         h2{
             font-size: 3rem;
-            justify-content:start;
+            
         }
     
         h3{
             font-size: 2rem;
-            justify-content:start;
         }
         
         .linea {
-            flex-direction: row;
-            justify-content: space-between;
-
+            
             .parrafo-bodega{
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
     
             .div-img-bodega{
-                max-width: 470px;
+                max-width: 380px;
 
-                &:hover{
-                    /* Transformacion de escala para las imagenes */
-                    @include prefijos(scale(1.2,1));
-                    transition: all 2s;
-                }
-                
                 img{
-
+                    max-height: 600px;  
                 } 
             }
     
         }
     
         .segunda-linea{
-        flex-direction: column-reverse;
-            flex-direction: row;
+            flex-direction: column-reverse;
         }
     }
     
@@ -175,15 +165,16 @@
 
     .seccion-vinos{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 0.25fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.25fr 1fr 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 10px;
         align-items: center;
         justify-items: center;
         grid-template-areas: 
-        "blanco titulo titulo blanco2"
-        "joven guarda organico premium";
+        "titulo titulo"
+        "joven guarda"
+        "organico premium";
         
         h2 {  
             font-size: 3em;
@@ -207,13 +198,7 @@
         }
 
         .vino-container{
-            &:hover{
-                @include prefijos (scale(1.5));
-                transition: 2s;
-                z-index: 1;
-                background-color: nth($color, 1);
-            } 
-
+            
             h3{
                 font-size: 1.5rem;
                 padding: 0.2em;
@@ -266,13 +251,14 @@
 
         .grid-container-2{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 5em 40em;
-            grid-column-gap: 50px;
-            grid-row-gap: 10px;
+            grid-template-columns: 0.5fr 1fr 0.5fr;
+            grid-template-rows: 5em 40em 40em;
+            grid-column-gap: 10px;
+            grid-row-gap: 5px;
             grid-template-areas: 
             "blanco1 titulo blanco2"
-            "caba cba rosario";
+            "blanco3 caba blanco4"
+            "cba blanco5 rosario";
         
             h3{
                 grid-area: titulo;
@@ -302,7 +288,7 @@
                 h3{
                     color:  nth($color, 1 );
                     margin: 0.5em;
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
 
                 .mapa-interno {
@@ -322,7 +308,7 @@
                     }
 
                     .mapa{
-                        max-width: 500px;
+                        max-width: 150px;
                     }
                 }
             }
@@ -387,4 +373,3 @@
         }
     } 
 }
-

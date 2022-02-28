@@ -28,6 +28,7 @@
   align-items: center;
 }
 
+/*Breakpoints Media Queries*/
 /*FUENTES LOCALES*/
 /*FUENTE BUTLER*/
 @font-face {
@@ -447,6 +448,9 @@ header nav #ul-nav li a {
   .seccion-vinos .premium {
     grid-area: premium;
   }
+  .seccion-vinos .vino-container {
+    height: 804px;
+  }
   .seccion-vinos .vino-container h3 {
     font-size: 1.5rem;
     padding: 0.2em;
@@ -506,8 +510,7 @@ header nav #ul-nav li a {
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   /* Header */
   header nav h1 #logo {
-    font-size: 3rem;
-    padding: 0.1em 0.1em;
+    font-size: 3.2rem;
   }
   header nav #ul-nav li a {
     font-size: 2rem;
@@ -605,7 +608,7 @@ header nav #ul-nav li a {
   .seccion-vinos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.25fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     align-items: center;
@@ -627,6 +630,9 @@ header nav #ul-nav li a {
   }
   .seccion-vinos .premium {
     grid-area: premium;
+  }
+  .seccion-vinos .vino-container {
+    height: 806px;
   }
 
   /* PUNTOS DE VENTA ------------------------------------------------*/
@@ -743,7 +749,7 @@ header nav #ul-nav li a {
     padding: 0.1em 0.1em;
   }
   header nav #ul-nav li a {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   /* Footer */
@@ -851,7 +857,7 @@ header nav #ul-nav li a {
   .seccion-vinos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 0.25fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     align-items: center;
@@ -873,6 +879,9 @@ header nav #ul-nav li a {
   }
   .seccion-vinos .premium {
     grid-area: premium;
+  }
+  .seccion-vinos .vino-container {
+    height: 950px;
   }
   .seccion-vinos .vino-container:hover {
     transform: scale(1.5);

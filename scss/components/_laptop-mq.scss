@@ -5,8 +5,8 @@
         nav{
             h1{
                 #logo{
-                    font-size: 3rem;
-                    padding: 0.1em 0.1em;
+                    font-size: 3.2rem;
+                    
                 }    
             }
 
@@ -170,7 +170,7 @@
     .seccion-vinos{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.25fr 1fr 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 10px;
         align-items: center;
@@ -200,8 +200,11 @@
         .premium{
             grid-area: premium;
         }
-
-    }    
+        
+        .vino-container{
+            height: 806px;
+        }  
+    }
 
     /* PUNTOS DE VENTA ------------------------------------------------*/
 

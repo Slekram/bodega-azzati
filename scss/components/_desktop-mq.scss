@@ -14,7 +14,7 @@
             #ul-nav{
                 li{
                     a{
-                        font-size: 1.8rem; 
+                        font-size: 2.4rem; 
                     } 
                 }           
             } 
@@ -173,7 +173,7 @@
     .seccion-vinos{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 0.25fr 1fr;
+        grid-template-rows: 0.1fr 1fr;
         grid-column-gap: 20px;
         grid-row-gap: 10px;
         align-items: center;
@@ -204,6 +204,7 @@
         }
 
         .vino-container{
+            height: 950px;
             &:hover{
                 @include prefijos (scale(1.5));
                 transition: 2s;
